@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <br />
+    <br />
+    <div
+      class="row"
+    >
+      <div
+        class="col-12 col-sm-5"
+      >
+        <img
+          alt="drugs"
+          src="altmeds.png"
+        />
+      </div>
+      <div
+        class="col-12 col-sm-6"
+      >
+        <strong>
+          <span
+            class="heading"
+          >
+              Nice Job! You've Completed Step 2
+          </span>
+        </strong>
+        <p />
+        <p>
+          Medications can interact with each other and have a negative effect on your health, we are going to make sure that doesn't happen.
+        </p>
+        <p>
+          In this next step, you can tell us about any over the counter medications or supplements you are taking.
+        </p>
+        <p>
+          This can include things like daily vitamins, herbal supplements or medications that don't require a prescription.
+        </p>
+        <p>
+          By sharing this information with our pharmacists, we can make sure you are on the safest, best medications for your condition.
+        </p>
+        <p>
+          <strong>
+            Click Next to help us help you take your medicines safely!
+          </strong>
+        </p>
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="buttonwrapper container"
+      >
+        <div
+          class="col-12 col-sm-12"
+        >
+          <a
+            href="/meds-other-meds"
+          >
+            <button
+              class="button btn btn-secondary"
+            >
+              <b>
+                NEXT
+              </b>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p />
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumberActive"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

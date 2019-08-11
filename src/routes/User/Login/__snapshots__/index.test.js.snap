@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`login failed | email or password incorrect 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p>
+      Member Sign In
+    </p>
+    <p>
+      <span
+        class="newRegistration"
+      >
+        Don't have an account?  
+        <a
+          href="/welcome-new"
+        >
+          <u>
+            Register now.
+          </u>
+        </a>
+      </span>
+    </p>
+    <div
+      class="formWrapper"
+    >
+      <form
+        class=""
+      >
+        <span>
+          <input
+            class="inputText"
+            name="email"
+            placeholder="email"
+            type="email"
+            value="test@test.com"
+          />
+          <div
+            class="textError"
+          >
+            Error: Wrong email or password.
+          </div>
+        </span>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            autocomplete="a-password"
+            class="passwordText"
+            ispassword="true"
+            name="password"
+            placeholder="password"
+            type="text"
+            value="A12345678*a"
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            id="btnShowPassword"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div>
+          <button
+            class="button btn btn-secondary"
+            id="btnlogin"
+            type="submit"
+          >
+            Sign In
+          </button>
+        </div>
+      </form>
+      <div>
+        <span
+          class="forgotPasswordText"
+        >
+          I forgot my password
+        </span>
+      </div>
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p>
+      Member Sign In
+    </p>
+    <p>
+      <span
+        class="newRegistration"
+      >
+        Don't have an account?  
+        <a
+          href="/welcome-new"
+        >
+          <u>
+            Register now.
+          </u>
+        </a>
+      </span>
+    </p>
+    <div
+      class="formWrapper"
+    >
+      <form
+        class=""
+      >
+        <span>
+          <input
+            autofocus=""
+            class="inputText"
+            name="email"
+            placeholder="email"
+            type="email"
+            value=""
+          />
+        </span>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            autocomplete="a-password"
+            class="passwordText"
+            ispassword="true"
+            name="password"
+            placeholder="password"
+            type="password"
+            value=""
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            id="btnShowPassword"
+            type="button"
+          >
+            Show
+          </button>
+        </div>
+        <div>
+          <button
+            class="button btn btn-secondary"
+            id="btnlogin"
+            type="submit"
+          >
+            Sign In
+          </button>
+        </div>
+      </form>
+      <div>
+        <span
+          class="forgotPasswordText"
+        >
+          I forgot my password
+        </span>
+      </div>
+      <div />
+    </div>
+  </div>
+</div>
+`;

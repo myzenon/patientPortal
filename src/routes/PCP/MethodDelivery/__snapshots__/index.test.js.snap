@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p>
+      <strong>
+        Once our pharmacist completes your medication review,  We will email a link to your personal medication list and medication action plan.
+      </strong>
+    </p>
+    <table>
+      <tbody>
+        <tr
+          class="checkboxWrapper"
+        >
+          <td>
+            <input
+              class="checkbox"
+              name="getByEmail"
+              type="checkbox"
+            />
+          </td>
+          <td>
+            <span>
+              In addition to the email, I would like a hard copy mailed to me.
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button
+      class="button btn btn-secondary"
+      type="button"
+    >
+      Next
+    </button>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumberActive"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumberActive"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumberActive"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

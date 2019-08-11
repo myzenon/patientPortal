@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checkbox checked | next button enabled 1`] = `
+<button
+  class="button btn btn-secondary"
+  type="button"
+>
+  NEXT
+</button>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p>
+      <strong>
+        We at Arine take your Privacy Very Seriously.
+      </strong>
+    </p>
+    <p>
+      Our Policies have changed. Please read the statements below about how medical information about you may be used and disclosed and how you can get access to this information.
+    </p>
+    <div
+      class="policies"
+    >
+      <div
+        class="wrapperNoPopup"
+      >
+        <div
+          class="policyWrapper"
+        >
+          <div
+            class="policyContent"
+          >
+            <div
+              class="tabWrapper"
+            >
+              <div
+                class="tabActive"
+              >
+                Notice of Privacy Practices
+              </div>
+              <div
+                class="tab"
+              >
+                End User License Agreement
+              </div>
+              <div
+                class="tab"
+              >
+                Terms and Conditions
+              </div>
+              <div
+                class="tabSpace"
+              />
+            </div>
+            <div
+              class="contentWrapper"
+            >
+              <div
+                class="scrollDiv"
+              >
+                <span>
+                  <meta
+                    charset="UTF-8"
+                  />
+                  
+
+                  <meta
+                    version="v1.0"
+                  />
+                  
+nopp content
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="agreeCheckbox"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-2"
+        >
+          <input
+            type="checkbox"
+            value="false"
+          />
+        </div>
+        <div
+          class="col-10"
+        >
+          I have read and agree to the Notice of Privacy Practices, Terms of Service and End User License Agreement
+        </div>
+      </div>
+    </div>
+    <div>
+      <button
+        class="button btn btn-secondary disabled"
+        disabled=""
+        type="button"
+      >
+        NEXT
+      </button>
+    </div>
+    <div
+      class="questionWrapper"
+    >
+      Questions ?
+    </div>
+  </div>
+</div>
+`;

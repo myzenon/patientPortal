@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <br />
+    <div
+      class="row"
+    >
+      <div
+        class="col-12 col-sm-10 offset-sm-1"
+      >
+        <strong>
+          <span
+            class="heading"
+          >
+            CONGRATULATIONS!
+          </span>
+          <br />
+          <span
+            class="subheading"
+          >
+            You've answered all our questions.
+          </span>
+        </strong>
+        <p />
+        <p>
+          If you would like to schedule your phone call with one of our pharmacists, you can click the link below and choose a date and time that works for you. Otherwise, we will call you in the next couple of days to schedule a call. You can also call us anytime at .
+        </p>
+        <div
+          class="col"
+        >
+          <a
+            href="https://calendly.com/dev-pharmacists/cmr?name=undefined%20undefined(on behalf of Rita%20Summers)&a1=7c7330c0-a321-4cba-8153-c15e9e87fbdf&email=&a2=+17322221333"
+          >
+            Click here to schedule your appointment now
+          </a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div
+      class="row"
+    >
+      <span
+        class="center"
+      >
+        <video
+          autoplay=""
+          class="video"
+          controls=""
+          src="https://s3.amazonaws.com/arine-content-public/web-site/video/review_complete_v1.mov"
+        />
+      </span>
+    </div>
+    <p>
+      Clicking Next will take you back to the Arine landing page where you can review your answers.
+    </p>
+    <div
+      class="row"
+    >
+      <a
+        href="/landing-page"
+      >
+        <button
+          class="button btn btn-secondary"
+        >
+          <b>
+            NEXT
+          </b>
+        </button>
+      </a>
+    </div>
+  </div>
+  <p />
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumberActive"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumberActive"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumberActive"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

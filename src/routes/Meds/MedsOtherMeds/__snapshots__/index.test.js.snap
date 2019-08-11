@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p />
+    <span
+      class="questions"
+    >
+      Are there additional medications or herbal supplements you are taking?
+    </span>
+    <p />
+    <br />
+    <div
+      class="buttonWrapper"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="text-left col"
+        >
+          <button
+            class="button btn btn-secondary"
+            type="button"
+          >
+            YES
+          </button>
+        </div>
+        <div
+          class="text-right col"
+        >
+          <button
+            class="button btn btn-secondary"
+            type="button"
+          >
+            NO
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumberActive"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

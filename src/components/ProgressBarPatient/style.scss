@@ -1,0 +1,264 @@
+@import '~themes/colors.scss';
+
+.wrapper {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    border-top-color: $textbox-border-color !important;
+    border-top:solid;
+    border-width: 2px;
+
+}
+
+.step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: $progress-inactive-color;
+    height: 100%;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.stepActive {
+    @extend .step;
+    color: $tab-active-color;
+     font-weight: bold;
+    font-size: 16px;
+}
+
+.stepCompleted {
+    @extend .step;
+    color: $tab-active-color;
+    font-size: 16px;
+}
+
+.stepNumber {
+    border: 1px solid #DEDCDC;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #344559;
+    font-family: "Nunito Sans";
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 30px;
+    height: 105px;
+    width: 105px;
+
+    position: relative;
+}
+
+
+// .stepNumber::before{
+//     content: '';
+//     position: absolute;
+//     left: 10%;
+//     width: 80%;
+//     height: .2em;
+//     border: 1px solid #DEDCDC;
+//     z-index: -1 !important;
+//   }
+
+.stepNumberActive {
+    @extend .stepNumber;
+    margin-top: 0px;
+    height: 147px;
+    width: 147px;
+    background-color: #E6F5F9;
+    color: $background-color;
+    border: 0;
+    position: relative;
+}
+
+.stepNumberCompleted {
+    @extend .stepNumber;
+    margin-top: 30px;
+    height: 105px;
+    width: 105px;
+    background-color: #EDEFF1;
+    color: $background-color;
+    border: 0;
+    position: relative;
+}
+
+.stepName{
+    padding-top: 40px;
+    height: 27px;
+    color: #344559;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+}
+
+
+.stepNameActive{
+    padding-top: 25px;
+    color: #0DA4C5;
+    font-family: "Nunito Sans";
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    text-align: center;
+}
+
+.stepNameCompleted{
+    padding-top: 40px;
+    color: #A0ACB8;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+}
+
+.topCircleCompleted{
+    position: absolute;
+    top:  -10px;
+    right: -10px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    border: 5.88px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: #A0ACB8;
+}
+.topCircle{
+  display: none;
+}
+
+.topCircleActive{
+    position: absolute;;
+    top:  -10px;
+    right: -10px;
+    box-sizing: border-box;
+    height: 67.2px;
+    width: 67.2px;
+    border: 8.4px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: #0DA4C5;
+}
+
+.topCircleText{
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+
+.step1IconSize{
+    height: 43px;
+    width: 40px;
+}
+
+.step2IconSize{
+    height: 63px;
+    width: 51px;
+}
+
+.step3IconSize{
+    height: 59px;
+    width: 73px;
+}
+
+.step4IconSize{
+    height: 59px;
+    width: 63px;
+}
+
+.step5IconSize{
+    height: 60px;
+    width: 52px;
+}
+
+.step1GreyIconSize{
+    height: 30px;
+    width: 28px;
+}
+
+.step2GreyIconSize{
+   height: 44.1px;
+    width: 35.7px;
+}
+
+.step3GreyIconSize{
+    height: 41.3px;
+    width: 51.1px;
+}
+
+.step4GreyIconSize{
+     height: 41.3px;
+     	width: 44.1px;
+}
+
+.lineActive {
+    position: absolute;
+    top: 80px;
+    left: 145px;
+    width: 149px;
+    height: 5px;
+    height: .2em;
+    border: 1px solid #DEDCDC;
+    z-index: -1 !important;
+    background:linear-gradient(to right, #E6F5F9 50%, white 50%);
+    border-right-style: none;
+    border-left-style: none;
+  }
+
+  .lineCompleted {
+    position: absolute;
+    top: 50px;
+    left: 104px;
+    width:170px;
+    height: 5px;
+    height: .2em;
+    border: 1px solid #DEDCDC;
+    z-index: -1 !important;
+    background-color: #EDEFF1;
+    border-right-style: none;
+    border-left-style: none;
+  }
+
+  .lineYettoVisite {
+    position: absolute;
+    top: 50px;
+    left: 104px;
+    width:170px;
+    height: 5px;
+    height: .2em;
+    border: 1px solid #DEDCDC;
+    z-index: -1 !important;
+    background: #fff;
+    border-right-style: none;
+    border-left-style: none;
+  }
+
+
+
+
+
+// This code is used when the screen width of website is less than 650px | then both of this class will apply and override the arrtibute that defined.
+@media screen and (max-width: 650px) {
+  .wrapper {
+      display: none;
+      opacity: 0;
+  }
+}

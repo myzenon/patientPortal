@@ -1,0 +1,25 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/global.scss';
+@import '~themes/css/styles.scss';
+
+.content {
+    @include content-wrapper();
+}
+
+.content form {
+    margin: 50px 0;
+}
+
+.checkboxLabel{
+    color: $label-color;
+    font-size: 23px;
+    padding-left: 20px;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+
+.buttonWrapper button {
+   @include button(349px)
+}

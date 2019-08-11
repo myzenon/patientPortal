@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p
+      class="instruction"
+    >
+      Awesome! It looks like you are trying to help 
+      <strong>
+        firstName lastName
+      </strong>
+       today.
+    </p>
+    <p
+      class="instruction"
+    >
+      Is that right?
+    </p>
+    <div
+      class="choicesWrapper"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <a
+            href="/caregiver-consent"
+          >
+            <button
+              class="button btn btn-secondary"
+            >
+              YES
+            </button>
+          </a>
+        </div>
+        <div
+          class="col"
+        >
+          <a
+            href="/caregiver-patient-lookup"
+          >
+            <button
+              class="button btn btn-secondary"
+            >
+              NO
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p
+      class="hint"
+    >
+      As a caregiver, you will be asked questions as if YOU were the patient. 
+      <br />
+      We've put you in their shoes!
+    </p>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

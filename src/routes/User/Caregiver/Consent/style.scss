@@ -1,0 +1,132 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/global.scss'; 
+@import '~themes/css/styles.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: left;
+    color: #344559; 
+    font-family: Nunito Sans; 
+}
+
+.content > p {
+    font-size: 1.4em;
+}
+
+.content p {
+    margin: 30px 0;
+}
+
+
+.subHeading{ 
+    color: #344559;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: 600;	
+    line-height: 41px;
+    padding-left: 48px;
+}
+
+.headingText{ 
+    color: #11839E;
+    font-family: "Nunito Sans";	
+    font-size: 24px;
+    font-weight: 600;	
+    line-height: 41px;  
+    font-weight: bold;
+    padding-left: 48px; 
+}
+
+.empty{
+    width: 100%;
+    height: 40px;
+}
+
+.empty20{
+    width: 100%;
+    height:20px;
+}
+
+ .buttonWrapper
+{
+    padding-left: 48px; 
+} 
+.buttonWrapper button { 
+    font-family: Nunito Sans;
+    height: 91px;
+    width: 349px; 
+    border-radius: 45.5px;
+    background-color: #0DA4C5;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.38);
+}
+
+.formWrapper {
+    border: 3px solid $accent-color;
+    border-radius: 30px;
+    padding: 5%;
+    margin: 20px 0;
+    margin-left: 45px;
+}
+
+.dobWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.dobRow {
+    max-width: 90%;
+    flex: 1;
+}
+
+.dobRow > div {
+    padding: 0 5px;
+}
+
+.labelTitle { 
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #344559;
+    font-family: Nunito Sans;
+    font-size: 24px; 
+    line-height: 41px;
+}
+
+.caregiverName {
+    color: #11839E;
+    font-family: "Nunito Sans";	
+    font-size: 40px;
+    font-weight: 600;	
+    line-height: 41px;  
+    font-weight: bold; 
+    margin-bottom: 30px;
+}
+
+.hint {
+    font-weight: normal;
+    text-align: justify; 
+    color: #344559;
+    font-family: Nunito Sans;
+    font-size: 16Px;  
+}
+
+.button {
+    @include button(300px);
+    width: 40% !important;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.errorWrapper { 
+    margin-top: 0px;
+    font-size: 1.3em;
+    text-align: left; 
+    padding-left: 50px;  
+}
+
+.textError {
+    @include global-text-error();   
+}

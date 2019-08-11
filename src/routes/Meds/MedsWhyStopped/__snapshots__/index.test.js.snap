@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <div
+      class="heading1"
+    >
+      EFFEXOR XR 75MG
+    </div>
+    <p />
+    <span
+      class="questions"
+    >
+      Why did you stop taking this medication?
+    </span>
+    <p />
+    <div
+      class="indicationContainer"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="checkboxWrapper col-1 col-md-1 offset-md-1"
+        >
+          <label
+            class="checkboxContainer"
+          >
+            <input
+              name="My doctor stopped it and started a different medication or dose"
+              type="checkbox"
+            />
+            <span
+              class="checkbox"
+            />
+          </label>
+        </div>
+        <div
+          class="formLabel col-9 col-md-9"
+        >
+          <span
+            class="indicationConditionName"
+          >
+            My doctor stopped it and started a different medication or dose
+          </span>
+          <p />
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="checkboxWrapper col-1 col-md-1 offset-md-1"
+        >
+          <label
+            class="checkboxContainer"
+          >
+            <input
+              name="I ran out"
+              type="checkbox"
+            />
+            <span
+              class="checkbox"
+            />
+          </label>
+        </div>
+        <div
+          class="formLabel col-9 col-md-9"
+        >
+          <span
+            class="indicationConditionName"
+          >
+            I ran out
+          </span>
+          <p />
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="checkboxWrapper col-1 col-md-1 offset-md-1"
+        >
+          <label
+            class="checkboxContainer"
+          >
+            <input
+              name="I cannot pay for them"
+              type="checkbox"
+            />
+            <span
+              class="checkbox"
+            />
+          </label>
+        </div>
+        <div
+          class="formLabel col-9 col-md-9"
+        >
+          <span
+            class="indicationConditionName"
+          >
+            I cannot pay for them
+          </span>
+          <p />
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="checkboxWrapper col-1 col-md-1 offset-md-1"
+        >
+          <label
+            class="checkboxContainer"
+          >
+            <input
+              name="I am concerned about side effects"
+              type="checkbox"
+            />
+            <span
+              class="checkbox"
+            />
+          </label>
+        </div>
+        <div
+          class="formLabel col-9 col-md-9"
+        >
+          <span>
+            <div
+              class="row"
+            >
+              <div
+                class="col"
+              >
+                <span
+                  class="indicationConditionName"
+                >
+                  I am concerned about side effects
+                </span>
+              </div>
+              <div
+                class="col"
+              >
+                <input
+                  class="inputText"
+                  disabled=""
+                  name="inputSideEffects"
+                  placeholder="Enter Side Effects Here"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </span>
+          <p />
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="checkboxWrapper col-1 col-md-1 offset-md-1"
+        >
+          <label
+            class="checkboxContainer"
+          >
+            <input
+              name="Other"
+              type="checkbox"
+            />
+            <span
+              class="checkbox"
+            />
+          </label>
+        </div>
+        <div
+          class="formLabel col-9 col-md-9"
+        >
+          <span>
+            <input
+              class="inputText"
+              disabled=""
+              name="inputOther"
+              placeholder="Enter Other Here"
+              type="text"
+              value=""
+            />
+          </span>
+          <p />
+        </div>
+      </div>
+    </div>
+    <p>
+      <button
+        class="button btn btn-secondary"
+        id="MedsWhyStoppedButton"
+        type="button"
+      >
+        <b>
+          NEXT
+        </b>
+      </button>
+    </p>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

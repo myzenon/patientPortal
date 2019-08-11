@@ -1,0 +1,461 @@
+import React, { Component } from 'react'
+import { Container, Button, Form, Row, Col } from 'reactstrap'
+import InputText from 'components/InputText'
+import Switch from 'components/Switch'
+import Policies from 'components/Policies'
+import { Link } from 'react-router-dom'
+import style from './style.scss'
+import ProgressBarPatient from 'components/ProgressBarPatient' 
+import { connect } from 'react-redux'
+import { callSyncAPIGateway, apiInited } from 'redux/apiGateway/action'
+import { savePageData } from 'redux/page/action'
+import { saveAuth } from 'redux/auth/action'
+import { push } from 'react-router-redux'
+import ReactGA from 'react-ga'; 
+import InputTextWithError from 'components/InputTextWithError' 
+import PasswordTextWithError from 'components/PasswordTextWithError'
+
+ReactGA.initialize('UA-121783543-1');
+
+
+// load policies from files.
+const policies = {
+    nopp: require('assets/policy/nopp.html'),
+    eula: require('assets/policy/eula.html'),
+    terms: require('assets/policy/terms.html'),
+    access: require('assets/policy/access.html')
+}
+
+// find policy version from html
+const findPolicyVersion = (policy) => {
+    const htmlElements = policy.replace(/(?:\\[rn]|[\r]+)+/g, '').split('\n')
+    const versionElement = htmlElements[htmlElements.indexOf('<meta charset="UTF-8">') + 1]
+    return versionElement.split('"')[1]
+}
+
+export class CaregiverRegister extends Component {
+    state = {
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+        rePassword: '',
+        isPolicyCheck: false,
+        validation: {
+            firstName: null,
+            lastName: null,
+            email: null,
+            password: null,
+            rePassword: null
+        },
+        isLoading: false,
+        isShowPassword: false,
+        isShowPolicy: false
+    }
+    componentDidMount() {
+        //by default show the password
+        this.setState({ isShowPassword: true })
+    }
+    componentWillMount = async () => { 
+        const page = window.location.pathname + window.location.search;
+        if (process.env.NODE_ENV == 'production'){ 
+            ReactGA.pageview(page); 
+        }
+        // Load password policy
+        await this.props.callSyncAPIGateway('usersOrganizationPolicyIdGet', {
+            id: 'default'
+        })
+        const passwordPolicy = this.props.page.apiData
+        this.securityPolicy = passwordPolicy
+        // create regex from the pattern
+        this.securityPolicy.passwordPattern = new RegExp(this.securityPolicy.passwordPattern)
+        this.forceUpdate()
+    }
+
+    handleSubmit = async (event) => {
+        event.preventDefault()
+        /* call checkFormValidation function then call below function */
+        this.checkFormValidation(async (validation) => {
+            if (validation) {
+                const date = new Date()
+                const user = {
+                    email: this.state.email,
+                    password: this.state.password,
+                    firstName: this.state.firstName,
+                    lastName: this.state.lastName,
+                    role: 'user',
+                    nopp: {
+                        date: date.getFullYear() + '-' + ('0' + (date.getMonth() + 1)).slice(-2) + '-' + date.getDate(),
+                        vNopp: findPolicyVersion(policies.nopp),
+                        vTerms: findPolicyVersion(policies.terms),
+                        vEnd: findPolicyVersion(policies.eula)
+                    }
+                }
+                await this.props.callSyncAPIGateway('usersRegisterPost', null, user)
+                //  get the page error from redux
+                if (this.props.page.error.status) {
+                    if (this.props.page.error.status === 409) {
+                        this.setState({ isEmailExist: true })
+                    } else {
+                        this.setState({
+                            registerApiError: true,
+                            errorMsg: this.props.page.error.message
+                        })
+                    }
+                }
+                else {
+                    // get the auth token from redux
+                    const auth = this.props.page.apiData
+                    await this.props.saveAuth(auth)
+                    this.props.push('/caregiver-patient-lookup')
+                }
+            }
+        })
+    }
+
+    handleInputText = (event) => {
+        const { name, value } = event.target
+        this.setState({ isEmailExist: false })
+        const state = {}
+        state[name] = value
+        this.setState(state, () => {
+            if (name === 'rePassword') {
+                this.handleTypingValidation(name, value)
+            }
+        })
+    }
+
+    handleTypingValidation = (name, value) => {
+        switch (name) {
+            case 'rePassword' :
+                if (this.state.password !== this.state.rePassword) {
+                    this.setValidationState(name, false)
+                    return
+                }
+                break
+            default: return
+        }
+        this.setValidationState(name, true)
+    }
+
+    setValidationState = (name, state, callback) => {
+        const validation = {...this.state.validation}
+        validation[name] = state
+        this.setState({ validation }, callback)
+    }
+
+    // if state = true or blank it will throw error
+    isShowError(state) {
+        return state === true || state === null
+    }
+
+    validateName = (event) => {
+        const { name, value } = event.target
+        if (value === '') {
+            this.setValidationState(name, false)
+        }
+        else {
+            this.setValidationState(name, true)
+        }
+    }
+
+    validateEmail = (event) => {
+        const { name, value } = event.target
+        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        if (!regex.test(value)) {
+            this.setValidationState(name, false)
+        }
+        else {
+            this.setValidationState(name, true)
+        }
+    }
+    validatePassword = (event) => {
+        const { name, value } = event.target
+        let isValid = null
+        if (!this.securityPolicy.passwordPattern.test(value)) {
+            isValid = false
+        }
+        else {
+            isValid = true
+        }
+        this.setValidationState(name, isValid, () => {
+            if (this.state.rePassword) {
+                this.handleTypingValidation('rePassword', this.state.rePassword)
+            }
+        })
+    }
+    handleSwitchPassword = (value) => {
+        this.setState({ isShowPassword: value })
+    }
+
+    // call each of the validation method then callback with the result
+    checkFormValidation = (callback) => {
+        setTimeout(() => {
+            this.validateName({
+                target: {
+                    name: 'firstName',
+                    value: this.state.firstName
+                }
+            })
+            setTimeout(() => {
+                this.validateName({
+                    target: {
+                        name: 'lastName',
+                        value: this.state.lastName
+                    }
+                })
+                setTimeout(() => {
+                    this.validateEmail({
+                        target: {
+                            name: 'email',
+                            value: this.state.email
+                        }
+                    })
+                    setTimeout(() => {
+                        this.validatePassword({
+                            target: {
+                                name: 'password',
+                                value: this.state.password
+                            }
+                        })
+                        setTimeout(() => {
+                            this.handleTypingValidation('rePassword', this.state.rePassword)
+                            setTimeout(() => {
+                                const validation = Object.keys(this.state.validation).reduce((valid, key) => {
+                                    if (!valid) {
+                                        return valid
+                                    }
+                                    else {
+                                        return this.state.validation[key] === true
+                                    }
+                                }, true)
+                                callback(validation)
+                            }, 0)
+                        }, 0)
+                    }, 0)
+                }, 0)
+            }, 0)
+        }, 0)
+    }
+
+    /* check it all validation is true */
+    isFormValid = () => Object.keys(this.state.validation).reduce((valid, key) => {
+        if (!valid) {
+            return valid
+        }
+        if (this.state.validation[key]|| this.state.validation[key] === null) {
+            return true
+        }
+        else {
+            return false
+        }
+    }, true) && this.state.isPolicyCheck
+
+    togglePolicy = (status) => {
+        this.setState({
+            isShowPolicy: status
+        })
+    }
+
+    togglePolicyCheck = () => {
+        this.setState({
+            isPolicyCheck: !this.state.isPolicyCheck
+        })
+    }
+    handleSwitchPassword = (value) => {
+        this.setState({ isShowPassword: !this.state.isShowPassword })
+    }
+
+    render() {
+        // if cannot get the password policy then show nothing.
+        if (!this.securityPolicy) {
+            return null
+        }
+        /* when user changes to show password then passwordInputType change to 'text' style */
+        let passwordInputType = 'password'
+        if (this.state.isShowPassword) {
+            passwordInputType = 'text'
+        }
+        return (
+            <Container fluid>
+                {this.state.isShowPolicy ? (<Policies user="caregiver" onDone={() => this.togglePolicy(false)} />) : null}
+                <Container className={style.content}>
+                  <div className={style.empty} />
+                  <div className={style.headingText}>
+                        Let's get you set up with a caregiver account.
+                    </div>
+                    <div className={style.formWrapper}>
+                        <Form onSubmit={this.handleSubmit}>
+                        <Row >
+                            <Col   className={style.formLabel} >
+                            <div>
+                                <InputTextWithError
+                                        label="First Name" 
+                                        name="firstName" 
+                                        type="text"
+                                        autoFocus
+                                        placeholder="First Name"
+                                        value={this.state.firstName}
+                                        onChange={this.handleInputText}
+                                        onBlur={this.validateName}
+                                        error={this.state.validation.firstName === false}
+                                        success={this.state.validation.firstName} 
+                                        grayborder={true}
+                                        errorMessage="Please enter your first name."  /> 
+                                        
+                                </ div>
+
+                            </Col>
+                            <Col   className={style.formLabel} >
+                            <div className={style.componentGapLeft}>
+                                <InputTextWithError
+                                         label="Last Name" 
+                                            name="lastName"
+                                            type="text"
+                                            placeholder="Last Name"
+                                            value={this.state.lastName}
+                                            onChange={this.handleInputText}
+                                            onBlur={this.validateName}
+                                            error={this.state.validation.lastName === false}
+                                            success={this.state.validation.lastName}
+                                            grayborder={true}
+                                            errorMessage="Please enter your last name."  /> 
+                                    
+                                </ div>
+                            </Col>
+                        </Row>
+                          
+                            <div>
+                                <InputTextWithError
+                                   label="EMAIL" 
+                                    name="email"
+                                    type="email"
+                                    placeholder="Enter Your EMAIL"
+                                    value={this.state.email}
+                                    onChange={this.handleInputText}
+                                    onBlur={this.validateEmail}
+                                    error={this.state.validation.email === false || this.state.isEmailExist || this.state.registerApiError}
+                                    success={this.state.validation.email}
+                                    grayborder={true}
+                                    errorMessage="Please enter a valid email address."
+                                    error1={this.state.isEmailExist}
+                                    errorMessage1="This email address is already registered. Click below to Login."
+                                  
+                                />
+                            </div>
+                            <div >
+                            <PasswordTextWithError 
+                                    label="PASSWORD" 
+                                    name="password"
+                                    autoComplete="new-password"  
+                                    placeholder="Enter Your Password"
+                                    value={this.state.password}
+                                    onChange={this.handleInputText}
+                                    onBlur={this.validatePassword}
+                                    error={this.state.validation.password === false}
+                                    success={this.state.validation.password}
+                                    grayborder={true} 
+                                    errorMessage={this.securityPolicy.passwordMsg}
+                                /> 
+ 
+
+                               </div>
+                            <div >
+                            <PasswordTextWithError 
+                                    label="PASSWORD" 
+                                    name="rePassword"
+                                    autoComplete="new-password"  
+                                    placeholder="re-enter password"
+                                    value={this.state.rePassword}
+                                    onChange={this.handleInputText}
+                                    error={this.state.validation.rePassword === false}
+                                    success={this.state.validation.rePassword}
+                                    errorMessage="Your passwords do not match, try again."
+                                    grayborder={true}  
+                                />  
+
+                             </div>
+                             {this.state.registerApiError ? (
+                                <div className={style.textError}>
+                                    Oops! Register API returned error.<br />
+                                    {this.state.errorMsg}
+                                </div>
+                            ) : null }
+                            {this.state.isEmailExist ? (
+                                   <div className={style.loginText}>
+                                   <Link to="/login">
+                                        Take me to Login screen
+                                   </Link>
+                               </div>
+                            ) : null}
+
+                            {(!this.state.isEmailExist) ? (
+                                <div className={style.formHint}>
+                                    <div>
+                                    Password must contain at least:
+                                            <ul>
+                                                {this.securityPolicy.passwordCriteria.map((criteria, index) => (
+                                                    <li key={index}>- {criteria}</li>
+                                                ))}
+                                            </ul>
+                                    </div>
+                                </div>
+                            ) : null}
+
+                             <Row className={style.checkboxWrapper}>
+                              <Col xs={12} md={{ size: 12 }} className={style.formLabel} > 
+                             <label className={style.chkContainer}>
+                                    <input  id="chkboxAgreeTerms"
+                                            type="checkbox" 
+                                            onChange={() => this.togglePolicyCheck()}
+                                                checked={this.isPolicyCheck} 
+                                        />
+                                        <span className={style.checkbox}></span>
+
+                             </label> 
+                                <span className={style.noppCheckBoxWrapper}>
+                                    &nbsp;&nbsp; I certify that all info I provide is correct and I have read and agree to the &nbsp;
+                                   
+                                    <span id="policies-button" onClick={() => this.togglePolicy(true)}>
+                                    Notice of Privacy Practices, Terms of Service, End User License Agreement and Access to Another Adult's Online Medical Record.
+                               </span>
+                                </span>
+
+                                </Col>
+                            </Row> 
+                            
+                          
+                            <div className={style.buttonWrapper}>
+                            <Button  type="submit"
+                                    id='btnCreateCaregiver'
+                                     className={[style.btn]}
+                                     disabled={!this.isFormValid()}>
+                                    CREATE CAREGIVER ACCOUNT
+                            </Button> 
+ 
+                            </div>
+                        </Form>
+                    </div>
+                </Container>
+                <span className={style.footerWrapper}>
+                    <ProgressBarPatient step={1} />
+                </span>
+            </Container>
+        )
+    }
+}
+
+export default connect(
+    ({
+        page
+    }) => ({
+        page
+    }),
+    {
+        callSyncAPIGateway,
+        savePageData,
+        saveAuth,
+        apiInited,
+        push
+    }
+)(CaregiverRegister)

@@ -1,0 +1,188 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+
+:global(html) {
+    height: 100%;
+    color: $page-text-color;
+}
+
+:global(body) {
+    height: 100%;
+    color: $page-text-color;
+  //   overflow: hidden;
+  // position: fixed;
+  // width: 100%;
+  // height: 100%;
+}
+
+:global(#root) {
+    height: 100%;
+    color: $page-text-color;
+}
+
+.componentGap {
+    padding-bottom: 20px;
+    // border-width: medium;
+    // border-style: solid;
+    // border-color: red;
+}
+
+.content {
+    @include content-wrapper();
+
+
+}
+.routerWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color:  #F8FAFA; // #EBEFF0;
+
+}
+//last div is the footer with progress bar
+.routerWrapper > div:last-child {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.heading1 {
+    @include heading(24pt,20px);
+    font-weight: bold;
+}
+
+.headingText{
+    color: $title-color;
+    font-size: 26px;
+    font-weight: 600;
+    font-weight: bold;
+    line-height: 25px;
+    margin-top: 62px;
+}
+.subheading{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 25px;
+
+}
+.TitleLarge {
+    @include heading(42pt,30px);
+    font-weight: bold;
+}
+
+.heading2 {
+    @include heading(18pt,20px);
+    font-weight: normal;
+ }
+
+.heading3 {
+    @include heading(14pt,20px);
+    font-weight: normal;
+ }
+
+
+
+.chkContainer {
+        display: block;
+        padding-top: 30px;
+        padding-left: 20px !important;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding-right: 20px;
+    }
+
+/* Hide the browser's default checkbox */
+.chkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+/* On mouse-over, add a grey background color */
+.chkContainer:hover input ~ .checkbox {
+    background-color: white;
+}
+
+/* When the checkbox is checked, add a blue background */
+.chkContainer input:checked ~ .checkbox {
+    background-color: white;
+}
+
+
+/* Show the checkbox when checked */
+.chkContainer input:checked ~ .checkbox:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.chkContainer .checkbox:after {
+    left: 15px;
+    top: 8px;
+    width: 10px;
+    height: 18px;
+    border: solid #46a2c1;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* Create a custom checkbox */
+.checkbox {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  margin-top: 5px;
+  border-radius: 25px;
+  border: 2px solid #DEDCDC;
+}
+
+/* Create the checkbox/indicator (hidden when not checked) */
+.checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+
+
+
+.showHideButton{
+    flex: 1 !important;
+    height: 43px !important;
+    width: 100% !important;
+    background-color: white !important;
+    color:black !important;
+    border: 2px solid $accent-color !important;
+    border-radius: 10px !important;
+    display: inline-flex !important;
+    text-align: center !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    border-left: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    line-height: 26.5px !important;
+    cursor: pointer !important;
+    box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    padding: 6px;
+}
+
+.showHideButton:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 2px $accent-color !important;
+}
+
+@media screen and (max-width: 768px) {
+  .componentGap {
+      //flex-basis:auto !important;
+  }
+  .content{
+    padding-left: 30px;
+  }
+}

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly | on page loading | call /users/organization-policy?token=xxxx&code=xxxx 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p>
+      Let's get you a new password.
+    </p>
+    <div
+      class="formWrapper"
+    >
+      <form
+        class=""
+      >
+        <div>
+          <input
+            class="inputText"
+            name="password"
+            placeholder="enter new password"
+            type="password"
+            value=""
+          />
+        </div>
+        <div>
+          <span
+            class="switch switchOff"
+          />
+              Show Password
+        </div>
+        <div
+          class="passwordRule"
+        >
+          For security purposes, Password must be at least 8 characters long and contain at least one character, one number and one special character including !@#$%*=
+        </div>
+        <div>
+          <button
+            class="button btn btn-secondary"
+            type="submit"
+          >
+            Change Password and Sign In
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <p>
+      <strong>
+        Hint:
+      </strong>
+       From now on, you will log in with the email shown on this page and the password you set in the above box
+    </p>
+  </div>
+</div>
+`;

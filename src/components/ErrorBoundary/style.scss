@@ -1,0 +1,114 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/global.scss';
+
+.backgroundImage { 
+  font-family: 'Source Sans Pro', sans-serif;
+  background-position:center center;
+  background-size:cover;
+  position:relative;
+  background-color:gray;
+  width:110%; 
+  vertical-align:middle;
+  max-width: 110%; 
+  -ms-interpolation-mode: bicubic;  
+  margin-left:-15px;    
+  vertical-align:baseline;
+  background:transparent;   
+  background-image: url(https://dka575ofm4ao0.cloudfront.net/assets/better_error_pages/templates/background/background-e1d28eee7cab6e890134c7271be33d66.png) !important;
+}
+
+  .phoneNumber {
+    color: $accent-color; 
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.contentContainer {
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  padding:50px;
+  background-color: #fff;
+  width:100%;
+  max-width:525px;
+  position:absolute;
+  left:50%;
+  margin-left:-262px;
+  box-shadow: 0 0 60px #000000; 
+  opacity:1;
+  margin-top: 60px;
+}
+ 
+
+.headLine {
+  transition:color .2s linear;
+  font-size:48px;
+  line-height:60px;
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+  color:#ccc; 
+}
+
+.subheader {
+  transition:color .2s linear;
+  font-size:36px;
+  line-height:46px; 
+  color: #494949 !important;
+}
+
+.hr {
+  height:1px;
+  background-color: #ddd;
+  width:60%;
+  max-width:250px;
+  margin:35px auto;
+}
+
+.context {
+  transition:color .2s linear;
+  font-size:18px;
+  line-height:27px; 
+  color: #AAAAAA !important;
+}
+
+.context p {
+  margin:0;
+}
+
+.context p:nth-child(n+2) {
+  margin-top:16px;
+}
+
+
+.buttonsContainer {
+  margin-top: 35px;
+  overflow: hidden;
+}
+
+.buttonsContainer a   { 
+  text-indent: 0px !important;
+  font-size:14px !important;
+  text-decoration: none !important;
+  color:#fff !important;
+  background-color:$accent-color !important;
+  border-radius: 30px !important;
+  padding:12px 10px !important;
+  text-align: center !important;
+  overflow: hidden !important;
+  width:65% !important;
+  font-weight:none !important;
+  font-style: normal !important;
+}
+  
+.button {  
+  text-indent: 0px;
+  font-size:14px !important;
+  color:#fff !important;
+  background-color:$accent-color !important;
+  border-radius: 30px !important;
+  padding:8px 10px !important;
+  text-align: center !important;
+  overflow: hidden !important;
+  width:33% !important;
+}

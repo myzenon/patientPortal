@@ -1,0 +1,1146 @@
+/*
+Theme Name: JuniorLink
+Version: 1.0
+Author: Whale Shark Studio
+Author URI: http://www.whalesharkstudio.com/
+Description: HTML & css theme by Whale Shark Studio
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Import css
+ * 2.0 - Reset
+ * 3.0 - Layout
+ * 4.0 - Typography & Elements
+ *   4.1 - Headings
+ *   4.2 - Anchors
+ *   4.3 - Paragraphs
+ *   4.4 - Lists
+ *   4.5 - Tables
+ *   4.6 - Buttons
+ *   4.7 - Elements
+ * 5.0 - Header & Navigations
+ * 6.0 - Content & Pages
+ * 7.0 - Footer
+ * 8.0 - Form Styling
+ */
+
+/* 1.0 - Imports */
+/* ------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800');
+@import '_variables';
+@import '_mixins';
+
+/* 2.0 - Reset http://meyerweb.com/eric/tools/css/reset/  */
+/* ------------------------------------------------------------ */
+@import '_placeholders';
+
+*, *:before, *:after {
+  @include box-sizing(border-box);
+}
+
+html {
+  font-family: $default-font;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 3.0 - Layout */
+/* ------------------------------------------------------------ */
+body {
+  //background: #EBEFF0 !important;
+  background: #F8FAFA !important; 
+  font-family: $default_font;
+  font-size: $default_font_size;
+  color: $font_color;
+  line-height: 1.333em;
+}
+
+.container {
+  width: 98%;
+  max-width: $max_width;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 .5em;
+
+  @extend %clear;
+}
+
+div {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+
+  &.center {
+    text-align: center;
+  }
+}
+
+#content {
+  padding: 3em 0 0;
+  margin-bottom: 4em;
+  background: #f8fafa !important;
+
+  @media all and (max-width: 768px) {
+    padding-top: 1.5em;
+    margin-bottom: 1em;
+  }
+}
+
+article {
+  display: inline-block;
+  width: 100%;
+
+  @extend %clear;
+}
+
+/* 4.0 - Typography & Elements */
+/* ------------------------------------------------------------ */
+
+/* 4.1 - Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 .5em;
+}
+
+h1 {
+  font-family: Nunito Sans;
+  font-size: 2.5em; // equally to 42px
+  clear: both;
+
+  @media all and (max-width: 980px) {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  font-family: Nunito Sans;
+  font-size: 2em; // equally to 36px
+}
+
+h3 { 
+  font-family: Nunito Sans;
+  font-size: 1.5em; // equally to 27px
+}
+
+h4 {
+  font-family: Nunito Sans;
+  font-size: 1.333em; // equally to 24px
+  font-weight: normal;
+}
+
+.contactNumber {
+  font-size: 20px; // equally to 24px
+  font-weight: bold;
+  color: #0DA4C5;
+}
+
+
+/* 4.2 - Anchors */
+a img {
+  border: 0px;
+  text-decoration: none;
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: $link_color;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: $font_color;
+  outline: 0;
+}
+
+/* 4.3 - Paragraphs */
+p {
+  margin-bottom: .5em;
+}
+strong, b {
+  font-weight: bold;
+}
+em, i {
+  font-style: italic;
+}
+
+::-moz-selection {
+  background: $primary_color;
+  color: $font_color;
+}
+::selection {
+  background: $primary_color;
+  color: $font_color;
+}
+
+/* 4.4 - Lists */
+ul {
+  list-style: inside;
+  margin: 1em 0;
+
+  li {
+    line-height: 1.75em;
+  }
+}
+
+ol {
+  list-style: inside decimal;
+  margin: 1em 0;
+}
+
+li > ul,
+li > ol {
+  margin: .5em 0 .5em 2em;
+}
+
+dl {
+  margin: 1em 0;
+  color: $primary_color;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 1.5em;
+
+  &:before {
+    content: "\2212";
+    margin-right: 5px;
+  }
+}
+
+/* 4.5 - Tables */
+table,
+th,
+td {
+  border: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0 0 1em;
+  table-layout: auto;
+  width: 100%;
+
+  &.center {
+    text-align: center;
+  }
+
+  tr {
+
+    td, th {
+      padding: .75em;
+    }
+
+    th {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+}
+
+caption,
+th,
+td {
+  vertical-align: middle;
+}
+
+th {
+  font-weight: 700;
+}
+
+/* 4.6 - Buttons */
+a.btn,
+button.btn {
+  padding: 1em 3em;
+  font-family: $default_font;
+  font-weight: 800;
+  font-size: 1.222em; // equal to 22px
+  color: #fff;
+  background: $primary_color;
+  display: inline-block;
+  margin: 1em 0;
+  border: 0;
+  text-align: center;
+  border: 0;
+  box-shadow: 0 2px 7px 0 rgba(0,0,0,0.38);
+  
+  @include transition(all, 200ms, ease-in-out);
+  @include border-radius(2.5em);
+
+
+  &.btnOutlineBackText {
+    background: none;
+    color: #000;
+    border: 2px solid #DEDCDC;
+
+    &:hover {
+      background: #0E849E;
+      color: #fff;
+    }
+  }
+
+  &.btnOutline {
+    background: none;
+    color: #0E849E;
+    border: 2px solid #0E849E;
+
+    &:hover {
+      background: #0E849E;
+      color: #fff;
+    }
+  }
+
+  &.btnNext {
+    padding: 1.5em 5em;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      right: 2em;
+      top: 50%;
+      margin-top: -10px;
+      height: 35px; 
+      width: 35px;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased; 
+      content: url('data:image/svg+xml;charset=UTF-8,<svg width="12px" height="21px" viewBox="0 0 12 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>A452A2B3-E4B3-4BCE-A4C0-99ED6CED1527</title><g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Account-creation-(information-verification)" transform="translate(-482.000000, -1333.000000)" fill="#FFFFFF" fill-rule="nonzero"> <g id="button" transform="translate(201.000000, 1298.000000)"><path d="M278.682142,40 L295.317858,40 C296.813674,40 297.561582,41.7054774 296.506123,42.6997905 L288.188265,50.5357677 C287.531225,51.1547441 286.468775,51.1547441 285.818724,50.5357677 L277.493877,42.6997905 C276.438418,41.7054774 277.186326,40 278.682142,40 Z" id="next-arrow-icon" transform="translate(287.000000, 45.500000) rotate(-90.000000) translate(-287.000000, -45.500000) "></path></g></g></g></svg>');
+      color: #fff; 
+
+      @media all and (max-width: 480px) {
+        right: 1em;
+      }
+    }
+
+    @media all and (max-width: 480px) {
+      padding: 1em 3em;
+    }
+  }
+
+  &:hover:enabled {
+    background: darken($primary_color,6%);
+  }
+  
+}
+
+
+button.btnLean {
+  padding: 10px;
+  font-family: $default_font; 
+  color: #fff;
+  background: $primary_color;
+  display: inline-block;
+  margin: 1em 0;
+  border: 0;
+  text-align: center;
+  border: 0;
+  box-shadow: 0 2px 7px 0 rgba(0,0,0,0.38);
+  
+  @include transition(all, 200ms, ease-in-out);
+  @include border-radius(2.5em);
+
+
+  &.leanbtnOutlineBackText {
+    background: none;
+    color: #000;
+    border: 3px solid #DEDCDC;; 
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.38);
+
+    &:hover { 
+      color: #fff;
+      background: #0E849E;
+      border: 1px solid #0E849E;;
+    }
+  }
+
+  &.btnOutline {
+    background: none;
+    color: #0E849E;
+    border: 2px solid #0E849E;
+
+    &:hover {
+      background: #0E849E;
+      color: #fff; 
+    }
+  }
+ 
+
+  &:hover:enabled {
+    background: darken($primary_color,6%);
+  }
+  
+}
+
+/* 4.7 - Elements */
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+figure {
+  margin: 0;
+}
+
+del {
+  opacity: 0.8;
+}
+
+hr {
+  background-color: #e1e1e1;
+  border: 0;
+  height: 1px;
+  margin: .5em auto;
+  display: inline-block;
+  width: 100%;
+}
+
+.fl {
+  float: left;
+  display: block;
+  margin: 0 1.5em 1em 0;
+
+  @media all and (max-width: 680px) {
+    float: none;
+    margin: 0 auto 1em;
+  }
+}
+
+.fr {
+  float: right;
+  display: block;
+  margin: 0 0 1.5em 1em;
+
+  @media all and (max-width: 680px) {
+    float: none;
+    margin: 0 auto 1em;
+  }
+}
+
+.full {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1em;
+}
+
+.clear,
+.clearfix {
+  clear: both;
+  display: block;
+
+  @extend %clear;
+}
+
+/* 5.0 - Header & Navigations */
+/* ------------------------------------------------------------ */
+a.site-title {
+  float: left;
+  display: inline-block;
+  margin: 0 3.5em 1em 0;
+
+  @include transition(all, 200ms, ease);
+
+  @media all and (max-width: 768px) {
+    margin: 0 auto;
+    max-width: 120px;
+    margin: 0;
+  }
+
+  &:hover {
+
+    @include opacity(.7);
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+   
+ .nav {
+  position: absolute;
+  width: 70px;
+  right: 0; 
+  border-radius: 20px;
+  margin-top: 10px;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+  background-color: #FFF;
+  color: #2F758C; 
+
+  @media all and (max-width: 768px) {
+    clear: both;
+  }
+
+  a.triggerNav {
+    font-size: 1.222em;
+    font-weight: 700;
+
+    @media all and (max-width: 768px) {
+      font-size: 1em;
+    }
+
+    &:after {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: .75em;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      content: "\f0d7";
+      font-weight: 900;
+      color: $primary_color;
+
+      @media all and (max-width: 768px) {
+        margin-left: .3em;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 14em;
+    margin: 2em 0 0 -6.6em;
+    padding: 0;
+    background: #fff; 
+    
+    @extend %clear;
+    @include box-shadow(0px,2px,16px,0px, rgba(0,0,0,.14));
+    @include border-radius(15px);
+
+    @media all and (max-width: 768px) {
+      left: 0;
+      margin: 1em 0 0 2em;
+      width: 12em;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -15px;
+      margin-left: -30px;
+      border-width: 0 30px 15px 30px;
+      border-style: solid;
+      border-color: transparent transparent #fff;
+
+      -webkit-filter: drop-shadow(0px -4px 4px rgba(0,0,0,.08)); /* Safari */
+      filter: drop-shadow(0px -4px 4px rgba(0,0,0,.08));
+
+      @media all and (max-width: 768px) {
+        left: 20px;
+        top: -10px;
+        margin-left: 0;
+        border-width: 0 10px 10px 10px;
+      }
+    }
+
+    li {
+      list-style: none;
+      width: 100%;
+      float: left;
+      margin: 0;
+
+      &:last-of-type a {
+        border: 0;
+      }
+
+      a {
+        float: left;
+        width: 100%;  
+        padding: 1.2em 1.5em;
+        border-bottom: 1px solid #e3e4e4;
+        color: #0E849E;
+          font-family: Nunito Sans;
+          font-size: 22px;	
+          font-weight: bold;	
+          line-height: 30px;
+
+        @media all and (max-width: 768px) {
+          font-size: .9em;
+        }
+
+        i {
+          font-size: 1.33em;
+          margin-right: .3em;
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        &:hover, &:active {
+          color: $font_color;
+        }
+      }
+    }
+
+    li:hover{
+      background-color: darken(#D8E4E7,6%);    
+      color: darken(#0E849E,6%);  
+    }
+
+    li:first-child:hover{
+      background-color: darken(#D8E4E7,6%);   
+      border-radius:  10px 10px 0 0;
+      color: darken(#0E849E,6%);  
+    }
+    li:last-child:hover{
+      background-color: darken(#D8E4E7,6%);   
+      border-radius:  0 0 10px 10px;
+      color: darken(#0E849E,6%);  
+    }
+
+  }  
+  
+  .cta {
+    float: right;
+
+    a.triggerNav {
+      float: left;
+    }
+
+    nav ul {
+
+      @media all and (max-width: 768px) {
+        left: auto;
+        right: 0;
+      }
+
+      &:before {
+
+        @media all and (max-width: 768px) {
+          left: auto;
+          right: 20px;
+        }
+      }
+    }
+
+    a.btn-login {
+      float: right;
+      margin: .25em 0 0 1.5em;
+      text-transform: none;
+      padding: .5em 1.5em;
+
+      @media all and (max-width: 480px) {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        right: 10px;
+        font-size: .9em;
+      }
+    }
+  }
+}
+/* 6.0 - Content & Pages */
+/* ------------------------------------------------------------ */
+.title-block {
+  margin: 0 0 4em;
+
+  @media all and (max-width: 768px) {
+    margin-bottom: 2em;
+  }
+
+  h3 {
+    font-weight: 700;
+    color: $link_color;
+  }
+
+  p {
+    font-size: 1.333em;
+    font-weight: 600;
+  }
+}
+
+.alert-row {
+  background: #fff;
+  margin: 0 0 1em;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  padding: 1.5em 2em 1em;
+
+  @include border-radius(6px);
+
+  @media all and (max-width: 480px) {
+    padding: 1em 1em .5em;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+.alert-info {
+  background: lighten($primary_color,52.5%);
+  display: block;
+  width: auto;
+  padding: 1.2em 2em;
+  margin: 2em 0;
+  font-size: 1.333em;
+  line-height: 1.5em;
+
+  @include border-radius(40px);
+
+  @media all and (max-width: 480px) {
+    padding: 1em;
+    font-size: 1em;
+    margin: 1em 0;
+  }
+
+  &:before {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5em;
+    margin-bottom: .25em;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    content: "\f059";
+    font-weight: 900;
+    font-size: 1.75em;
+    color: $primary_color;
+  }
+
+  a {
+    color: $font_color;
+    font-weight: 700;
+
+    &:hover {
+      color: $link_color;
+    }
+  }
+}
+
+.steps {
+  background: #fff;
+  padding: 3em 0 1em;
+  margin: 3em 0 0;
+  border-top: 1px solid #dbdbdb;
+
+  @media all and (max-width: 768px) {
+    padding: 1em 0 0;
+    margin-top: 2em;
+  }
+
+  .container {
+    padding: 0;
+    max-width: 1300px;
+  }
+
+  ul {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    &:before {
+      content: "";
+      width: 80%;
+      top: 69px;
+      left: 10%;
+      height: 8px;
+      border: 1px solid #dfdddd;
+      position: absolute;
+      z-index: 1;
+
+      @media all and (max-width: 1024px) {
+        display: none;
+      }
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      list-style: none;
+      width: 19.3%;
+
+      @media all and (max-width: 1024px) {
+        font-size: .8em;
+      }
+
+      @media all and (max-width: 600px) {
+        float: left;
+        width: 15%;
+      }
+
+      &.activ {
+
+        @media all and (max-width: 600px) {
+          width: 40%;
+        }
+
+        .step-holder {
+          background: lighten($primary_color,53%);
+          width: 147px;
+          height: 147px;
+          line-height: 147px;
+          border-width: 0;
+          padding: 0;
+          margin: 0 0 1.55em;
+
+          @media all and (max-width: 1024px) {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            margin-bottom: .5em;
+          }
+
+          &:after {
+            display: none;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 70px;
+            height: 8px;
+            top: 69px;
+            left: 100%;
+            margin: 0;
+            background: lighten($primary_color,53%);
+
+            @media all and (max-width: 1024px) {
+              display: none;
+            }
+          }
+
+          span {
+
+            &.stepTxt {
+              display: none;
+            }
+
+            &.stepNum {
+              position: absolute;
+              right: -10px;
+              top: -10px;
+              line-height: 51px;
+              background: $primary_color;
+              color: #fff;
+              border: 9px solid #fff;
+              width: 69px;
+              height: 69px;
+
+              @include border-radius(50%);
+
+              @media all and (max-width: 1024px) {
+                width: 55px;
+                height: 55px;
+                line-height: 45px;
+                border-width: 5px;
+              }
+            }
+          }
+
+          i {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+
+        h3 {
+          font-size: 1.333em;
+          color: $primary_color;
+
+          @media all and (max-width: 768px) {
+            display: block;
+          }
+        }
+      }
+
+      &:last-of-type {
+
+        &.activ .step-holder:before {
+          left: -70px;
+        }
+
+        .step-holder {
+
+          &:after {
+            left: -1px;
+            width: 100%;
+          }
+        }
+      }
+
+      &:first-of-type {
+
+        .step-holder {
+
+          &:after {
+            left: 1px;
+            width: 100%;
+          }
+        }
+      }
+
+      h3 {
+        font-size: 1.111em;
+        font-weight: 700;
+
+        @media all and (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .step-holder {
+        display: inline-block;
+        width: 105px;
+        height: 105px;
+        padding-top: 1.2em;
+        margin: 1em 0 3em;
+        border: 1px solid #dfdddd;
+        background: #fff;
+        position: relative;
+        z-index: 2;
+
+        @include border-radius(50%);
+
+        @media all and (max-width: 1024px) {
+          width: 85px;
+          height: 85px;
+          margin-bottom: 1em;
+        }
+
+        @media all and (max-width: 600px) {
+          width: 100%;
+          height: auto;
+          padding: 2em 0 .5em;
+          border-width: 0;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: calc( 100% + 2px);
+          height: 8px;
+          top: 50%;
+          left: -1px;
+          margin-top: -2px;
+          background: #fff;
+
+          @media all and (max-width: 1024px) {
+            display: none;
+          }
+        }
+
+        span {
+          font-weight: 700;
+          text-transform: uppercase;
+          display: block;
+          position: relative;
+          z-index: 1;
+
+          @media all and (max-width: 480px) {
+            font-size: .8em;
+            line-height: 1.1em;
+          }
+
+          &.stepNum {
+            font-size: 1.5em;
+
+            @media all and (max-width: 480px) {
+              font-size: 1.2em;
+            }
+          }
+        }
+
+        i {
+          color: $primary_color;
+          font-size: 2.5em;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* 7.0 - Form Styling */
+/* ------------------------------------------------------------ */
+form {
+  display: inline-block;
+  width: 100%;
+  margin: 1em 0;
+
+  p {
+    margin-bottom: .6em;
+    position: relative;
+    display: block;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    margin: 0;
+    max-width: 100%;
+    vertical-align: baseline;
+    display: inline-block;
+    border: 0;
+    font-family: $default-font;
+    outline: none;
+  }
+
+  input, select, textarea {
+    border: 1px solid $primary_color;
+    background: none;
+    color: $font_color;
+    padding: .7em;
+    line-height: 1.3em;
+    width: 100%;
+    font-size: 1em;
+    font-style: italic;
+    font-family: $default_font;
+
+    @include border-radius(5px);
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  select {
+    padding: .7em .8em;
+
+    option {
+      padding: 0 10px;
+    }
+  }
+
+  textarea {
+    overflow: auto;
+    vertical-align: top;
+    min-height: 150px;
+    clear: both;
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  button,
+  button.btn,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    margin: 1em auto .5em;
+
+    &:hover, &:focus {
+      outline: 0;
+    }
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    padding: 0;
+    margin: 0 7px 0 0;
+    width: auto;
+    display: inline-block;
+  }
+
+  label {
+    padding: 0 0 .5em;
+    cursor: pointer;
+    color: $font_color;
+    font-size: 1em;
+    font-weight: 700;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+
+    i {
+      font-weight: 400;
+    }
+  }
+}
+
+.error {
+  color: red;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Placeholder text color -- selectors need to be separate to work. */
+@each $placeholder in '::-webkit-input', ':-moz', '::-moz', ':-ms-input' {
+  #{$placeholder}-placeholder {
+    color: rgba(112, 122, 130, .8);
+
+    @include opacity(1); // Since FF19 lowers the opacity of the placeholder by default
+  }
+}
+
+@each $placeholder in ':focus::-webkit-input', ':focus:-moz', ':focus::-moz', ':focus:-ms-input' {
+  #{$placeholder}-placeholder {
+    color: rgba(112, 122, 130, 1);
+  }
+}

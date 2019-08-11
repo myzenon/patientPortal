@@ -1,0 +1,111 @@
+@import '~themes/mixins.scss';
+@import '~themes/colors.scss';
+
+
+.selectLeft {
+    width: 100%;
+    height: 55px;
+    border: 0px;
+    text-align: left;
+    outline: none;
+    padding: 0px;
+    font-style: normal;
+    color: $label-color;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    -webkit-appearance: none;
+}
+
+
+.selectLabel {
+    position:relative;
+    font-family: Nunito Sans;
+    outline: none;
+    padding: 0px;
+    font-style: normal;
+    color: #344559;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    background-color: #fff;
+    -webkit-appearance: none;
+}
+
+.selectLabel:after {
+    //content:'\25BE';
+    content: url('data:image/svg+xml;charset=UTF-8,<svg width="20px" height="11px" viewBox="0 0 20 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Account-creation-(information-verification)" transform="translate(-1336.000000, -639.000000)" fill="#4C6077" fill-rule="nonzero"><g id="input" transform="translate(810.000000, 581.000000)"><path d="M527.682142,58 L544.317858,58 C545.813674,58 546.561582,59.7054774 545.506123,60.6997905 L537.188265,68.5357677 C536.531225,69.1547441 535.468775,69.1547441 534.818724,68.5357677 L526.493877,60.6997905 C525.438418,59.7054774 526.186326,58 527.682142,58 Z" id="down-dropdown-icon"></path></g></g></g></svg>');
+
+    color: #4F6075;
+    right:10px;
+    top:30px;
+    border-bottom:0px solid $background-color;
+    position:absolute;
+    pointer-events:none;
+    cursor: default;
+    background-color: #fff;
+    background-color:transparent;
+    padding: 0px;
+    -webkit-appearance: none;
+}
+
+.selectLabel:before {
+    content:'';
+    right:4px;
+    top:37px;
+    width:40px;
+    height:40px;
+    background-color: #fff;
+    position:absolute;
+    pointer-events:none;
+    cursor: default;
+    padding: 0px;
+    -webkit-appearance: none;
+}
+
+.rectangle{
+    background-color: #fff;
+    border: 3px solid #DEDCDC;
+    margin:0;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.errorStyle{
+    background-color: #46a2c1;
+    color: #fff;
+    width: 100%;
+    padding: 0px;
+    border: 0px;
+    margin:0;
+    height: 50px;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.textName {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 0px;
+    border: 0px;
+    margin:0;
+    text-align: left;
+    font-size: 18px;
+    text-align-last: left;
+    color: #344559;
+    font-family: Nunito Sans;
+    font-weight: bold;
+    line-height: 24px;
+
+}
+
+.rectangle:focus-within{
+    background-color: #fff;
+    border: 4px solid #0DA4C5;
+    margin:0;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 20px;
+}

@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly | Display name come from patient.name[0].given[0] 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p
+      class="congratulations"
+    >
+      CONGRATULATIONS RITA!
+    </p>
+    <p>
+      You have now completed the one of the most important steps of your Medication Review.
+    </p>
+    <div
+      class="mediaWrapper"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          Video Clip
+        </div>
+        <div
+          class="col"
+        >
+          Schedule Calendar
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumberActive"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumberActive"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumberActive"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

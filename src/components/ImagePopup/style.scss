@@ -1,0 +1,68 @@
+@import '~themes/mixins.scss';
+@import '~themes/colors.scss';
+@import '~themes/css/styles.scss';
+
+.wrapper {
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    z-index: 50;
+    height: 500px;
+    width: 700px; 
+    border-radius: 6px;	
+    background-color: #fff;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px $confirm-box-shadow-color;
+    text-align: center;
+} 
+
+.cover {
+    object-fit: cover; 
+    height: 500px;
+    width: 700px; 
+  }
+
+.header {  
+    text-align: left; 
+    padding-top: 50px;  
+    padding-bottom: 50px;
+    padding-left: 59px; 
+    color: #344559;
+    font-family: "Nunito Sans";
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 41px;
+
+}
+
+.imageWrapper  {  
+    object-fit: fill;
+    position: relative;
+    display: inline-block; 
+    border: 0px solid $border-color;  
+    height: 500px;
+    width: 700px; 
+    border-radius: 6px;	 
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.14); 
+}
+ 
+.headerTextCloseSucc{      
+    margin-left: 330px;
+    text-align: right; 
+    cursor: pointer;
+}
+
+
+.NoImageText{ 
+    position: absolute;
+    top: 40%;
+    left: 15%;   
+    color: #000;	
+    font-family: "Nunito Sans";	
+    font-size: 22px;	
+    font-weight: 800;	
+    line-height: 30px;
+    text-align: center;
+}
+ 

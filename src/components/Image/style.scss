@@ -1,0 +1,70 @@
+@import '~themes/colors.scss';
+
+.imageWrapper  {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 0px solid $border-color;
+    // height: 205px;
+     width: 100%;	
+     max-width: 277px;
+    border-radius: 6px;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.14);
+}
+
+
+.zoomInText{
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    height: 30px;
+    width: 196px;
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.noImageWrapper  {
+    background-color: #344559;
+    position: relative;
+    display: inline-block;
+    border: 0px solid $border-color;
+    height: 205px;
+    width: 277px;
+    border-radius: 6px;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.14);
+}
+
+
+.NoImageText{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: #fff;
+    font-family: "Nunito Sans";
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30px;
+    text-align: center;
+}
+
+.imageMagnifyZoomIn {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+.imageZoomWrapper {
+    height: 485px;
+    width: 837.33px;
+    object-fit: fill;
+    position: absolute;
+    border: 0px solid $border-color;
+    border-radius: 20px;
+    padding: 2.5%;
+    z-index: 50;
+}

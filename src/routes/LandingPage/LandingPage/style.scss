@@ -1,0 +1,159 @@
+@import '~themes/mixins.scss';
+@import '~themes/colors.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: center;
+    font-size: 1.4em;
+    max-width: 800px;
+}
+
+.button {
+    @include button(90px);
+    width: 40% !important;    
+    max-width: 300px;
+    margin-top: 30px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 20px 0;
+}
+
+.titleName {
+    font-size: 1.3em;
+}
+
+.line {
+    width: 1px;
+    height: 100%;
+    background-color: $accent-color;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    z-index: -100;
+}
+
+.progressWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 25px;
+}
+
+.progressWrapper:nth-child(2) {
+    margin-top: 0;
+}
+
+.progressWrapper:last-child {
+    margin-bottom: 0;
+}
+
+.circleWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.circleWhiteBackground {
+    flex: 1;
+    background-color: #FFF;
+}
+
+.circleNoBackground {
+    flex: 1;
+    background-color: transparent;
+}
+
+.circle {
+    margin-right: 45px;
+    color: $accent-color;
+    border: 1px solid $accent-color;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #FFF;
+}
+
+.circleActive {
+    @extend .circle;
+    color: #FFF;
+    background-color: $accent-color;
+}
+
+.text {
+    flex: 1;
+    font-weight: bold;
+    text-align: left;
+    font-family: Arial;
+    font-size:0.9em;
+}
+
+.subText {
+    color: #F00;
+    font-weight: bold;
+    font-size: 1.0em;
+    font-family: Arial;
+}
+
+.subText span {
+    color: #F00;   
+}
+
+.edit {
+    color: $accent-color;
+    font-size: 0.8em;
+    margin-left: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.edit:hover {
+    color: $accent-color;
+    text-decoration: none;
+}
+
+.edit:active {
+    color: $accent-color;
+}
+
+.medsNumber {
+    color: $accent-color;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 1.1em;
+    font-family: Arial;
+}
+
+@media screen and (max-width: 650px) {
+    
+    .content {
+        font-size: 0.8em;
+    }
+    .circle  {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 18px;
+    }
+    .line{
+        width: 1px;
+        height: 100%;    
+        left: 55px;
+        z-index: -100;
+    }
+
+    .button {
+        @include button(90px);
+        width: 50% !important;    
+        max-width: 300px;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,175 @@
+@import '~themes/mixins.scss';
+@import '~themes/colors.scss';
+
+.select {
+    width: 100%;
+    height: 80px;
+    border: 0px;
+    text-align: center;
+    text-align-last: center;
+    font-weight: normal;
+    font-family: Nunito Sans;
+    background-color: #fff;
+    outline: none;
+    padding: 0px;
+    font-style: normal;
+    color: #344559;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    -webkit-appearance: none;
+}
+
+.selectLeft {
+    width: 100%;
+    height: 80px;
+    border: 0px;
+    text-align: left;
+    text-align-last: left;
+    font-weight: normal;
+    overflow-wrap: normal;
+    background-color: #fff;
+    outline: none;
+    padding: 0px;
+    font-style: normal;
+    color: #344559;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    -webkit-appearance: none;
+
+}
+.selectLeft option {
+  /* wrap text in compatible browsers */
+  -moz-white-space: pre-wrap;
+  -o-white-space: pre-wrap;
+  white-space: pre-wrap;
+  /* hide text that can't wrap with an ellipsis */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* add border after every option */
+  border-bottom: 1px solid #DDD;
+}
+
+
+.selectLabel {
+    position:relative;
+    font-family: Nunito Sans;
+    outline: none;
+    padding: 0px;
+    font-style: normal;
+    color: #344559;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    background-color: #fff;
+}
+
+.selectLabel:after {
+    //content:'\25BE';
+    content: url('data:image/svg+xml;charset=UTF-8,<svg width="20px" height="11px" viewBox="0 0 20 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Account-creation-(information-verification)" transform="translate(-1336.000000, -639.000000)" fill="#4C6077" fill-rule="nonzero"><g id="input" transform="translate(810.000000, 581.000000)"><path d="M527.682142,58 L544.317858,58 C545.813674,58 546.561582,59.7054774 545.506123,60.6997905 L537.188265,68.5357677 C536.531225,69.1547441 535.468775,69.1547441 534.818724,68.5357677 L526.493877,60.6997905 C525.438418,59.7054774 526.186326,58 527.682142,58 Z" id="down-dropdown-icon"></path></g></g></g></svg>');
+
+    color: #4F6075;
+    right:10px;
+    top:30px;
+    border-bottom:0px solid $background-color;
+    position:absolute;
+    pointer-events:none;
+    cursor: default;
+    background-color: #fff;
+    background-color:transparent;
+    padding: 0px;
+    margin-left: 100px;
+}
+
+.selectLabel:before {
+    content:'';
+    right:4px;
+    top:37px;
+    width:40px;
+    height:50px;
+    color: #fff;
+    background-color: #fff;
+    position:absolute;
+    pointer-events:none;
+    cursor: default;
+    padding: 0px;
+}
+
+.rectangle{
+    background-color: #fff;
+    border: 3px solid #DEDCDC;
+    margin:0;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 33px;
+    display: inline-flex;
+}
+
+.errorStyle{
+    background-color: #E6F5F9;
+    padding-top: 5px;
+    padding-left: 0px;
+}
+
+.textName {
+    width: 100%;
+    background-color: #fff;
+    padding: 0px;
+    border: 0px;
+    margin:0;
+    text-align: left;
+    font-size: 18px;
+    text-align-last: left;
+    color: #344559;
+    font-family: Nunito Sans;
+    font-weight: bold;
+    line-height: 24px;
+    padding-top: 20px;
+
+}
+
+.rectangle:focus-within{
+    background-color: #fff;
+    border: 4px solid #0DA4C5;
+    margin:0;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.picture{
+    height: 36px;
+    width: 35px;
+    background-color: #E6F5F9;
+}
+
+    .nameCircle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: $navbar-color;
+        height: 86px;
+        width: 86px;
+        background-color: #E6F5F9;
+    }
+
+ .leftPanel{
+     padding-top: 15px;
+     padding-right: 30px;
+ }
+
+ // hide the icon
+ @media screen and (max-width: 768px) {
+
+   .leftPanel {
+     display: none;
+     opacity: 0;
+     height: 0px;
+     width: 0px;
+
+   }
+ }

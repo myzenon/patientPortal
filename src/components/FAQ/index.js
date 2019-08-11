@@ -1,0 +1,131 @@
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Container, Row, Col, Button, Form } from 'reactstrap'
+import style from './style.scss'
+
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-121783543-1');
+
+export default class FAQ extends Component {
+    static defaultProps = {
+        onDone: () => {}
+    }
+    componentDidMount() {
+        const page = window.location.pathname + window.location.search;
+        ReactGA.pageview(page);
+    }
+
+    render() {
+        return ( <span className={style.wrapper}>
+              <div className={style.logoWrapper} onClick={this.props.onDone}>
+                    <img className={style.logo} src={require('assets/logo.png')} alt="Arine" />
+                </div>
+                <div className={style.title} onClick={this.props.onDone}> <b>FAQs - Patient</ b> </ div>
+                        <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>What is Arine? </b> <br />
+                            Arine is a company that works with your health plan to optimize your medications and improve your health by offering personalized clinical services to you, at no additional cost.<br/>
+                            <br />
+                            </Col>
+                            </Row>
+
+                        <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>What does Arine do?</b><br/>
+                            Arine works with you and your health plan to collect important information on your health, what medications you are taking, how you are taking them, and any other concerns you may have. Our pharmacists then work directly with you and your care team to provide personalized recommendations on how to improve your health. <br/>
+                            <br/>
+                            </Col>
+                       </Row>
+                        <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>What does that mean?</b><br/>
+                           Arine combines sophisticated technology with clinical experts in order to improve your health. Our team will use the information you provide to complete a comprehensive medication review. This is a process where our pharmacists work with you and your care team to make sure you are on all the right medications, at the lowest possible price, and that you are taking these medications safely.<br/>
+                            <br/>
+                            </Col>
+                       </Row>
+                       <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>How does it work?</b><br/>
+                            You fill out the questions in the Arine website, and our pharmacists will analyze both your responses and the information we receive from your health plan to see where any improvements or changes need to be made to help you achieve better health. Our pharmacists then call you to go over any issues that have been identified, and to make suggestions on how these can be improved. They then follow up with your doctor to make sure that your doctor is aware of these suggestions. Finally, our pharmacists compile several useful reports for you, including a personal medication list and a medication action plan, that you can access through the Arine website.<br/>
+                            <br/>
+                            </Col>
+                       </Row>
+                       <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>What do I get out of this?</b><br/>
+                            Our goal is to make sure that you are on the safest, most effective medications for your condition, and that you are on the right track for your health. We also want your healthcare team to know all the medications you are on, and any changes that might be recommended because of your condition or other factors. Also, we provide you with a medication action plan, which includes recommendations from our pharmacists, and a personal medication list, which you can take with you to any doctor's appointment. It is also an opportunity for you to ask our pharmacists any other questions you have about your medications.<br/>
+                            <br/>
+                            </Col>
+                       </Row>
+                       <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>What types of questions will Arine ask me?</b><br/>
+                            The Arine website will ask you about what medications and supplements you are taking, why you are taking them, and how frequently you are taking them. We also ask you important questions about your health conditions. <br/>
+                            <br/>
+                            </Col>
+                       </Row>
+                       <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>Why do you need to know about my medications?</b><br/>
+                            Your health plan is required to make sure you are receiving appropriate care if you are on multiple medications. Arine partners with your health plan to understand what medications you're on, and to see if there are any improvements that can be made in your care. This program is required by the government to make sure that your health plans are doing all they can to help you.<br/>
+                            <br/>
+                            </Col>
+                       </Row>
+                       <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>How long will this take?</b><br/>
+                            The time it takes to go through the Arine website will depend on how many medications and supplements you are taking. The website contains five easy steps, and you can pause and resume answering these questions at any point, as we save your answers. <br/>
+                            <br/>
+                            </Col>
+                       </Row>
+                       <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>Is my data secure? Who is looking at my health data?</b><br/>
+                            Arine's world class pharmacists review your health data in order to come up with the best possible recommendations for you and your care team. We take your data privacy and security very seriously, and our website follows all government regulations on data security. We also make sure that only authorized personnel has access to your information.<br/>
+                            <br/>
+                            </Col>
+                       </Row>
+                       <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>Why should I answer Arine's questions?</b><br/>
+                            The Arine website contains questions that are relevant to you and your condition. It is important for our pharmacists to know as much as possible about your medications and how you are taking them, in order to make sure you are on the safest, most effective treatments for your conditions. By answering the questions, and asking our pharmacists any other questions you have about your medications, we can work together to maximize your health. The more you tell us, the more we can help!<br/>
+                            <br/>
+                            </Col>
+                       </Row>
+                       <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>I'm stuck and don't know how to answer a question. What do I do?</b><br/>
+                            If you are stuck, you can give us a toll-free call at {process.env.ARINE_PHONE}, and we can help walk you through the Arine website questions. If you want to skip a question, you can just click the blue button at the bottom of the screen and you will be taken to the next question. It's important you answer all the questions as best you can so our pharmacists can help you!<br/>
+                            <br/>
+                            </Col>
+                       </Row>
+                       <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>How do I go back and change an answer?</b><br/>
+                            To change your answer on the previous page, you can click the “Back” button on your browser, just like you would for any webpage. Once you complete a section, you will be able to go back and change your answers to that section at a later time. <br/>
+                            <br/>
+                            </Col>
+                       </Row>
+                       <Row className={style.inputWrapper}>
+                            <Col xs={12} md={{size: 12}} className={style.heading}>
+                            <b>Where do I go if I have more questions about Arine and what this service is?</b><br/>                             
+                            If you have any questions about Arine and our clinical services, please give use a call toll-free at {process.env.ARINE_PHONE} or email us at {process.env.ARINE_EMAIL}.
+                            <br/>
+                            <br/>
+                            </Col>
+                       </Row>
+                       <Row >
+                       <Col xs={12} md={{size: 12}}  className={style.formLabel} >
+                           <Button
+                               className={style.button}
+                               onClick={this.props.onDone}
+                           >
+                               Done
+                           </Button>
+                           </Col>
+                        </Row>
+                        <br/>
+                        </span>
+                )
+            }
+        }

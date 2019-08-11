@@ -1,0 +1,50 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+
+@import '~themes/css/styles.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: center;
+}
+
+.content > p {
+    font-size: 1.4em;
+    margin: 25px 0;
+}
+
+.content > p > img {
+    width: 80%;
+    max-width: 420px;
+}
+
+.buttonWrapper button {
+    height: 90;
+     width: 60% !important;
+    max-width: 400px;
+    border-radius: 45.5px;
+    background-color: #0DA4C5;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.38);
+    vertical-align: middle;  
+}
+
+.empty
+{
+height: 60px;
+width: 100%;;
+}
+
+.empty20
+{
+height: 20px;
+width: 100%;;
+}
+
+.headingText{ 
+    color: #11839E;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: 600;	 
+    line-height: 41px;   
+    font-weight: bold; 
+}

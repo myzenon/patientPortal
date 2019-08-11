@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clicks on image | image zoom 1`] = `
+<div
+  class="imageZoomWrapper"
+>
+  <img
+    alt=""
+    class="imageZoomImage"
+  />
+  <img
+    alt="Zoom-Out"
+    class="imageMagnifyZoomOut"
+    src="magnify-out.png"
+  />
+</div>
+`;
+
+exports[`clicks on magnify | image zoom 1`] = `
+<div
+  class="imageZoomWrapper"
+>
+  <img
+    alt=""
+    class="imageZoomImage"
+  />
+  <img
+    alt="Zoom-Out"
+    class="imageMagnifyZoomOut"
+    src="magnify-out.png"
+  />
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  class="imageWrapper"
+>
+  <img
+    alt=""
+  />
+  <img
+    alt="Zoom-In"
+    class="imageMagnifyZoomIn"
+    src="magnify-in.png"
+  />
+</div>
+`;

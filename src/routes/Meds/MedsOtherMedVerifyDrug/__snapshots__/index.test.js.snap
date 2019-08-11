@@ -1,0 +1,582 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<MedsVerifyDrug
+  cmr={
+    Object {
+      "id": "d94786ff-3771-4c8e-bb74-6bc12cc4ca7e",
+      "medications": Array [
+        Object {
+          "brandName": "EFFEXOR XR",
+          "display": "EFFEXOR XR 75MG",
+          "doseFormText": "capsule(s)",
+          "genericName": "VENLAFAXINE HCL",
+          "hasQuantity": "true",
+          "id": "000080833",
+          "image": Object {
+            "small": Object {
+              "source": "rximage",
+              "title": "VENLAFAXINE HCL 75MG",
+              "url": "https://rximage.nlm.nih.gov/image/images/gallery/original/00008-0833-21_RXNAVIMAGE10_3015981C.jpg",
+            },
+          },
+          "indications": Array [
+            Object {
+              "conditionName": "Major Depressive Disorder",
+              "drugbankConditionId": "DBCOND0025426",
+              "drugbankDrugId": "DB00285",
+            },
+            Object {
+              "conditionName": "Generalized Anxiety Disorder",
+              "drugbankConditionId": "DBCOND0027966",
+              "drugbankDrugId": "DB00285",
+            },
+            Object {
+              "conditionName": "Vasomotor Symptoms",
+              "drugbankConditionId": "DBCOND0035305",
+              "drugbankDrugId": "DB00285",
+            },
+            Object {
+              "conditionName": "Social Anxiety Disorder",
+              "drugbankConditionId": "DBCOND0030589",
+              "drugbankDrugId": "DB00285",
+            },
+            Object {
+              "conditionName": "Neuropathic Pain",
+              "drugbankConditionId": "DBCOND0031639",
+              "drugbankDrugId": "DB00285",
+            },
+            Object {
+              "conditionName": "I don't know",
+            },
+            Object {
+              "conditionName": "Other",
+            },
+          ],
+          "isBrand": true,
+          "isOTC": false,
+          "ndc11": "00008-0833-21",
+          "prescriber": Object {
+            "name": "Peter Wong",
+            "npi": "7383627234",
+          },
+          "smartQuestions": Array [],
+          "source": "claims",
+          "takingMethodText": "take",
+        },
+        Object {
+          "brandName": "AVANDIA",
+          "display": "AVANDIA 4MG",
+          "genericName": "ROSIGLITAZONE MALEATE",
+          "id": "000293159",
+          "image": Object {
+            "small": Object {
+              "source": "rximage",
+              "title": "ROSIGLITAZONE MALEATE 4MG",
+              "url": "https://rximage.nlm.nih.gov/image/images/gallery/original/00029-3159-13_RXNAVIMAGE10_E418F247.jpg",
+            },
+          },
+          "indications": Array [
+            Object {
+              "conditionName": "I don't know",
+            },
+            Object {
+              "conditionName": "Other",
+            },
+          ],
+          "isBrand": true,
+          "isOTC": false,
+          "ndc11": "00029-3159-20",
+          "smartQuestions": Array [
+            Object {
+              "items": Array [
+                Object {
+                  "groupName": "PIOGLITAZONE",
+                  "id": "e2f28b65-5f5e-4f17-98uj4-26b4a708ffd9",
+                  "max": "15.0",
+                  "min": "0.0",
+                  "order": 1,
+                  "template": "numberEntryBox",
+                  "text": "How many days a week do you feel Anxiety?",
+                  "type": "decimal",
+                },
+              ],
+              "page": 1,
+            },
+          ],
+          "source": "claims",
+        },
+        Object {
+          "brandName": "GEODON",
+          "display": "GEODON 80MG",
+          "genericName": "ZIPRASIDONE HCL",
+          "id": "000493990",
+          "image": Object {
+            "small": Object {
+              "source": "rximage",
+              "title": "ZIPRASIDONE HCL 80MG",
+              "url": "https://rximage.nlm.nih.gov/image/images/gallery/original/00049-3990-60_RXNAVIMAGE10_253B12F8.jpg",
+            },
+          },
+          "indications": Array [
+            Object {
+              "conditionName": "Bipolar 1 Disorder",
+              "drugbankConditionId": "DBCOND0020745",
+              "drugbankDrugId": "DB00246",
+            },
+            Object {
+              "conditionName": "Acute Agitation",
+              "drugbankConditionId": "DBCOND0078942",
+              "drugbankDrugId": "DB00246",
+            },
+            Object {
+              "conditionName": "Schizophrenia",
+              "drugbankConditionId": "DBCOND0018504",
+              "drugbankDrugId": "DB00246",
+            },
+            Object {
+              "conditionName": "Treatment Resistant Major Depressive Disorder",
+              "drugbankConditionId": "DBCOND0044715",
+              "drugbankDrugId": "DB00246",
+            },
+            Object {
+              "conditionName": "Psychosis",
+              "drugbankConditionId": "DBCOND0020753",
+              "drugbankDrugId": "DB00246",
+            },
+            Object {
+              "conditionName": "I don't know",
+            },
+            Object {
+              "conditionName": "Other",
+            },
+          ],
+          "isBrand": true,
+          "isOTC": false,
+          "ndc11": "00049-3990-60",
+          "smartQuestions": Array [],
+          "source": "claims",
+        },
+        Object {
+          "brandName": "DEPAKOTE ER",
+          "display": "DEPAKOTE ER 500MG",
+          "genericName": "DIVALPROEX SODIUM",
+          "id": "000747126",
+          "image": Object {
+            "small": Object {
+              "source": "rximage",
+              "title": "DIVALPROEX SODIUM 500MG",
+              "url": "https://rximage.nlm.nih.gov/image/images/gallery/original/00074-7126-13_RXNAVIMAGE10_C003606B.jpg",
+            },
+          },
+          "indications": Array [
+            Object {
+              "conditionName": "Schizophrenia",
+              "drugbankConditionId": "DBCOND0018504",
+              "drugbankDrugId": "DB00313",
+            },
+            Object {
+              "conditionName": "Manic Episode",
+              "drugbankConditionId": "DBCOND0033453",
+              "drugbankDrugId": "DB00313",
+            },
+            Object {
+              "conditionName": "Migraine Headache",
+              "drugbankConditionId": "DBCOND0030217",
+              "drugbankDrugId": "DB00313",
+            },
+            Object {
+              "conditionName": "Seizure",
+              "drugbankConditionId": "DBCOND0017560",
+              "drugbankDrugId": "DB00313",
+            },
+            Object {
+              "conditionName": "Epilepsy",
+              "drugbankConditionId": "DBCOND0017557",
+              "drugbankDrugId": "DB00313",
+            },
+            Object {
+              "conditionName": "I don't know",
+            },
+            Object {
+              "conditionName": "Other",
+            },
+          ],
+          "isBrand": true,
+          "isOTC": false,
+          "ndc11": "00074-7126-13",
+          "smartQuestions": Array [],
+          "source": "claims",
+        },
+        Object {
+          "brandName": "VYTORIN",
+          "display": "VYTORIN 10MG-20MG",
+          "genericName": "EZETIMIBE/SIMVASTATIN",
+          "id": "665820312",
+          "image": Object {
+            "small": Object {
+              "source": "rximage",
+              "title": "EZETIMIBE/SIMVASTATIN 10MG-20MG",
+              "url": "https://rximage.nlm.nih.gov/image/images/gallery/original/66582-0312-31_RXNAVIMAGE10_B21DD90E.jpg",
+            },
+          },
+          "indications": Array [
+            Object {
+              "conditionName": "Mixed Hyperlipidemia",
+              "drugbankConditionId": "DBCOND0031827",
+              "drugbankDrugId": "DB00973",
+            },
+            Object {
+              "conditionName": "Homozygous Familial Hypercholesterolemia",
+              "drugbankConditionId": "DBCOND0040863",
+              "drugbankDrugId": "DB00973",
+            },
+            Object {
+              "conditionName": "Homozygous Sitosterolemia",
+              "drugbankConditionId": "DBCOND0040848",
+              "drugbankDrugId": "DB00973",
+            },
+            Object {
+              "conditionName": "Hypercholesterolemia",
+              "drugbankConditionId": "DBCOND0004043",
+              "drugbankDrugId": "DB00641",
+            },
+            Object {
+              "conditionName": "History of stroke or other cerebrovacular disease cardiovascular event",
+              "drugbankConditionId": "DBCOND0022051",
+              "drugbankDrugId": "DB00641",
+            },
+            Object {
+              "conditionName": "I don't know",
+            },
+            Object {
+              "conditionName": "Other",
+            },
+          ],
+          "isBrand": true,
+          "isOTC": false,
+          "ndc11": "66582-0312-31",
+          "smartQuestions": Array [],
+          "source": "claims",
+        },
+      ],
+      "patientId": "b70f3cbe-ddd3-4ce3-96b2-914a609abd53",
+      "patientReviewStatus": "NotStarted",
+      "pharmacistId": "456456456",
+      "pharmacistReviewStatus": "NotStarted",
+      "resourceType": "cmr",
+      "smartQuestions": Array [
+        Object {
+          "items": Array [
+            Object {
+              "groupName": "HedisStaticQuestions",
+              "id": "f2f28b65-5f5e-4r17-901a-26asdf8ffd2",
+              "openChoice": Object {
+                "option": "1",
+                "placeholder": "",
+                "text": "(if yes, enter allergens.)",
+              },
+              "option": Array [
+                Object {
+                  "1": "Yes",
+                },
+                Object {
+                  "2": "No",
+                },
+              ],
+              "template": "radioButtonsChioce",
+              "text": "Do you have any allergies?",
+              "type": "openChoice",
+            },
+          ],
+          "page": 1,
+        },
+        Object {
+          "items": Array [
+            Object {
+              "groupName": "DM General",
+              "id": "e2f28b65-5f5e-5f17-901a-26gt508ffd2",
+              "order": 1,
+              "template": "yesNoRadioButtons",
+              "text": "What was your most recent A1c reading?",
+              "type": "boolean",
+            },
+          ],
+          "page": 2,
+        },
+        Object {
+          "items": Array [
+            Object {
+              "groupName": "HedisStaticQuestions",
+              "id": "65d653bc-7c91-4ecf-rf54-755ed01a2076",
+              "option": Array [
+                Object {
+                  "1": "Daily",
+                },
+                Object {
+                  "2": "Less than daily",
+                },
+                Object {
+                  "3": "Not at all",
+                },
+              ],
+              "order": 2,
+              "template": "radioButtons",
+              "text": "How often do you have a drink containing alcohol?",
+              "type": "choice",
+            },
+          ],
+          "page": 3,
+        },
+        Object {
+          "items": Array [
+            Object {
+              "groupName": "DM General",
+              "id": "e2f28b65-5f5e-4f17-901a-26b4a708ffd2",
+              "max": "15.0",
+              "min": "0.0",
+              "order": 5,
+              "template": "numberEntryBox",
+              "text": "What was your most recent A1c reading?",
+              "type": "decimal",
+            },
+          ],
+          "page": 4,
+        },
+        Object {
+          "items": Array [
+            Object {
+              "id": "e2f28b65-5f5e-4f17-901a-26b4a708sfd2",
+              "max": 10,
+              "min": 0,
+              "template": "painScale",
+              "text": "What was your last blood pressure reading?",
+              "type": "number",
+            },
+          ],
+          "page": 5,
+        },
+      ],
+      "updated": "2017-12-01T06:33:11",
+    }
+  }
+  match={
+    Object {
+      "params": Object {
+        "medId": "000080833",
+      },
+    }
+  }
+>
+  <Container
+    fluid={true}
+    tag="div"
+  >
+    <div
+      className="container-fluid"
+    >
+      <Container
+        className="content"
+        tag="div"
+      >
+        <div
+          className="content container"
+        >
+          <div
+            className="heading1"
+          >
+            EFFEXOR XR 75MG
+          </div>
+          <p />
+          <div>
+            <Image
+              className="contentImg"
+              src="https://rximage.nlm.nih.gov/image/images/gallery/original/00008-0833-21_RXNAVIMAGE10_3015981C.jpg"
+            >
+              <div
+                className="imageWrapper"
+              >
+                <img
+                  alt=""
+                  className="contentImg"
+                  onClick={[Function]}
+                  src="https://rximage.nlm.nih.gov/image/images/gallery/original/00008-0833-21_RXNAVIMAGE10_3015981C.jpg"
+                />
+                <img
+                  alt="Zoom-In"
+                  className="imageMagnifyZoomIn"
+                  onClick={[Function]}
+                  src="magnify-in.png"
+                />
+              </div>
+            </Image>
+          </div>
+          <p />
+          <span
+            className="questions"
+          >
+            Are you still taking this medicine?
+          </span>
+          <Row
+            className="buttonWrapper"
+            tag="div"
+          >
+            <div
+              className="buttonWrapper row"
+            >
+              <Col
+                className="text-center"
+                tag="div"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                <div
+                  className="text-center col"
+                >
+                  <Button
+                    className="button"
+                    color="secondary"
+                    id="yesButton"
+                    onClick={[Function]}
+                    tag="button"
+                  >
+                    <button
+                      className="button btn btn-secondary"
+                      id="yesButton"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      YES
+                    </button>
+                  </Button>
+                </div>
+              </Col>
+              <Col
+                className="text-center"
+                tag="div"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                <div
+                  className="text-center col"
+                >
+                  <Button
+                    className="button"
+                    color="secondary"
+                    id="noButton"
+                    onClick={[Function]}
+                    tag="button"
+                  >
+                    <button
+                      className="button btn btn-secondary"
+                      id="noButton"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      NO
+                    </button>
+                  </Button>
+                </div>
+              </Col>
+            </div>
+          </Row>
+          <p />
+        </div>
+      </Container>
+      <Container
+        className="footerWrapper"
+        tag="div"
+      >
+        <div
+          className="footerWrapper container"
+        >
+          <ProgressBarPatient
+            step={2}
+          >
+            <div>
+              <div
+                className="wrapper"
+              >
+                <div
+                  className="stepCompleted"
+                >
+                  Account
+                  <br />
+                  Setup
+                  <div
+                    className="stepNumberActive"
+                  >
+                    1
+                  </div>
+                </div>
+                <div
+                  className="stepActive"
+                >
+                  Medication
+                  <br />
+                  Review
+                  <div
+                    className="stepNumberActive"
+                  >
+                    2
+                  </div>
+                </div>
+                <div
+                  className="step"
+                >
+                  Additional 
+                  <br />
+                  Medications
+                  <div
+                    className="stepNumber"
+                  >
+                    3
+                  </div>
+                </div>
+                <div
+                  className="step"
+                >
+                  Health
+                  <br />
+                  Updates
+                  <div
+                    className="stepNumber"
+                  >
+                    4
+                  </div>
+                </div>
+                <div
+                  className="step"
+                >
+                  Set
+                  <br />
+                  Appointment
+                  <div
+                    className="stepNumber"
+                  >
+                    5
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ProgressBarPatient>
+        </div>
+      </Container>
+    </div>
+  </Container>
+</MedsVerifyDrug>
+`;

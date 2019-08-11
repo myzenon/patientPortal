@@ -1,0 +1,15 @@
+*** Variables ***
+<<<<<<< HEAD
+<<<<<<< HEAD
+${btnNextMedsDosingRegimen}    //*[@id="router-wrapper"]/div[2]/div/form/button
+=======
+${btnNextMedsDosingRegimen}    //*[@id="router-wrapper"]/div[2]/div[1]/form/button
+${linkTakeMyMedicationDiffMedsDosingRegimen}    //*[@id="router-wrapper"]/div[2]/div[1]/form/div/div[3]/p
+>>>>>>> e09c84d66510ff73053105e1bae296d08e9a6758
+=======
+${btnNextMedsDosingRegimen}    //*[@id="router-wrapper"]/div[2]/div/form/button
+>>>>>>> origin/uma/ui_changes
+${txtPillsEverydayMedsDosingRegimen}    //input[@name="pillsEveryHours"]
+${txtHoursMedsDosingRegimen}    //input[@name="hours"]
+${txtPillsTimeMedsDosingRegimen}    //input[@name="pillsATime"]
+${chkAsNeededMedsDosingRegimen}    //*[@id="as-needed-check-box"]

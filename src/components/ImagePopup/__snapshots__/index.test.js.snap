@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clicks NEXT | api forgot password call | show Password Reset Email Has Been Sent dialog box 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="header"
+    >
+      <div
+        class="headerText"
+      >
+        Password reset email has been sent!
+      </div>
+      <div
+        class="headerClose"
+      >
+        X
+      </div>
+    </div>
+    <div
+      class="content"
+    >
+      <p>
+        We have sent a password reset email to 
+        <strong>
+          test@test.com
+        </strong>
+        .
+      </p>
+      <p>
+        Please check your email in a few minutes. If you haven't received it, please check your spam folder.
+      </p>
+      <p>
+        The email will be from 
+        <strong />
+        .
+      </p>
+      <p>
+        If you do not receive an email, please call Arine at  
+        <strong>
+           
+        </strong>
+        .
+      </p>
+    </div>
+    <div
+      class="action"
+    >
+      <button
+        class="btn btn-secondary"
+        type="button"
+      >
+        Done
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`email validation on user unfocus email entry box 1`] = `
+<div>
+  <form
+    class=""
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="header"
+      >
+        <div
+          class="headerText"
+        >
+          Password Reset
+        </div>
+        <div
+          class="headerClose"
+        >
+          X
+        </div>
+      </div>
+      <div
+        class="content"
+      >
+        <p>
+          Enter your email address. If you are registered, we will send you an email with instructions on how to reset your password.
+        </p>
+        <div>
+          <input
+            class="inputTextError"
+            name="email"
+            placeholder="Enter your email address here"
+            type="email"
+          />
+          <div
+            class="inputMessageError"
+          >
+            Please enter a valid email address.
+          </div>
+        </div>
+      </div>
+      <div
+        class="action"
+      >
+        <button
+          class="btn btn-secondary disabled"
+          disabled=""
+          type="submit"
+        >
+          Send Email
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div>
+  <form
+    class=""
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="header"
+      >
+        <div
+          class="headerText"
+        >
+          Password Reset
+        </div>
+        <div
+          class="headerClose"
+        >
+          X
+        </div>
+      </div>
+      <div
+        class="content"
+      >
+        <p>
+          Enter your email address. If you are registered, we will send you an email with instructions on how to reset your password.
+        </p>
+        <div>
+          <input
+            class=""
+            name="email"
+            placeholder="Enter your email address here"
+            type="email"
+          />
+        </div>
+      </div>
+      <div
+        class="action"
+      >
+        <button
+          class="btn btn-secondary"
+          type="submit"
+        >
+          Send Email
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;

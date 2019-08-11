@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Node.JS
+node_modules/
+
+# NPM
+package-lock.json
+
+# Yarn
+yarn.lock
+yarn-error.log
+
+# Build
+build/
+
+# Jest
+coverage/
+junit.xml
+
+log.html
+output.xml
+report.html
+
+*selenium-screenshot*

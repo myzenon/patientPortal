@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p>
+      Please select
+    </p>
+    <div
+      class="flexContainer"
+    >
+      <div
+        class="doctorSelectContainer"
+      >
+        <div
+          class="title"
+        >
+          Your main doctor:
+        </div>
+        <div
+          class="selectWrapper"
+        >
+          <div
+            class="activeChoiceWrapper"
+          >
+            <div
+              class="radioWrapper"
+            >
+              <div
+                class="activeRadio"
+              />
+            </div>
+            <div
+              class="text"
+            >
+              Dr.  Saunter Adam - 44 Shirley Ave Gastonia , NC , USA. 28052
+            </div>
+          </div>
+          <div
+            class="choiceWrapper"
+          >
+            <div
+              class="radioWrapper"
+            >
+              <div
+                class="radio"
+              />
+            </div>
+            <div
+              class="text"
+            >
+              Dr.  Mahoney Sandra - 14 Bowman St. Monsey , NY , USA. 10952
+            </div>
+          </div>
+          <div
+            class="choiceWrapper"
+          >
+            <div
+              class="radioWrapper"
+            >
+              <div
+                class="radio"
+              />
+            </div>
+            <div
+              class="text"
+            >
+              Other
+              <input
+                class="inputText"
+                name="otherPractitioner"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="pharmacySelectContainer"
+      >
+        <div
+          class="title"
+        >
+          Your preferred pharmacy:
+        </div>
+        <div
+          class="selectWrapper"
+        >
+          <div
+            class="activeChoiceWrapper"
+          >
+            <div
+              class="radioWrapper"
+            >
+              <div
+                class="activeRadio"
+              />
+            </div>
+            <div
+              class="text"
+            >
+              Walgreens Pharmacy - 3601 California St, 3601 California Street, San Francisco, CA 94118-1701
+            </div>
+          </div>
+          <div
+            class="choiceWrapper"
+          >
+            <div
+              class="radioWrapper"
+            >
+              <div
+                class="radio"
+              />
+            </div>
+            <div
+              class="text"
+            >
+              Walgreens Pharmacy - 3838 California St, San Francisco, CA 94118-1522
+            </div>
+          </div>
+          <div
+            class="choiceWrapper"
+          >
+            <div
+              class="radioWrapper"
+            >
+              <div
+                class="radio"
+              />
+            </div>
+            <div
+              class="text"
+            >
+              Other
+              <input
+                class="inputText"
+                name="otherPharmacy"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="button btn btn-secondary"
+      type="button"
+    >
+      <b>
+        NEXT
+      </b>
+    </button>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

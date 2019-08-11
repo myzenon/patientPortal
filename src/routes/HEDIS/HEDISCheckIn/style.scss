@@ -1,0 +1,15 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: center;
+}
+
+
+.button {
+    @include button(90px);
+    width: 40% !important;
+    max-width: 300px;
+    margin-top: 40px;
+}

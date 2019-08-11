@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="wrapper"
+>
+  <div
+    class="logoWrapper"
+  >
+    <img
+      alt="Arine"
+      class="logo"
+      src="logo.png"
+    />
+  </div>
+  <br />
+  <p>
+    Give us a call and we'll sort it out.
+  </p>
+  <p>
+    (Don't worry, it's free!)
+  </p>
+  <p
+    class="phoneNumber"
+  />
+  <p>
+     or email us at 
+  </p>
+  <p
+    class="phoneNumber"
+  >
+       
+  </p>
+  <p>
+    <button
+      class="button btn btn-secondary"
+      id="linkDoneMeFindHPID"
+      type="button"
+    >
+      Done
+    </button>
+  </p>
+</div>
+`;

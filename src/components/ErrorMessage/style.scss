@@ -1,0 +1,25 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/global.scss';
+
+.errorStyle{
+    background-color: #CA435D;
+    color: #fff;  
+    padding: 0px;
+    border: 0px;
+    margin:0px;
+    font-size: 20px; 
+    padding: 10px; 
+    font-family: Nunito Sans !important;  
+    text-align: left;
+    align-content: left;  
+    font-weight: bold;   
+    padding-left: 20px;  
+}
+
+.eye{
+    height: 26px;
+    width: 29px; 
+}
+ 
+ 

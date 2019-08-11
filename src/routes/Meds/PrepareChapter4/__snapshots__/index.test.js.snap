@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <br />
+    <br />
+    <div
+      class="row"
+    >
+      <div
+        class="col-12 col-sm-4"
+      >
+        <img
+          alt="drugs"
+          src="health.png"
+        />
+      </div>
+      <div
+        class="col-12 col-sm-7"
+      >
+        <strong>
+          <span
+            class="heading"
+          >
+            Almost Done! You've Completed Step 3
+          </span>
+        </strong>
+        <p />
+        <p>
+          We now know all the medications you are taking, so our pharmacists can make sure you are taking them safely.
+        </p>
+        <p>
+          Next we are going to ask you some questions about your health, so we can make sure you are getting the care you need.
+        </p>
+        <p>
+          By answering these questions, we can work with your doctor to make sure that your health is improving as much as possible.
+        </p>
+        <p>
+          This information helps our pharmacists undertand what services you need in order to best manage your conditions.
+        </p>
+        <p>
+          <strong>
+            Keep going to make sure you are getting all the care you need!
+          </strong>
+        </p>
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="buttonwrapper container"
+      >
+        <div
+          class="col-12 col-sm-12"
+        >
+          <a
+            href="/smart-questions/hedis/1"
+          >
+            <button
+              class="button btn btn-secondary"
+            >
+              <b>
+                NEXT
+              </b>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p />
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumberActive"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumberActive"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,41 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: center;
+}
+
+.content > p {
+     font-size: 1.4em;
+}
+
+.content > p > span > span {
+    padding: 10px;
+    font-size: 3em;
+}
+
+.numberTold {
+    color: $accent-color;
+}
+
+.numberStill {
+    color: $text-error-color;
+}
+
+
+
+.footerWrapper a {
+    color: $footer-color;
+}
+
+.footerWrapper a:hover {
+    text-decoration: none;
+    color: $footer-color;
+}
+
+.button {
+    @include button(90px);
+    width: auto !important;
+    margin-top: 20px;
+}

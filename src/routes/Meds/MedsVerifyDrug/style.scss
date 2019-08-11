@@ -1,0 +1,93 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/global.scss'; 
+@import '~themes/css/styles.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: left; 
+}
+ 
+.inputWrapper {
+    align-items: top;
+    text-align: left;   
+    padding-left: 20px;   
+    padding-top: 65px;
+}
+.buttonGap{
+    padding-right: 20px;
+}
+
+.buttonWrapper{
+    padding-top: 10px; 
+}
+
+.buttonText {  
+    height: 40px;
+    width: 145px; 
+    font-family: Nunito Sans;
+    font-size: 24px;	
+    font-weight: bold;	 
+    text-align: center;
+
+} 
+
+
+.buttonWrapper button {
+    font-family: Nunito Sans;    
+    font-size: 22px; 
+    height: 77px;	
+    width: 218px;	
+    border-radius: 38.5px;
+    background-color: #0DA4C5; 
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.38);  
+}
+ 
+
+.heading{ 
+    color: #11839E;
+    font-family: Nunito Sans;	
+    font-size: 28px;
+    font-weight: 600;	
+    line-height: 41px;  
+    font-weight: bold;  
+    text-align: left;   
+    padding-top: 10px;
+ }
+
+.subHeading{  
+    text-align: left;  
+    height: 82px;
+    width: 841px;
+    color: #344559;
+    font-family: Nunito Sans;	
+    font-size: 24px;	
+    font-weight: 600;
+    line-height: 41px;  
+}
+ 
+.contentImg { 
+    object-fit: cover; 
+    height: 205px;
+    width: 277px;	 
+    border-radius: 6px; 
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.14);  
+}
+
+
+@media (max-width: 768px) {
+    .contentImg {
+        max-width: 90px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contentImg {
+        max-width: 180px;
+    }
+}
+
+.empty{
+    width: 100%;
+    height: 200px;;
+}

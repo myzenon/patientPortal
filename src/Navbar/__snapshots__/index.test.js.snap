@@ -1,0 +1,372 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clicking the menu down caret | displays the dropdown menu 1`] = `
+<div
+  class="wrapper"
+>
+  <div
+    class="row"
+  >
+    <div
+      class="leftSideWrapper col"
+    >
+      <a
+        href="https://www.arine.io"
+      >
+        <img
+          alt="Arine"
+          class="logo"
+          src="logo.png"
+        />
+      </a>
+    </div>
+    <div
+      class="text-right col"
+    >
+      <span
+        class="helpMenu"
+      >
+        Help
+        <svg
+          class="chevron"
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style="vertical-align: middle;"
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m37.6 18l-16.6 16.6q-0.4 0.4-1 0.4t-1-0.4l-16.6-16.6q-0.4-0.4-0.4-1t0.4-1l3.7-3.7q0.5-0.4 1-0.4t1 0.4l11.9 11.9 11.9-11.9q0.4-0.4 1-0.4t1 0.4l3.7 3.7q0.4 0.4 0.4 1t-0.4 1z"
+            />
+          </g>
+        </svg>
+      </span>
+      <span
+        class="userMenu"
+      >
+        <span
+          class="nameCircle"
+        >
+          RS
+        </span>
+        <svg
+          class="chevron"
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style="vertical-align: middle;"
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m37.6 29.7l-3.7 3.7q-0.5 0.4-1 0.4t-1-0.4l-11.9-11.9-11.8 11.9q-0.5 0.4-1.1 0.4t-1-0.4l-3.7-3.7q-0.4-0.4-0.4-1t0.4-1l16.6-16.6q0.4-0.4 1-0.4t1 0.4l16.6 16.6q0.4 0.4 0.4 1t-0.4 1z"
+            />
+          </g>
+        </svg>
+        <span>
+          <ul
+            class="userMenuExpandWrapper"
+          >
+            <li>
+              Account Info ...
+            </li>
+            <li>
+              <a
+                href="/"
+              >
+                My Care Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="/"
+              >
+                Dashboard ...
+              </a>
+            </li>
+            <li
+              id="signout"
+            >
+              Sign Out
+            </li>
+          </ul>
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`clicking the my progewss | displays the dropdown progess 1`] = `
+<div
+  class="wrapper"
+>
+  <div
+    class="row"
+  >
+    <div
+      class="leftSideWrapper col"
+    >
+      <a
+        href="https://www.arine.io"
+      >
+        <img
+          alt="Arine"
+          class="logo"
+          src="logo.png"
+        />
+      </a>
+      <span
+        class="myProgress"
+      >
+        My Progress
+        <svg
+          class="chevron"
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style="vertical-align: middle;"
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m37.6 29.7l-3.7 3.7q-0.5 0.4-1 0.4t-1-0.4l-11.9-11.9-11.8 11.9q-0.5 0.4-1.1 0.4t-1-0.4l-3.7-3.7q-0.4-0.4-0.4-1t0.4-1l16.6-16.6q0.4-0.4 1-0.4t1 0.4l16.6 16.6q0.4 0.4 0.4 1t-0.4 1z"
+            />
+          </g>
+        </svg>
+        <div
+          class="myProgressExpandWrapper"
+        >
+          <div
+            class="triangle"
+          />
+          <div
+            class="myProgressExpand"
+          >
+            <p>
+              You have told us about 
+              <span
+                class="myProgressTold"
+              >
+                2
+              </span>
+               of your medications:
+            </p>
+            <div
+              class="myProgessMedsListWrapper"
+            >
+              <ul
+                class="myProgressMedsList"
+              >
+                <li>
+                  EFFEXOR XR 75MG
+                </li>
+                <li>
+                  AVANDIA 4MG
+                </li>
+              </ul>
+            </div>
+            <div>
+              There are 
+              <span
+                class="myProgressStill"
+              >
+                3
+              </span>
+               medications we need to ask you about.
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="text-right col"
+    >
+      <span
+        class="helpMenu"
+      >
+        Help
+        <svg
+          class="chevron"
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style="vertical-align: middle;"
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m37.6 18l-16.6 16.6q-0.4 0.4-1 0.4t-1-0.4l-16.6-16.6q-0.4-0.4-0.4-1t0.4-1l3.7-3.7q0.5-0.4 1-0.4t1 0.4l11.9 11.9 11.9-11.9q0.4-0.4 1-0.4t1 0.4l3.7 3.7q0.4 0.4 0.4 1t-0.4 1z"
+            />
+          </g>
+        </svg>
+      </span>
+      <span
+        class="userMenu"
+      >
+        <span
+          class="nameCircle"
+        >
+          RS
+        </span>
+        <svg
+          class="chevron"
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style="vertical-align: middle;"
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m37.6 18l-16.6 16.6q-0.4 0.4-1 0.4t-1-0.4l-16.6-16.6q-0.4-0.4-0.4-1t0.4-1l3.7-3.7q0.5-0.4 1-0.4t1 0.4l11.9 11.9 11.9-11.9q0.4-0.4 1-0.4t1 0.4l3.7 3.7q0.4 0.4 0.4 1t-0.4 1z"
+            />
+          </g>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  class="wrapper"
+>
+  <div
+    class="row"
+  >
+    <div
+      class="leftSideWrapper col"
+    >
+      <a
+        href="https://www.arine.io"
+      >
+        <img
+          alt="Arine"
+          class="logo"
+          src="logo.png"
+        />
+      </a>
+    </div>
+    <div
+      class="text-right col"
+    >
+      <span
+        class="helpMenu"
+      >
+        Help
+        <svg
+          class="chevron"
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style="vertical-align:middle"
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m37.6 18l-16.6 16.6q-0.4 0.4-1 0.4t-1-0.4l-16.6-16.6q-0.4-0.4-0.4-1t0.4-1l3.7-3.7q0.5-0.4 1-0.4t1 0.4l11.9 11.9 11.9-11.9q0.4-0.4 1-0.4t1 0.4l3.7 3.7q0.4 0.4 0.4 1t-0.4 1z"
+            />
+          </g>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`show helpme final 1`] = `
+<div
+  class="wrapper"
+>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="logoWrapper"
+    >
+      <img
+        alt="Arine"
+        class="logo"
+        src="logo.png"
+      />
+    </div>
+    <br />
+    <p>
+      Give us a call and we'll sort it out.
+    </p>
+    <p>
+      (Don't worry, it's free!)
+    </p>
+    <p
+      class="phoneNumber"
+    />
+    <p>
+       or email us at 
+    </p>
+    <p
+      class="phoneNumber"
+    >
+         
+    </p>
+    <p>
+      <button
+        class="button btn btn-secondary"
+        id="linkDoneMeFindHPID"
+        type="button"
+      >
+        Done
+      </button>
+    </p>
+  </div>
+  <div
+    class="row"
+  >
+    <div
+      class="leftSideWrapper col"
+    >
+      <a
+        href="https://www.arine.io"
+      >
+        <img
+          alt="Arine"
+          class="logo"
+          src="logo.png"
+        />
+      </a>
+    </div>
+    <div
+      class="text-right col"
+    >
+      <span
+        class="helpMenu"
+      >
+        Help
+        <svg
+          class="chevron"
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style="vertical-align: middle;"
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m37.6 18l-16.6 16.6q-0.4 0.4-1 0.4t-1-0.4l-16.6-16.6q-0.4-0.4-0.4-1t0.4-1l3.7-3.7q0.5-0.4 1-0.4t1 0.4l11.9 11.9 11.9-11.9q0.4-0.4 1-0.4t1 0.4l3.7 3.7q0.4 0.4 0.4 1t-0.4 1z"
+            />
+          </g>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,385 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/global.scss';
+
+@import '~themes/css/styles.scss';
+
+
+.inputWrapper {
+    align-items: top;
+    text-align: left; 
+    margin: 0px;
+    padding-left: 40px;   
+    padding-top: 20px;   
+}
+ 
+
+.content {
+    @include content-wrapper(); 
+}
+
+.contentWrapper {
+    @include templateWrapper(); 
+    padding-bottom:  35px;
+}
+    
+
+.buttonInputWrapper {
+    align-items: top;
+    text-align: left; 
+    padding-top: 20px;
+}
+
+.buttonWrapper button {
+    height: 91px;
+    width: 349px; 
+    border-radius: 45.5px;
+    background-color: #0DA4C5;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.38);
+}
+
+
+
+.questionText{
+    height: 70px;
+    width: 956px;
+    color: #344559;
+    font-family: "Nunito Sans";	
+    font-size: 26px; 
+    font-weight: bold;	
+    line-height: 42px;
+}
+
+.subQuestionText{
+    height: 70px;
+    width: 956px;
+    color: #344559;
+    font-family: "Nunito Sans";	
+    font-size: 24px; 
+    font-weight: 600;	
+    line-height: 32px;
+}
+ 
+
+.optionsText{ 
+    color: #344559;	
+    font-family: "Nunito Sans";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+}
+ 
+/* Create a custom checkbox */
+.checkbox {
+    display: inline-flex;
+    align-items: center;  
+    text-align: center;
+    justify-content: space-around;
+    top: 0;
+    left: 0; 
+    background-color: white;
+    border: 0px;
+    border-width: 2px 2px 2px 2px; 
+    margin-top: 5px; 
+    border: 2px solid #DEDCDC;
+    text-align: center;
+    vertical-align: middle;   
+     height: 77px;
+    width: 185px;	
+    border-radius: 38.5px; 
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.38);  
+}
+ 
+/* Create the checkbox/indicator (hidden when not checked) */
+.checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.yesnocheckboxWrapper{ 
+    align-items: top;
+    text-align: left;  
+    padding-left: 20px; 
+    padding-top: 20px;   
+}
+
+
+.checkboxWrapper{ 
+    align-items: top;
+    text-align: left;  
+    padding-left: 40px; 
+    padding-top: 20px;   
+}
+
+.checkboxContainer {
+    display: block;
+    padding-top: 30px; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-right: 180px;  
+    color: #344559;
+    font-family: Nunito Sans;	
+    font-size: 24px;
+    font-weight: bold;	
+    line-height: 40px; 
+}
+
+/* Hide the browser's default checkbox */
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    padding-left: 20px; 
+    text-align: center;
+    vertical-align: middle;
+ 
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxContainer:hover input ~ .checkbox {
+    background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxContainer input:checked ~ .checkbox {
+    color: #fff;
+    background-color:#0DA4C5;
+}
+
+
+/* Show the checkbox when checked */
+.checkboxContainer input:checked ~ .checkbox:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxContainer .checkbox:after {
+    left: 15px;
+    top: 8px;
+    width: 10px;
+    height: 18px;
+    border: solid #0DA4C5;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+.openChoiceQuestionContentWrapper {
+    border: 1px solid $choice-border-color;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    margin:auto;
+    padding: 10px;
+    text-align: left;
+}
+
+.openChoiceQuestionWrapper {
+    border: 0px solid $choice-border-color;
+    width: 70%;
+    border-radius: 10px 10px 10px 10px;
+    margin:auto;
+    padding: 10px;
+    text-align: left;
+}
+ 
+
+ 
+ 
+.yesNoQuestionRadioButton {
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius:2px 2px 2px 2px;
+    outline: none;
+    border: 2px solid gray;
+    padding: 2px;
+    background: $background-color;
+    vertical-align: middle;
+}
+
+.yesNoQuestionRadioButton:before {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+
+}
+
+.yesNoQuestionRadioButton:checked:before {
+    content: "\2713";
+    color: $accent-color;
+    font-size: 1.4em;
+    font-weight: bold;
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+}
+
+ 
+
+.radioChoiceSelectorWrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 1; 
+    font-size:20px;
+}
+
+.radioChoiceSelectorWrapper > div:first-child {
+    margin: 0 2vw;
+}
+.radioChoiceSelectorWrapper > div:last-child {
+    flex: 1;
+    text-align: left;
+}
+                                    
+
+
+.checkboxChoiceWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+} 
+  
+ 
+
+ .numberEntryBoxInputWrapper input{  
+    max-height: 77px; 
+    height: 77px;	 
+    border: 3px solid #DEDCDC;
+    border-radius: 6px;
+    background-color: #FFFFFF; 
+}
+
+.numberEntryBoxInputWrapper input:focus { 
+    max-height: 77px; 
+    height: 77px;	 
+    border: 4px solid #0DA4C5;
+    border-radius: 10px;
+    background-color: #FFFFFF; 
+    margin:auto;  
+    outline: none; 
+    color: #344559;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: bold;	
+    line-height: 40px;   
+    font-style: normal; 
+ }
+
+
+ 
+ .textEntryBoxInputWrapper input{
+    max-height: 77px; 
+    height: 77px;	 
+    border: 3px solid #DEDCDC;
+    border-radius: 6px;
+    background-color: #FFFFFF; 
+    margin:auto;
+ }
+ .textEntryBoxInputWrapper input:focus { 
+    max-height: 77px; 
+    height: 77px;	 
+    border: 4px solid #0DA4C5;
+    border-radius: 10px;
+    background-color: #FFFFFF; 
+    margin:auto;  
+    outline: none; 
+    color: #344559;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: bold;	
+    line-height: 40px;   
+    font-style: normal; 
+ }
+ .openChoceTextboxWrapper{  
+     padding-top: 60px;
+
+ }
+
+  .openChoceTextboxWrapper  input{ 
+    height: 77px;
+    width: 550px;	   
+    border: 3px solid #DEDCDC;
+    border-radius: 6px;
+    background-color: #FFFFFF;  
+    text-align: left;  
+  }
+
+ .openChoceTextboxWrapper input:focus{   
+    border: 4px solid #0DA4C5;  
+    border-radius: 6px;
+    background-color: #FFFFFF;  
+    text-align: left; 
+}
+
+ 
+  
+.painScaleContentWrapperImg { 
+    max-width: 500px;
+    margin: 0px 0px 20px 0px;
+}
+
+.empty20{
+    width: 100px;
+    height: 20px;;
+}
+
+.empty40{
+    width: 100px;
+    height: 40px;;
+}
+
+
+.painScaleInputWrapper {
+    max-width: 250px; 
+    margin: 0px 0px 20px 0px;
+}
+ 
+.line {	
+    margin: 0px 40px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 2px;
+    width: 90%;	
+    border: 1px solid #DEDCDC;
+}
+ 
+
+
+.radioButton {
+    -webkit-appearance: none; 
+    height: 43px;	
+    width: 43px;
+    border: 3px solid #DEDCDC;
+    background-color: #FFFFFF; 
+    border-radius: 50%;
+    outline: none; 
+}
+
+.radioButton:before {
+    content: '';
+    display: block;  
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+.radioButton:checked:before {
+    background: #0DA4C5;
+}
+
+.radioButton:checked {
+    border-color: #0DA4C5;
+}
+
+.greyTemplate {
+    background-color: $grey-template-color;
+    border-radius: 10px 10px 10px 10px;
+}
+ 

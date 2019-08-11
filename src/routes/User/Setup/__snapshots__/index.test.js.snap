@@ -1,0 +1,1946 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The "Create My Account" is disabled until the checkbox to accept the nopp,terms is selected 1`] = `
+<button
+  class="button btn btn-secondary disabled"
+  disabled=""
+  id="btnCreateMyAccountSetup"
+  type="submit"
+>
+  Create My Account
+</button>
+`;
+
+exports[`The "Create My Account" is disabled until the checkbox to accept the nopp,terms is selected 2`] = `
+<button
+  class="button btn btn-secondary"
+  id="btnCreateMyAccountSetup"
+  type="submit"
+>
+  Create My Account
+</button>
+`;
+
+exports[`clicks on Notice of Privacy Practices | Policies popup show 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="policyWrapper"
+    >
+      <div
+        class="policyContent"
+      >
+        <div
+          class="tabWrapper"
+        >
+          <div
+            class="tabActive"
+          >
+            Notice of Privacy Practices
+          </div>
+          <div
+            class="tab"
+          >
+            End User License Agreement
+          </div>
+          <div
+            class="tab"
+          >
+            Terms and Conditions
+          </div>
+          <div
+            class="tabSpace"
+          />
+        </div>
+        <div
+          class="contentWrapper"
+        >
+          <div
+            class="scrollDiv"
+          >
+            <span>
+              <meta
+                charset="UTF-8"
+              />
+              
+
+              <meta
+                version="v1.0"
+              />
+              
+nopp content
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="buttonWrapper"
+    >
+      <button
+        class="button btn btn-secondary"
+        type="button"
+      >
+        Done
+      </button>
+    </div>
+  </div>
+  <div
+    class="content container"
+  >
+    <p />
+    <span
+      class="heading2"
+    >
+      Let's get you set up with an account.
+    </span>
+    <div
+      class="formWrapper"
+    >
+      <form
+        class=""
+      >
+        <div>
+          <input
+            class="inputText"
+            name="email"
+            placeholder="email"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            autocomplete="new-password"
+            class="passwordText"
+            ispassword="true"
+            name="password"
+            placeholder="password"
+            type="text"
+            value=""
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            class="passwordText"
+            ispassword="true"
+            name="rePassword"
+            placeholder="re-enter password"
+            type="text"
+            value=""
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="formHint"
+        >
+          <div>
+            Password must contain at least:
+            <ul>
+              <li>
+                - 8 characters
+              </li>
+              <li>
+                - One uppercase letter
+              </li>
+              <li>
+                - One lowercase letter
+              </li>
+              <li>
+                - One number
+              </li>
+              <li>
+                - One special character !@#$%^&*=
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="checkboxWrapper row"
+        >
+          <div
+            class="formLabel col-12 col-md-12"
+          >
+            <label
+              class="checkboxContainer"
+            >
+              <input
+                id="chkboxAgreeTerms"
+                type="checkbox"
+                value=""
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+                     I certify that all info I provide is correct and I have read and agree to the  
+            <span
+              class="noppCheckBoxWrapper"
+            >
+              <span
+                id="policies-button"
+              >
+                Notice of Privacy Practices, Terms of Service and End User License Agreement
+              </span>
+            </span>
+          </div>
+        </div>
+        <br />
+        <div>
+          <button
+            class="button btn btn-secondary disabled"
+            disabled=""
+            id="btnCreateMyAccountSetup"
+            type="submit"
+          >
+            Create My Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`email format must be validated and errors displayed when email input field has lost focus 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p />
+    <span
+      class="heading2"
+    >
+      Let's get you set up with an account.
+    </span>
+    <div
+      class="formWrapper"
+    >
+      <form
+        class=""
+      >
+        <div>
+          <input
+            class="inputTextError"
+            name="email"
+            placeholder="email"
+            type="email"
+            value="test"
+          />
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            autocomplete="new-password"
+            class="passwordText"
+            ispassword="true"
+            name="password"
+            placeholder="password"
+            type="text"
+            value=""
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            class="passwordText"
+            ispassword="true"
+            name="rePassword"
+            placeholder="re-enter password"
+            type="text"
+            value=""
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="textError"
+        >
+          Please enter a valid email address.
+        </div>
+        <div
+          class="formHint"
+        >
+          <div>
+            Password must contain at least:
+            <ul>
+              <li>
+                - 8 characters
+              </li>
+              <li>
+                - One uppercase letter
+              </li>
+              <li>
+                - One lowercase letter
+              </li>
+              <li>
+                - One number
+              </li>
+              <li>
+                - One special character !@#$%^&*=
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="checkboxWrapper row"
+        >
+          <div
+            class="formLabel col-12 col-md-12"
+          >
+            <label
+              class="checkboxContainer"
+            >
+              <input
+                id="chkboxAgreeTerms"
+                type="checkbox"
+                value=""
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+                     I certify that all info I provide is correct and I have read and agree to the  
+            <span
+              class="noppCheckBoxWrapper"
+            >
+              <span
+                id="policies-button"
+              >
+                Notice of Privacy Practices, Terms of Service and End User License Agreement
+              </span>
+            </span>
+          </div>
+        </div>
+        <br />
+        <div>
+          <button
+            class="button btn btn-secondary disabled"
+            disabled=""
+            id="btnCreateMyAccountSetup"
+            type="submit"
+          >
+            Create My Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`email format must be validated and errors displayed when email input field has lost focus 2`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p />
+    <span
+      class="heading2"
+    >
+      Let's get you set up with an account.
+    </span>
+    <div
+      class="formWrapper"
+    >
+      <form
+        class=""
+      >
+        <div>
+          <input
+            class="inputTextSuccess"
+            name="email"
+            placeholder="email"
+            type="email"
+            value="test@test.com"
+          />
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            autocomplete="new-password"
+            class="passwordText"
+            ispassword="true"
+            name="password"
+            placeholder="password"
+            type="text"
+            value=""
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            class="passwordText"
+            ispassword="true"
+            name="rePassword"
+            placeholder="re-enter password"
+            type="text"
+            value=""
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="formHint"
+        >
+          <div>
+            Password must contain at least:
+            <ul>
+              <li>
+                - 8 characters
+              </li>
+              <li>
+                - One uppercase letter
+              </li>
+              <li>
+                - One lowercase letter
+              </li>
+              <li>
+                - One number
+              </li>
+              <li>
+                - One special character !@#$%^&*=
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="checkboxWrapper row"
+        >
+          <div
+            class="formLabel col-12 col-md-12"
+          >
+            <label
+              class="checkboxContainer"
+            >
+              <input
+                id="chkboxAgreeTerms"
+                type="checkbox"
+                value=""
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+                     I certify that all info I provide is correct and I have read and agree to the  
+            <span
+              class="noppCheckBoxWrapper"
+            >
+              <span
+                id="policies-button"
+              >
+                Notice of Privacy Practices, Terms of Service and End User License Agreement
+              </span>
+            </span>
+          </div>
+        </div>
+        <br />
+        <div>
+          <button
+            class="button btn btn-secondary disabled"
+            disabled=""
+            id="btnCreateMyAccountSetup"
+            type="submit"
+          >
+            Create My Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`password validation for 1st password entry box is done after user finished typing 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p />
+    <span
+      class="heading2"
+    >
+      Let's get you set up with an account.
+    </span>
+    <div
+      class="formWrapper"
+    >
+      <form
+        class=""
+      >
+        <div>
+          <input
+            class="inputText"
+            name="email"
+            placeholder="email"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            autocomplete="new-password"
+            class="passwordTextError"
+            ispassword="true"
+            name="password"
+            placeholder="password"
+            type="text"
+            value="test"
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            class="passwordText"
+            ispassword="true"
+            name="rePassword"
+            placeholder="re-enter password"
+            type="text"
+            value=""
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="textError"
+        >
+          Password must be at least 8 characters long and contain at least one character, one number and one special character including !@#$%*=
+        </div>
+        <div
+          class="formHint"
+        >
+          <div>
+            Password must contain at least:
+            <ul>
+              <li>
+                - 8 characters
+              </li>
+              <li>
+                - One uppercase letter
+              </li>
+              <li>
+                - One lowercase letter
+              </li>
+              <li>
+                - One number
+              </li>
+              <li>
+                - One special character !@#$%^&*=
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="checkboxWrapper row"
+        >
+          <div
+            class="formLabel col-12 col-md-12"
+          >
+            <label
+              class="checkboxContainer"
+            >
+              <input
+                id="chkboxAgreeTerms"
+                type="checkbox"
+                value=""
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+                     I certify that all info I provide is correct and I have read and agree to the  
+            <span
+              class="noppCheckBoxWrapper"
+            >
+              <span
+                id="policies-button"
+              >
+                Notice of Privacy Practices, Terms of Service and End User License Agreement
+              </span>
+            </span>
+          </div>
+        </div>
+        <br />
+        <div>
+          <button
+            class="button btn btn-secondary disabled"
+            disabled=""
+            id="btnCreateMyAccountSetup"
+            type="submit"
+          >
+            Create My Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`password validation for 1st password entry box is done after user finished typing 2`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p />
+    <span
+      class="heading2"
+    >
+      Let's get you set up with an account.
+    </span>
+    <div
+      class="formWrapper"
+    >
+      <form
+        class=""
+      >
+        <div>
+          <input
+            class="inputText"
+            name="email"
+            placeholder="email"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            autocomplete="new-password"
+            class="passwordTextSuccess"
+            ispassword="true"
+            name="password"
+            placeholder="password"
+            type="text"
+            value="A12345678*a"
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            class="passwordText"
+            ispassword="true"
+            name="rePassword"
+            placeholder="re-enter password"
+            type="text"
+            value=""
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="formHint"
+        >
+          <div>
+            Password must contain at least:
+            <ul>
+              <li>
+                - 8 characters
+              </li>
+              <li>
+                - One uppercase letter
+              </li>
+              <li>
+                - One lowercase letter
+              </li>
+              <li>
+                - One number
+              </li>
+              <li>
+                - One special character !@#$%^&*=
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="checkboxWrapper row"
+        >
+          <div
+            class="formLabel col-12 col-md-12"
+          >
+            <label
+              class="checkboxContainer"
+            >
+              <input
+                id="chkboxAgreeTerms"
+                type="checkbox"
+                value=""
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+                     I certify that all info I provide is correct and I have read and agree to the  
+            <span
+              class="noppCheckBoxWrapper"
+            >
+              <span
+                id="policies-button"
+              >
+                Notice of Privacy Practices, Terms of Service and End User License Agreement
+              </span>
+            </span>
+          </div>
+        </div>
+        <br />
+        <div>
+          <button
+            class="button btn btn-secondary disabled"
+            disabled=""
+            id="btnCreateMyAccountSetup"
+            type="submit"
+          >
+            Create My Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`password validation for 2nd password entry box must be done as user is typing 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p />
+    <span
+      class="heading2"
+    >
+      Let's get you set up with an account.
+    </span>
+    <div
+      class="formWrapper"
+    >
+      <form
+        class=""
+      >
+        <div>
+          <input
+            class="inputText"
+            name="email"
+            placeholder="email"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            autocomplete="new-password"
+            class="passwordTextSuccess"
+            ispassword="true"
+            name="password"
+            placeholder="password"
+            type="text"
+            value="A12345678*a"
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            class="passwordTextError"
+            ispassword="true"
+            name="rePassword"
+            placeholder="re-enter password"
+            type="text"
+            value="test"
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="textError"
+        >
+          Your passwords do not match, try again.
+        </div>
+        <div
+          class="formHint"
+        >
+          <div>
+            Password must contain at least:
+            <ul>
+              <li>
+                - 8 characters
+              </li>
+              <li>
+                - One uppercase letter
+              </li>
+              <li>
+                - One lowercase letter
+              </li>
+              <li>
+                - One number
+              </li>
+              <li>
+                - One special character !@#$%^&*=
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="checkboxWrapper row"
+        >
+          <div
+            class="formLabel col-12 col-md-12"
+          >
+            <label
+              class="checkboxContainer"
+            >
+              <input
+                id="chkboxAgreeTerms"
+                type="checkbox"
+                value=""
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+                     I certify that all info I provide is correct and I have read and agree to the  
+            <span
+              class="noppCheckBoxWrapper"
+            >
+              <span
+                id="policies-button"
+              >
+                Notice of Privacy Practices, Terms of Service and End User License Agreement
+              </span>
+            </span>
+          </div>
+        </div>
+        <br />
+        <div>
+          <button
+            class="button btn btn-secondary disabled"
+            disabled=""
+            id="btnCreateMyAccountSetup"
+            type="submit"
+          >
+            Create My Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`password validation for 2nd password entry box must be done as user is typing 2`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p />
+    <span
+      class="heading2"
+    >
+      Let's get you set up with an account.
+    </span>
+    <div
+      class="formWrapper"
+    >
+      <form
+        class=""
+      >
+        <div>
+          <input
+            class="inputText"
+            name="email"
+            placeholder="email"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            autocomplete="new-password"
+            class="passwordTextSuccess"
+            ispassword="true"
+            name="password"
+            placeholder="password"
+            type="text"
+            value="A12345678*a"
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            class="passwordTextSuccess"
+            ispassword="true"
+            name="rePassword"
+            placeholder="re-enter password"
+            type="text"
+            value="A12345678*a"
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="formHint"
+        >
+          <div>
+            Password must contain at least:
+            <ul>
+              <li>
+                - 8 characters
+              </li>
+              <li>
+                - One uppercase letter
+              </li>
+              <li>
+                - One lowercase letter
+              </li>
+              <li>
+                - One number
+              </li>
+              <li>
+                - One special character !@#$%^&*=
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="checkboxWrapper row"
+        >
+          <div
+            class="formLabel col-12 col-md-12"
+          >
+            <label
+              class="checkboxContainer"
+            >
+              <input
+                id="chkboxAgreeTerms"
+                type="checkbox"
+                value=""
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+                     I certify that all info I provide is correct and I have read and agree to the  
+            <span
+              class="noppCheckBoxWrapper"
+            >
+              <span
+                id="policies-button"
+              >
+                Notice of Privacy Practices, Terms of Service and End User License Agreement
+              </span>
+            </span>
+          </div>
+        </div>
+        <br />
+        <div>
+          <button
+            class="button btn btn-secondary disabled"
+            disabled=""
+            id="btnCreateMyAccountSetup"
+            type="submit"
+          >
+            Create My Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`register API returns 409 Conflict with email already exist, display error and link to Login page 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p />
+    <span
+      class="heading2"
+    >
+      Let's get you set up with an account.
+    </span>
+    <div
+      class="formWrapper"
+    >
+      <form
+        class=""
+      >
+        <div>
+          <input
+            class="inputTextError"
+            name="email"
+            placeholder="email"
+            type="email"
+            value="test@test.com"
+          />
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            autocomplete="new-password"
+            class="passwordTextSuccess"
+            ispassword="true"
+            name="password"
+            placeholder="password"
+            type="text"
+            value="A12345678*a"
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            class="passwordTextSuccess"
+            ispassword="true"
+            name="rePassword"
+            placeholder="re-enter password"
+            type="text"
+            value="A12345678*a"
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Hide 
+          </button>
+        </div>
+        <div>
+          <div
+            class="textError"
+          >
+            This email address is already registered.
+            <br />
+            Click below to Login.
+          </div>
+          <div>
+            <a
+              href="/login"
+            >
+              Take me to Login screen
+            </a>
+          </div>
+        </div>
+        <div
+          class="checkboxWrapper row"
+        >
+          <div
+            class="formLabel col-12 col-md-12"
+          >
+            <label
+              class="checkboxContainer"
+            >
+              <input
+                id="chkboxAgreeTerms"
+                type="checkbox"
+                value=""
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+                     I certify that all info I provide is correct and I have read and agree to the  
+            <span
+              class="noppCheckBoxWrapper"
+            >
+              <span
+                id="policies-button"
+              >
+                Notice of Privacy Practices, Terms of Service and End User License Agreement
+              </span>
+            </span>
+          </div>
+        </div>
+        <br />
+        <div>
+          <button
+            class="button btn btn-secondary disabled"
+            disabled=""
+            id="btnCreateMyAccountSetup"
+            type="submit"
+          >
+            Create My Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p />
+    <span
+      class="heading2"
+    >
+      Let's get you set up with an account.
+    </span>
+    <div
+      class="formWrapper"
+    >
+      <form
+        class=""
+      >
+        <div>
+          <input
+            class="inputText"
+            name="email"
+            placeholder="email"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            autocomplete="new-password"
+            class="passwordText"
+            ispassword="true"
+            name="password"
+            placeholder="password"
+            type="password"
+            value=""
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Show
+          </button>
+        </div>
+        <div
+          class="passwordwrapper"
+        >
+          <input
+            class="passwordText"
+            ispassword="true"
+            name="rePassword"
+            placeholder="re-enter password"
+            type="password"
+            value=""
+          />
+          <button
+            class="showHideButton btn btn-secondary"
+            type="button"
+          >
+            Show
+          </button>
+        </div>
+        <div
+          class="formHint"
+        >
+          <div>
+            Password must contain at least:
+            <ul>
+              <li>
+                - 8 characters
+              </li>
+              <li>
+                - One uppercase letter
+              </li>
+              <li>
+                - One lowercase letter
+              </li>
+              <li>
+                - One number
+              </li>
+              <li>
+                - One special character !@#$%^&*=
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="checkboxWrapper row"
+        >
+          <div
+            class="formLabel col-12 col-md-12"
+          >
+            <label
+              class="checkboxContainer"
+            >
+              <input
+                id="chkboxAgreeTerms"
+                type="checkbox"
+              />
+              <span
+                class="checkbox"
+              />
+            </label>
+                     I certify that all info I provide is correct and I have read and agree to the  
+            <span
+              class="noppCheckBoxWrapper"
+            >
+              <span
+                id="policies-button"
+              >
+                Notice of Privacy Practices, Terms of Service and End User License Agreement
+              </span>
+            </span>
+          </div>
+        </div>
+        <br />
+        <div>
+          <button
+            class="button btn btn-secondary disabled"
+            disabled=""
+            id="btnCreateMyAccountSetup"
+            type="submit"
+          >
+            Create My Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

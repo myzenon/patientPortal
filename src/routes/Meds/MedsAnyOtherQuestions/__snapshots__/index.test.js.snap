@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <div
+      class="heading1"
+    >
+      EFFEXOR XR 75MG
+    </div>
+    <p />
+    <div
+      class="questions"
+    >
+      Ask our pharmacists any questions you have about EFFEXOR XR 75MG.
+    </div>
+    <p />
+    <div>
+      <span
+        class="heading3"
+      >
+        Please enter them below.
+      </span>
+    </div>
+    <p />
+    <div
+      class="textBoxInputWrapper"
+    >
+      <textarea
+        autofocus=""
+        name="question"
+        placeholder="Write your questions here. [OPTIONAL]"
+        type="text"
+      />
+    </div>
+    <button
+      class="button btn btn-secondary"
+      id="btnNextMedsAnyOtherQuestions"
+      type="button"
+    >
+      <b>
+          NEXT 
+      </b>
+    </button>
+  </div>
+  <p />
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

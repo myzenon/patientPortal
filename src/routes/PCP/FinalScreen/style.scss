@@ -1,0 +1,23 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.congratulations {
+    font-size: 2em;
+    color: $accent-color;
+    font-weight: bold;
+}
+
+.mediaWrapper {
+    margin-top: 50px;
+}
+
+.mediaWrapper > div > div {
+    border: 1px solid $finalscreen-border-color;
+    height: 400px;
+}

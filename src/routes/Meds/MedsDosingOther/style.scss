@@ -1,0 +1,109 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/global.scss';
+@import '~themes/css/styles.scss';
+
+.content {
+    @include content-wrapper(); 
+}
+ 
+.heading{ 
+    color: #11839E;
+    font-family: Nunito Sans;	
+    font-size: 28px;
+    font-weight: 600;	
+    line-height: 41px;  
+    font-weight: bold;  
+    text-align: left;  
+    padding-left: 33px;
+    padding-top: 43px;
+   
+ }
+
+ 
+ .subHeading{  
+    text-align: left;  
+    height: 82px;
+    width: 841px;
+    color: #344559;
+    font-family: Nunito Sans;	
+    font-size: 24px;	
+    font-weight: 600;
+    line-height: 3px; 
+    padding-left: 33px; 
+    padding-top: 15px;
+
+ }
+        
+.inputWrapper {
+    align-items: top;
+    text-align: left;
+    padding-left: 40px;   
+    padding-top: 20px; 
+}
+
+.empty30{
+    width: 100%;
+    height: 30px; 
+}
+ 
+.empty40{
+    width: 100%;
+    height: 45px;
+   
+}
+
+.empty10{
+    width: 100%;
+    height: 10px; 
+}
+
+
+.contentImg { 
+    object-fit: cover; 
+    height: 205px;
+    width: 277px;	 
+    border-radius: 6px; 
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.14);  
+}
+    
+  
+.inputDescTextWrapper {
+    max-width: 650px;
+    margin: auto; 
+    height: 100%;
+}
+ 
+.formWrapper {
+    margin-top: 50px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}  
+   
+.button {
+    @include button(90px);
+    width: 40% !important;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+ 
+
+.textError {
+    @include global-text-error(); 
+    font-size: 18px;
+}
+
+.questions {
+    @extend .heading2;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+ 

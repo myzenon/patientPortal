@@ -1,0 +1,41 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: center;
+}
+
+.content > p {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.content > div {
+    text-align: center;
+}
+
+.formWrapper {
+    border: 1px solid $accent-color;
+    padding: 15px 25px; 
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.formWrapper > form > div {
+    margin: 20px 0;
+}
+ 
+.passwordRule {
+    color: $accent-color;
+}
+ 
+.button {
+    @include button(300px);
+    width: 100% !important;
+}
+ 
+.textError {
+    @include global-text-error();
+}

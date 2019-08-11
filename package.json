@@ -1,0 +1,106 @@
+{
+  "name": "patientportal",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "0.17.1",
+    "bootstrap": "4.1.3",
+    "concat-files": "0.1.1",
+    "downloadjs": "1.4.7",
+    "global": "4.3.2",
+    "history": "4.7.2",
+    "identity-obj-proxy": "3.0.0",
+    "moment-timezone": "0.5.21",
+    "node-sass": "^4.7.2",
+    "prop-types": "15.6.1",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "react-ga": "2.5.3",
+    "react-icons": "2.2.7",
+    "react-idle": "3.0.0",
+    "react-pdf": "^4.0.0",
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-scripts": "1.1.5",
+    "reactstrap": "5.0.0-alpha.3",
+    "redux": "4.0.0",
+    "redux-persist": "5.10.0",
+    "redux-promise": "0.6.0",
+    "redux-thunk": "2.3.0",
+    "sass-loader": "^6.0.6",
+    "svg-react-loader": "^0.4.6"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --hot --config webpack.config.local.js",
+    "build": "cross-env NODE_ENV=production REGION=us-east-1 webpack --config webpack.config.production.js",
+    "drp": "cross-env NODE_ENV=production REGION=us-west-2 webpack --config webpack.config.production.js",
+    "dev": "cross-env NODE_ENV=development REGION=us-east-1 webpack --config webpack.config.dev.js",
+    "test": "jest --watch false",
+    "test:watch": "jest --watchAll",
+    "awsapi": "node ./aws-api/merge.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.2.3",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "enzyme": "^3.1.1",
+    "enzyme-adapter-react-16": "^1.0.4",
+    "enzyme-to-json": "^3.2.2",
+    "eslint": "^4.12.0",
+    "eslint-plugin-react": "^7.5.1",
+    "file-loader": "^1.1.5",
+    "html-loader": "^0.5.5",
+    "jest": "^21.2.1",
+    "jest-cli": "^22.0.4",
+    "jest-css-modules": "^1.1.0",
+    "jest-junit": "^3.1.0",
+    "jest-localstorage-mock": "^2.0.1",
+    "jest-webpack": "^0.3.0",
+    "jest-worker": "^22.2.2",
+    "moxios": "^0.4.0",
+    "react-redux": "^5.0.6",
+    "react-router-test-context": "^0.1.0",
+    "react-test-renderer": "^16.0.0",
+    "redux-testkit": "^1.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.5",
+    "yarn": "^1.3.2"
+  },
+  "jest-junit": {
+    "suiteName": "jest tests",
+    "output": "./junit.xml",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "ancestorSeparator": " › ",
+    "usePathForSuiteName": "true"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
+    "setupFiles": [
+      "<rootDir>/src/config/test/setupTests.js"
+    ],
+    "testResultsProcessor": "jest-junit",
+    "moduleDirectories": [
+      "src",
+      "node_modules"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/config/test/fileTransformer.js"
+    },
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    }
+  }
+}

@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly | Total number of meds to review is length(cmr.medications) 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="progressInfoWraper"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-3 col-sm-3 offset-sm-4 col-md-3 offset-md-3 col-lg-3 offset-lg-3"
+      >
+        <img
+          alt="look"
+          src="look.png"
+          width="50"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="row"
+    >
+      <div
+        class="col-12 offset-2 col-sm-6 offset-sm-5 col-md-6 offset-md-4 col-lg-2 offset-lg-3"
+      >
+        Click here anytime, to see the medications you have reviewed.
+      </div>
+    </div>
+  </div>
+  <div
+    class="content container"
+  >
+    <br />
+    <p>
+      Great! Let's get Started!
+    </p>
+    <p>
+      <strong>
+        Rita
+      </strong>
+      , based on our information we have identified
+    </p>
+    <div
+      class="number"
+    >
+      <p>
+        <strong>
+          5
+        </strong>
+      </p>
+    </div>
+    <p>
+      medications we'd like to talk to you about.
+    </p>
+    <a
+      href="/meds-verify-drug/000080833"
+    >
+      <button
+        class="button btn btn-secondary"
+      >
+        <b>
+          NEXT
+        </b>
+      </button>
+    </a>
+    <p />
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

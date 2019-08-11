@@ -1,0 +1,265 @@
+@import '~themes/colors.scss'; 
+@import '~themes/css/styles.scss';  
+
+.wrapper { 
+    height: 114px !important;	 
+    border: 1px solid #DBDBDB !important;
+    background-color: #F8FAFA !important;
+    width: 100% !important;  
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo { 
+    height: 53.29px;
+    width: 117.71px; 
+    margin-top: 15px;
+}
+ 
+.logoLogin { 
+    height: 53.29px;
+    width: 117.71px;  
+}
+
+
+.leftSideWrapper {
+    display: inline ;  
+    align-items: center;
+    vertical-align: middle; 
+    padding-top: 15px;
+
+}
+.rightSideWrapper{
+    display: inline ;  
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 15px;  
+}
+
+ 
+.nameCircle { 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px; 
+    color: $navbar-color; 
+    height: 58.8px;
+    width: 58.8px; 
+    background-color: #D8E4E7;  
+}
+
+.nameCircle:hover
+{ 
+    background-color: darken(#D8E4E7,6%); 
+}
+
+
+
+.nameCircleText{ 
+    color: #09A7C9;
+    font-family: "Nunito Sans";
+    font-size: 21.6px;
+    font-weight: 900;	
+    line-height: 30px;
+}
+
+.UserMenuArrow {  
+    color: #09A7C9;
+    position:absolute;
+    cursor: pointer;
+    width: 30px;
+    height:70px;  
+}
+
+
+.arrow {  
+    width: 30px;
+    height:70px;  
+} 
+
+.userMenu { 
+    font-family: Nunito Sans; 
+    padding-top: 20px;
+    padding-left: 10%;  
+    display: inline-block;
+    position: relative;
+    cursor: pointer; 
+    color: #0E849E;	 
+    font-size: 22px;	
+    font-weight: bold;	
+    line-height: 30px; 
+    z-index: 55; 	 
+    text-align: right; 
+} 
+
+
+
+.helpMenu1 {
+    padding-top: 13px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer; 
+    color: #0E849E;	
+    font-family: Nunito Sans;
+    font-size: 22px;	
+    font-weight: bold;	
+    line-height: 30px; 
+    z-index: 50; 	 
+    text-align: right; 
+}
+  
+.helpMenu1:hover
+{ 
+    color: darken(#0E849E,6%); 
+}
+
+.myProgress {   
+    padding-top: 13px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer; 
+    color: #0E849E;	
+    font-family: Nunito Sans;
+    font-size: 22px;	
+    font-weight: bold;	
+    line-height: 30px; 
+    z-index: 50; 	 
+    text-align: right; 
+    padding-left: 100px;
+    text-align: left;
+}
+
+.myProgress:hover
+{ 
+    color: darken(#0E849E,6%); 
+}
+.myProgressExpandWrapper {
+    position: absolute; 
+    width: calc(100vw - 30px);
+    max-width: 800px;
+    color: #2F758C;
+    z-index: 150;
+    font-weight: normal;   
+    margin:  -1.0em 0 0 -6.6em;  
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+    .myProgress {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .myProgressExpandWrapper {
+        left: 0; 
+    }
+}
+
+.myProgressExpand {
+   width: 100%;
+   padding: 30px;
+   background-color: #FAFAFA;
+   box-shadow: 0px 0px 10px #888;
+   overflow:scroll;  
+}
+
+.myProgressTold {
+    font-size: 1.4em;
+    color: $accent-color;
+    font-weight: bold;
+}
+
+.myProgressStill {
+    font-size: 1.4em;
+    color: #F00;
+    font-weight: bold;
+}
+
+.myProgessMedsListWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.myProgressMedsList {
+    flex: 1;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #2F758C;
+    word-wrap: break-word;
+    max-width: 50ch;
+}
+
+.triangle {
+    width: 200px;
+    height: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.triangle:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #FAFAFA;
+    transform: rotate(45deg);
+    top: 10px;
+    left: 10%;
+    box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
+  }
+
+// This code is used when the screen width of website is less than 650px | then both of this class will apply and override the arrtibute that defined.
+@media screen and (max-width: 650px) {
+    .myProgressExpandWrapper {     
+        max-width: 100vw;       
+        font-size: 0.6em;         
+    }
+    .helpMenu1 {
+        font-size: 0.8em;
+        margin-right: 5px;
+    }
+    .userMenu {
+        font-size: 0.8em;
+    }
+    .nameCircle {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+    .myProgress {
+        font-size: 0.8em;
+        margin-left: 5px;
+    }
+    .logo {
+        height: 0px;
+    }
+    .caregiverRegisterButton {
+        font-size: 0.8em;  
+    }
+}
+ 
+
+.buttonWrapper{  
+    padding-left: 50px;    
+}
+
+.buttonWrapper button {  
+    height: 49px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+    padding-top: 5px;  
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;  
+}
+
+.icon{
+    height: 30px;	
+    width: 30px;
+}

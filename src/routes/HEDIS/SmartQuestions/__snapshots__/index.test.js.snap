@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <br />
+    <div
+      class=""
+    >
+      <div
+        class="openChoiceQuestionContentWrapper"
+      >
+        <p>
+          Do you have any allergies?
+        </p>
+        <div
+          class="openChoiceQuestionWrapper"
+        >
+          <div>
+            <div
+              class="radioChoiceWrapper"
+            >
+              <div
+                class="radioChoiceSelectorWrapper"
+              >
+                <div>
+                  <input
+                    class="radioButton"
+                    name="smartQuestion_f2f28b65-5f5e-4r17-901a-26asdf8ffd2_answer"
+                    type="radio"
+                    value="1"
+                  />
+                </div>
+                <div>
+                  <span
+                    class=""
+                  >
+                    Yes (if yes, enter allergens.)
+                  </span>
+                </div>
+              </div>
+              <span
+                class="openChoiceQuestionTextboxWrapper"
+              >
+                <input
+                  class="inputText"
+                  disabled=""
+                  name="smartQuestion_f2f28b65-5f5e-4r17-901a-26asdf8ffd2_value"
+                  placeholder=""
+                  type="text"
+                  value=""
+                />
+                  
+              </span>
+            </div>
+            <div
+              class="radioChoiceWrapper"
+            >
+              <div
+                class="radioChoiceSelectorWrapper"
+              >
+                <div>
+                  <input
+                    class="radioButton"
+                    name="smartQuestion_f2f28b65-5f5e-4r17-901a-26asdf8ffd2_answer"
+                    type="radio"
+                    value="2"
+                  />
+                </div>
+                <div>
+                  <span
+                    class=""
+                  >
+                    No
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <button
+      class="button btn btn-secondary"
+      type="button"
+    >
+      <b>
+        NEXT
+      </b>
+    </button>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="stepCompleted"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumberActive"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumberActive"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

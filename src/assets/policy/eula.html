@@ -1,0 +1,630 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta version="v1.0">
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073697537 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-language:AR-SA;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-priority:99;
+	mso-style-link:"Comment Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-language:AR-SA;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 234.0pt right 468.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-language:AR-SA;}
+span.MsoCommentReference
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-language:AR-SA;}
+p.DocID, li.DocID, div.DocID
+	{mso-style-name:DocID;
+	mso-style-priority:25;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-language:AR-SA;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.RBBasic, li.RBBasic, div.RBBasic
+	{mso-style-name:"RB Basic";
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-language:AR-SA;}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Comment Text";
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Cordia New";
+	mso-bidi-theme-font:minor-bidi;
+	mso-bidi-language:AR-SA;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("Arine%20EULA%20v1.0%2011_Jan_18.fld/header.html") fs;
+	mso-footnote-continuation-separator:url("Arine%20EULA%20v1.0%2011_Jan_18.fld/header.html") fcs;
+	mso-endnote-separator:url("Arine%20EULA%20v1.0%2011_Jan_18.fld/header.html") es;
+	mso-endnote-continuation-separator:url("Arine%20EULA%20v1.0%2011_Jan_18.fld/header.html") ecs;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-page-numbers:1;
+	mso-title-page:yes;
+	mso-first-footer:url("Arine%20EULA%20v1.0%2011_Jan_18.fld/header.html") ff1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Cordia New";
+	mso-bidi-theme-font:minor-bidi;
+	mso-bidi-language:AR-SA;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72" style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>Arine End User License Agreement<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;mso-outline-level:3'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-fareast-language:ZH-CN;mso-bidi-font-weight:
+bold'>Effective: January 1, 2018<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'>CAREFULLY
+READ THE FOLLOWING TERMS AND CONDITIONS (&quot;</span><strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial;color:#333333'>AGREEMENT</span></strong><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'>&quot;)
+BEFORE USING, DOWNLOADING OR OTHERWISE ACCESSING THE SOFTWARE PROVIDED TO YOU
+BY ARINE INC. (“</span><strong><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial;color:#333333'>ARINE</span></strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+"Times New Roman"'>”). THE SOFTWARE IS LICENSED BY ARINE TO YOU, SOLELY FOR
+YOUR PERSONAL USE AS SET FORTH BELOW. IF YOU DO NOT AGREE TO THE TERMS AND
+CONDITIONS OF THIS AGREEMENT, DO NOT USE, DOWNLOAD OR OTHERWISE ACCESS THE
+SOFTWARE. USING, DOWNLOADING, OR OTHERWISE ACCESSING ANY PART OF THE SOFTWARE
+INDICATES THAT YOU ACCEPT THESE TERMS. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'>References
+in this Agreement to “you” or “your” refer to both you and any person or entity
+on whose behalf you act, if any.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>LICENSE:</span></strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+"Times New Roman"'>&nbsp;Subject to the terms and conditions of this Agreement,
+Arine grants you a personal, limited, non-transferable (except as expressly set
+forth below), nonexclusive license to access and use this software program (the
+“</span><strong><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial;color:#333333'>Software</span></strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+"Times New Roman"'>”) on a device that you own or control. You are not
+permitted to use the Software in any manner not expressly authorized by this
+Agreement.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>RESTRICTIONS:</span></strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+"Times New Roman"'>&nbsp;This license does <u>not</u> allow you to use the
+Software on any devices&nbsp;that you do not own or control and you may not
+distribute or make the Software available over a network. You may not rent,
+lease, lend, sell, redistribute or sublicense the Software. You will not use
+the Software in connection with a service bureau, time-sharing or
+fee-for-service arrangement with third parties. If you dispose of any media
+embodying the Software, you will ensure that you have completely erased or
+otherwise destroyed any Software stored on such media. You may not remove any
+copyright, trademark, or other proprietary rights notices, and any disclaimer
+or warning notice included on or embedded in any part of the Software. Except
+as expressly set forth above, this Agreement does not grant you any rights,
+whether by license, ownership or otherwise, in or to the Software.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>NEW
+VERSIONS:</span></strong><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>&nbsp;The terms of this Agreement will
+govern any updates, upgrades or new versions of the Software provided by Arine
+that replace or supplement the original Software, unless such update, upgrade
+or new version is accompanied by a separate license, in which case the terms of
+such separate license will govern.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>NO
+ASSIGNMENT:</span></strong><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>&nbsp;The Software, or any rights
+granted hereunder, may not be transferred or assigned by you to another party. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>NO
+REVERSE ENGINEERING:</span></strong><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'>&nbsp;You may not
+copy (except as expressly permitted by this Agreement), reverse engineer,
+decompile, disassemble, attempt to derive the source code of, modify, or create
+derivative works of the Software, any updates or any part thereof (except and
+only to the extent that any foregoing restriction is prohibited by applicable
+law).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>OWNERSHIP:</span></strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+"Times New Roman"'>&nbsp;You acknowledge and agree that (i) the Software is licensed
+to you, not sold, (ii) Arine and its licensors reserve all rights not expressly
+granted to you hereunder, (iii) Arine owns all right, title and interest in and
+to the Software, including, but not limited to, any images, algorithms,
+photographs, animations, video, audio, music and text incorporated in the
+Software, and (iv) the Software is protected by United States copyright law and
+international treaties relating to the protection of intellectual property
+rights. You and Arine acknowledge that this Agreement is between you and Arine
+only, and that Arine is solely responsible for the Software and the content
+thereof. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>ASSUMPTION
+OF RISK:</span></strong><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>&nbsp;The Software is intended solely
+as a tool to help you better manage your healthcare through information,
+analysis, and communication. The Software is <u>not</u> a replacement for the
+medical advice of a healthcare professional. You should never disregard medical
+advice or delay seeking medical advice because of any information stored on,
+generated by or received through the Software (“</span><strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial;color:#333333'>Software-Related Information</span></strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+"Times New Roman"'>”). You are solely responsible for communicating
+health-related information to (and receiving feedback from) your healthcare
+provider(s). You are solely responsible for reviewing, interpreting and
+evaluating the accuracy and relevance of any Software-Related Information. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'>THE
+SOFTWARE-RELATED INFORMATION IS NOT INTENDED TO BE A SUBSTITUTE FOR
+PROFESSIONAL MEDICAL ADVICE, DIAGNOSIS OR TREATMENT. ALWAYS SEEK THE ADVICE OF
+A PHYSICIAN OR OTHER QUALIFIED HEALTHCARE PROVIDER WITH ANY QUESTIONS REGARDING
+A MEDICAL CONDITION.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'>IN
+ADDITION, YOU UNDERSTAND AND AGREE THAT IN PROVIDING SERVICES THROUGH THE
+SOFTWARE, ARINE RELIES ON A NUMBER OF THIRD PARTY PROVIDERS. ARINE HEREBY
+DISCLAIMS ANY LIABILITY WITH RESPECT TO THE SERVICES PROVIDED BY SUCH
+PROVIDERS. YOU SHOULD NOT RELY ON THE SOFTWARE FOR ANY LIFE-THREATENING
+CONDITION OR ANY OTHER SITUATION WHERE TIMELY ADMINISTRATION OF MEDICATIONS OR
+OTHER TREATMENT IS CRITICAL.<span style='mso-spacerun:yes'>  </span>IN THE
+EVENT OF AN EMERGENCY CALL 911 IMMEDIATELY.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>MODIFICATIONS:</span></strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+"Times New Roman"'>&nbsp;You acknowledge that Arine or its licensors, in their
+sole discretion, may from time to time, make modifications to the Software.
+Such modifications may require corresponding changes to be made in your
+systems. Changes or failure to make timely changes by you may sever or affect
+your access to the Software. Neither Arine nor its licensors is responsible for
+such effects and neither is obligated to provide any maintenance or support
+services with respect to the Software.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>SERVICES;
+THIRD PARTY MATERIALS:</span></strong><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'>&nbsp;<a
+style='mso-comment-reference:DRdV_2;mso-comment-date:20180111T1046;mso-comment-parent:
+1'></a><a style='mso-comment-reference:"JL\.P_1";mso-comment-date:20180111T0921'><span
+style='mso-comment-continuation:2'>The Software may enable access to Arine’s
+services and websites as well as third party services and web sites</span></a></span><span
+style='mso-comment-continuation:2'><span class=MsoCommentReference><span
+style='font-size:8.0pt;mso-fareast-font-family:Calibri'><span style='mso-special-character:
+comment'>&nbsp;</span></span></span></span><span class=MsoCommentReference><span
+style='font-size:8.0pt;mso-fareast-font-family:Calibri'><span style='mso-special-character:
+comment'>&nbsp;</span></span></span><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'> (<a
+style='mso-comment-reference:"JL\.P_3";mso-comment-date:20180111T1114'>collectively</a></span><span
+class=MsoCommentReference><span style='font-size:8.0pt;mso-fareast-font-family:
+Calibri'><span style='mso-special-character:
+comment'>&nbsp;</span></span></span><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'> and individually,
+&quot;<b style='mso-bidi-font-weight:normal'>Services</b>&quot;). Use of the
+Services may require internet access and you accept additional terms of service
+associated with such access. No portion of the Services may be reproduced in
+any form or by any means. You agree not to modify, rent, lease, loan, sell,
+distribute, or create derivative works based on the Services, in any manner,
+and you may not exploit the Services in any unauthorized way whatsoever,
+including but not limited to, by trespass or burdening network capacity. The
+Services may display, include or make available content, data, information,
+applications or materials from third parties (“<b style='mso-bidi-font-weight:
+normal'>Third Party Materials</b>”) or provide links to certain third party web
+sites. By using the Services, you acknowledge and agree that Arine is not
+responsible for examining or evaluating the content, accuracy, completeness,
+timeliness, validity, copyright compliance, legality, decency, quality or any
+other aspect of such Third Party Materials or third party web sites. In
+addition, third party services and Third Party Materials that may be accessed
+from, displayed on or linked to are not available in all languages or in all
+countries. Arine makes no representation that such services and Third Party
+Materials are appropriate or available for use in any particular location. To
+the extent you choose to access such services or Third Party Materials, you do
+so at your own risk and are responsible for compliance with any applicable
+laws. Arine and its licensors reserve the right to change, suspend, remove, or
+disable access to any Services at any time without notice. In no event will
+Arine be liable for the removal of or disabling of access to any such Services.
+Arine may also impose limits on the use of or access to certain Services, in
+any case and without notice or liability.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>DISCLAIMER
+OF WARRANTY:</span></strong><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>&nbsp;YOU EXPRESSLY ACKNOWLEDGE AND
+AGREE THAT USE OF THE SOFTWARE AND SOFTWARE-RELATED INFORMATION IS AT YOUR SOLE
+RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY
+AND EFFORT IS WITH YOU. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE
+SOFTWARE, SOFTWARE-RELATED INFORMATION AND SERVICES ARE PROVIDED &quot;AS
+IS&quot; AND “AS AVAILABLE,” WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND,
+AND ARINE AND ITS SUPPLIERS HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH
+RESPECT TO THE SOFTWARE, SOFTWARE-RELATED INFORMATION AND ANY SERVICES, EITHER
+EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF
+FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, TITLE AND
+NON-INFRINGEMENT OF THIRD PARTY RIGHTS. ARINE DOES NOT WARRANT AGAINST
+INTERFERENCE WITH YOUR ENJOYMENT OF THE SOFTWARE, THAT THE FUNCTIONS CONTAINED
+IN, OR SERVICES PERFORMED OR PROVIDED BY, THE SOFTWARE WILL MEET YOUR
+REQUIREMENTS, THAT THE OPERATION OF THE SOFTWARE OR SERVICES WILL BE
+UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE SOFTWARE OR SERVICES WILL
+BE CORRECTED. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY ARINE OR ITS
+AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY. SHOULD THE SOFTWARE OR
+SERVICES PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY
+SERVICING, REPAIR OR CORRECTION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION
+OF IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A
+CONSUMER, SO THE ABOVE EXCLUSION AND LIMITATIONS MAY NOT APPLY TO YOU. ARINE IS
+SOLELY RESPONSIBLE FOR ANY PRODUCT WARRANTIES, WHETHER EXPRESS OR IMPLIED BY
+LAW, TO THE EXTENT NOT EFFECTIVELY DISCLAIMED HEREIN. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>PRODUCT CLAIMS:</span></b><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+"Times New Roman"'> You and Arine acknowledge that Arine is responsible for
+addressing any claims of any third party or you relating to the Software or
+your possession and/or use of that Software, including, but not limited to: (i)
+product liability claims; (ii) any claim that the Software fails to conform to
+any applicable legal or regulatory requirement; and, (iii) claims arising under
+consumer protection or similar legislation. Notwithstanding anything herein to
+the contrary, this Agreement does not limit Arine’s liability to you beyond
+what is permitted by applicable law.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>LIMITATION
+OF LIABILITY:</span></strong><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>&nbsp;TO THE MAXIMUM EXTENT NOT
+PROHIBITED BY LAW, IN NO EVENT SHALL ARINE OR ITS SUPPLIERS BE LIABLE FOR
+PERSONAL INJURY, OR ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES
+WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF
+DATA, BUSINESS INTERRUPTION OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING
+OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE SOFTWARE OR
+SOFTWARE-RELATED INFORMATION, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF
+LIABILITY (CONTRACT, TORT OR OTHERWISE) AND EVEN IF ARINE HAS BEEN ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION
+OF LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO
+THIS LIMITATION MAY NOT APPLY TO YOU. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>EXPORT
+RESTRICTIONS:</span></strong><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>&nbsp;You agree that you will not
+export or re-export the Software or accompanying documentation (or any copies
+thereof) or any products utilizing the Software or such documentation in
+violation of any applicable laws or regulations of the United States, the European
+Union or the country in which you obtained them. By using the Software you
+represent and warrant to Arine that (i) you are not located in a country that
+is subject to a U.S. Government embargo, or that has been designated by the
+U.S. Government as a “terrorist supporting” country; and, (ii) you are not
+listed on any U.S. Government list of prohibited or restricted parties.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>TERM
+AND TERMINATION:</span></strong><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>&nbsp;This Agreement is effective until
+terminated. You may terminate it at any time by destroying the Software and
+documentation together with all copies and merged portions in any form. Arine
+may change, limit, suspend or terminate the Software, any services associated
+with the Software, or your access to the Software at any time. This Agreement
+will also terminate immediately if you fail to comply with any term or
+condition of this Agreement. Upon such termination you agree to destroy the
+Software and documentation, together with all copies.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>U.S.
+GOVERNMENT RIGHTS:</span></strong><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'>&nbsp;The Software
+and related documentation are &quot;Commercial Items,&quot; as that term is
+defined at 48 C.F.R. §2.101, consisting of &quot;Commercial Computer
+Software&quot; and &quot;Commercial Computer Software Documentation&quot;, as
+such terms are used in 48 C.F.R. §12.212 or 48 C.F.R. §227.7202, as applicable.
+Consistent with 48 C.F.R. §12.212 or 48 C.F.R. §227.7202-1 through 227.7202-4,
+as applicable, the Commercial Computer Software and Commercial Computer
+Software Documentation are being licensed to U.S. Government end users (a) only
+as Commercial Items and (b) with only those rights as are granted to all other
+end users pursuant to the terms and conditions herein. Unpublished-rights are
+reserved under the copyright laws of the United States.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoCommentText><strong><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial;color:#333333'>GOVERNING LAW:</span></strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+"Times New Roman"'>&nbsp;This Agreement shall be governed by the laws of the
+State of California and by the laws of the United States, excluding their
+conflicts of laws provisions. The United Nations Convention on Contracts for
+the International Sale of Goods (1980) is hereby excluded in its entirety from
+application to this Agreement. Any dispute, claim or controversy arising out of
+or relating to this agreement or the breach, termination, enforcement,
+interpretation or validity thereof, including the determination of the scope or
+applicability of this agreement to arbitrate, shall be determined by arbitration
+in San Francisco County, California before one arbitrator. The arbitration
+shall be administered by a nationally recognized arbitrator pursuant to its
+comprehensive arbitration rules and procedures and in accordance with the
+expedited procedures in those rules. Judgment on the award may be entered in
+any court having jurisdiction. This clause shall not preclude parties from
+seeking provisional remedies in aid of arbitration from a court of appropriate
+jurisdiction.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>SEVERABILITY:</span></strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+"Times New Roman"'>&nbsp;In the event any provision of this Agreement is found
+to be invalid, illegal or unenforceable, the validity, legality and
+enforceability of any of the remaining provisions shall not in any way be
+affected or impaired.<o:p></o:p></span></p>
+<p></p>
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>DRUG INFORMATION:</span></strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+"Times New Roman"'>&nbsp; <img src="../iodine_logo.png" height="36" width="189.75" alt="Iodine"><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial;color:#333333'>ENTIRE
+AGREEMENT:</span></strong><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>&nbsp;This Agreement sets forth the
+entire agreement between you and Arine, supersedes all prior agr</span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-theme-font:
+minor-latin'>eements, whether written or oral, with respect to the Software,
+and may be amended only in a writing signed by both parties.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-theme-font:minor-latin'>ARINE’S CONTACT INFORMATION: </span></b><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-theme-font:
+minor-latin'>Arine Inc., PO Box 460081, San Francisco, CA 94146, <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span class=MsoHyperlink><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-theme-font:
+minor-latin'>Any questions, complaints or claims with respect to the Software
+should be directed to Arine Customer Support at 1-833-ArineRx or
+support@arine.io.</span></span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
+ 
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+
+
+</div>
+
+</body>
+
+</html>

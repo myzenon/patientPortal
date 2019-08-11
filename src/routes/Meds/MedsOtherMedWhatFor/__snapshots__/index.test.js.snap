@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <span
+      class="heading1"
+    >
+      <strong>
+        EFFEXOR XR 75MG
+      </strong>
+    </span>
+    <p />
+    <div>
+      <div
+        class="imageWrapper"
+      >
+        <img
+          alt=""
+          class="contentImg"
+          src="https://rximage.nlm.nih.gov/image/images/gallery/original/00008-0833-21_RXNAVIMAGE10_3015981C.jpg"
+        />
+        <img
+          alt="Zoom-In"
+          class="imageMagnifyZoomIn"
+          src="magnify-in.png"
+        />
+      </div>
+    </div>
+    <div
+      class="questions"
+    >
+      If you would like to ask our pharmacist anything about EFFEXOR XR 75MG.
+    </div>
+    <p />
+    <div>
+      <span
+        class="heading3"
+      >
+        Please enter it below.
+      </span>
+    </div>
+    <p />
+    <div
+      class="textBoxInputWrapper"
+    >
+      <textarea
+        autofocus=""
+        name="question"
+        placeholder="Write your questions here. [OPTIONAL]"
+        type="text"
+      />
+    </div>
+    <button
+      class="button btn btn-secondary"
+      id="btnNextMedsAnyOtherQuestions"
+      type="button"
+    >
+      <b>
+          NEXT 
+      </b>
+    </button>
+  </div>
+  <p />
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

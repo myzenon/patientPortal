@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <div
+      class="heading2"
+    >
+      <b>
+         Welcome to Arine! 
+      </b>
+    </div>
+    <p>
+      We will help you understand your medicines and use them safely.
+    </p>
+    <p>
+      <button
+        class="button btn btn-secondary"
+        id="welcomeNewbtn"
+        type="button"
+      >
+        Start My Review
+      </button>
+    </p>
+    <div
+      class="inputWrapper row"
+    >
+      <div
+        class="col-12 col-sm-6"
+      >
+        <span
+          class="center"
+        >
+          <video
+            autoplay=""
+            class="video"
+            controls=""
+            src="https://s3.amazonaws.com/arine-content-public/web-site/video/arine_intro_v1.mov"
+          />
+          <p>
+            If you have any questions or any technical problems, please contact us
+            <br />
+            at 
+            <strong />
+             or email us at 
+            <strong />
+          </p>
+        </span>
+      </div>
+      <div
+        class="col-12 col-sm-6"
+      >
+        <br />
+        <div
+          class="wrapper"
+        >
+          <p>
+            Our goal is to provide you:
+          </p>
+          <p>
+            <strong>
+              BETTER HEALTH
+            </strong>
+            <br />
+            A trained pharmacist will help you achieve the maximum benefit from your medicines by ensuring that you are on the right medicines for your specific health conditions
+          </p>
+          <p>
+            <strong>
+              INCREASED SAFETY
+            </strong>
+            <br />
+            Some medicines may cause side effects or may not work well when taken incorrectly or with other medicines. The pharmacist will make sure that you are taking the right combination of medicines and also provide tips on how to manage any side effects.
+          </p>
+          <p>
+            <strong>
+              LOWER COSTS
+            </strong>
+            <br />
+            The pharmacist can also look for ways to save you money by recommending lower cost options or removing any unnecessary medicines.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+</div>
+`;

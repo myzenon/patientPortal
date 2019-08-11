@@ -1,0 +1,90 @@
+@import '~themes/mixins.scss';
+@import '~themes/colors.scss';
+
+.select {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #DEDCDC;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    text-align-last: center;
+    color: $label-color;
+    border-radius: 10px !important;
+    font-family: Arial;
+    background: $background-color;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none; 
+    background-color: #f8fafa; 
+    font-style: normal;   
+}
+
+.selectLeft {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #DEDCDC;
+    text-align: left;    
+    text-align-last: left;
+    font-weight: bold;
+    padding: 10px;
+    color: $label-color;
+    border-radius: 10px !important;
+    font-family: Arial;
+    background: $background-color;
+    outline: none; 
+    background-color: #f8fafa; 
+    font-style: normal;   
+    -webkit-appearance: none;
+}
+.selectLabel {position:relative}
+
+.selectLabel:after {  
+    content: url('data:image/svg+xml;charset=UTF-8,<svg width="20px" height="11px" viewBox="0 0 20 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Account-creation-(information-verification)" transform="translate(-1336.000000, -639.000000)" fill="#4C6077" fill-rule="nonzero"><g id="input" transform="translate(810.000000, 581.000000)"><path d="M527.682142,58 L544.317858,58 C545.813674,58 546.561582,59.7054774 545.506123,60.6997905 L537.188265,68.5357677 C536.531225,69.1547441 535.468775,69.1547441 534.818724,68.5357677 L526.493877,60.6997905 C525.438418,59.7054774 526.186326,58 527.682142,58 Z" id="down-dropdown-icon"></path></g></g></g></svg>');
+     right:8px; 
+    top:2px;
+    padding:0 0 1px;
+    border-bottom:0px solid $background-color;
+    position:absolute;
+    pointer-events:none;
+    cursor: default;
+    background: #f8fafa;
+    background-color:transparent;
+    -webkit-appearance: none;
+}
+
+.selectLabel:before {
+    content:'';
+    right:6px; 
+    top:0px;
+    width:20px; height:20px;
+    background: #f8fafa;
+    position:absolute;
+    pointer-events:none; 
+    cursor: default;
+    -webkit-appearance: none;
+}
+ 
+.selectError {
+    color: $input-text-error;
+    border: 1px solid $input-text-error;
+}
+ 
+
+.select:focus-within{
+    background-color: #f8fafa; 
+    border: 4px solid #0DA4C5;  
+    margin:0;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 20px;
+}
+ 
+.selectLeft:focus-within{
+    background-color: #f8fafa; 
+    border: 4px solid #0DA4C5;  
+    margin:0;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 20px;
+}

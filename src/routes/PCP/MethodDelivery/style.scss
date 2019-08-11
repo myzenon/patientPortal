@@ -1,0 +1,74 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.content p {
+    text-align: left;
+}
+
+.content table {
+    text-align: left;
+    margin: auto;
+}
+
+.content td:first-child {
+    padding-right: 30px;
+    color: $accent-color;
+    text-align: right;
+}
+
+.content td:last-child {
+    max-width: 500px;
+}
+
+.content td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.checkboxWrapper {
+   cursor: pointer;
+}
+
+
+.button {
+    @include button(90px);
+    width: 40% !important;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius:2px 2px 2px 2px;
+    outline: none;
+    border: 2px solid gray;
+    background: $background-color;
+    vertical-align: middle;
+}
+
+.checkbox:before {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+
+}
+
+.checkbox:checked:before {
+    content: "\2713";
+    color: $accent-color;
+    font-size: 1.4em;
+    font-weight: bold;
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: -20% auto;
+}

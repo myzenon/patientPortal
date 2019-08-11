@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="content"
+>
+  <p
+    class="title"
+  >
+    Carl, Your Review is Complete!
+  </p>
+  <p>
+    Please find your reports below.
+  </p>
+  <div>
+    <p>
+      Thank you for talking with us on &lt; cmr.completion date &gt; about your health and medications. Our Medication Therapy Management program helps you make sure that your medications are working
+    </p>
+    <p>
+      The action plan has steps you should take to help you get the best results from your medications.
+      <span
+        class="getPDFLink"
+      >
+        Carl Torres's Medication Action Plan (MAP)
+      </span>
+    </p>
+    <p>
+      The medication list will help you keep track of your medications and how to use them the right way.
+      <span
+        class="getPDFLink"
+      >
+        Carl Torres's Personal Medication List (PML)
+      </span>
+    </p>
+    <div>
+      <strong>
+        Suggestions from our pharmacists:
+      </strong>
+      <ul>
+        <li>
+          Have your action plan and medication list with you when you talk with your doctors, pharmacists, and other health care providers.
+        </li>
+        <li>
+          Ask your doctors, pharmacists, and other healthcare providers to update them at every visit.
+        </li>
+        <li>
+          Take your medication list with you if you go to the hospital or emergency room.
+        </li>
+        <li>
+          Give a copy of the action plan and medication list to your family or caregivers.
+        </li>
+      </ul>
+    </div>
+    <p>
+      We look forward to working with you and your doctors to help you stay healthy. If you want to talk about us about these reports, please call 
+      <strong>
+        1-833-arinerx (1-833-274-6379)
+      </strong>
+    </p>
+    <p>
+      This page is a summary of the following cover letter.
+      <span
+        class="getPDFLink"
+      >
+        Carl Torres's CMR Cover Letter (CL)
+      </span>
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,215 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+
+
+.inputText {
+    @include inputText();
+}
+
+.inputText:disabled {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #EBEFF0;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    color:#bdbdbd;
+    border-radius: 10px ;
+    font-family: Arial;
+  }
+
+.inputText:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #EBEFF0;
+}
+
+.inputTextSuccess:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $input-text-success;
+}
+
+.inputTextError:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $input-text-error;
+}
+.inputTextSuccess {
+    @include inputText();
+    color: $input-text-success;
+    border: 2px solid $input-text-success;
+}
+
+.inputTextError {
+    @include inputText();
+    color: $input-text-error;
+    border: 2px solid $input-text-error;
+}
+
+
+@mixin inputTextCenter {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #EBEFF0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px ;
+    color: #344559;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    font-style: normal;
+    outline: none;
+}
+
+.inputTextCenter {
+    @include inputTextCenter();
+    text-align: center;
+    outline: none;
+}
+
+.inputTextCenter:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #EBEFF0;
+    border-radius: 10px ;
+}
+
+.inputTextCenter:disabled {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #EBEFF0;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    color: grey;
+    border-radius: 10px ;
+    font-family: Arial;
+  }
+
+.inputTextCenterSuccess {
+    @include inputTextCenter();
+    color: $input-text-success;
+    border: 2px solid $input-text-success;
+}
+
+.inputTextCenterSuccess:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $input-text-success;
+}
+.inputTextCenterError:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $input-text-error;
+}
+
+.inputTextCenterError {
+    @include inputTextCenter();
+    color: $input-text-error;
+    border: 2px solid $input-text-error;
+}
+
+@mixin passwordText {
+    width: 100%;
+    height: 43px;
+    border: 2px solid $accent-color;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    color: $label-color;
+    border-radius: 10px ;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-family: Arial;
+}
+
+.passwordText {
+    @include passwordText();
+}
+
+.passwordText:disabled {
+    width: 100%;
+    height: 43px;
+    border: 2px solid $accent-color;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    color: $label-color;
+    border-radius: 10px ;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-family: Arial;
+  }
+
+.passwordTextSuccess {
+    @include passwordText();
+    color: $input-text-success;
+    border: 2px solid $input-text-success;
+}
+
+.passwordTextError {
+    @include passwordText();
+    color: $input-text-error;
+    border: 2px solid $input-text-error;
+}
+
+.passwordText:focus {
+    padding: 10px;
+    outline: none;
+    box-shadow: 0 0 0 2px $accent-color;
+    z-index: 0;
+}
+
+.passwordTextSuccess:focus {
+    padding: 10px;
+    outline: none;
+    box-shadow: 0 0 0 2px $input-text-success;
+    z-index: 0;
+}
+.passwordTextError:focus {
+    padding: 10px;
+    outline: none;
+    box-shadow: 0 0 0 2px $input-text-error;
+    z-index: 0;
+}
+
+/* WebKit, Blink, Edge */
+::-webkit-input-placeholder {
+    color:    #bdbdbd;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* Mozilla Firefox 4 to 18 */
+:-moz-placeholder {
+   color:    #bdbdbd;
+   opacity:  1;
+   font-weight: normal;
+   font-size: 16px;
+}
+
+/* Mozilla Firefox 19+ */
+::-moz-placeholder {
+   color:    #bdbdbd;
+   opacity:  1;
+   font-weight: normal;
+   font-size: 16px;
+}
+
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+   color:    #bdbdbd;
+   font-weight: normal;
+   font-size: 16px;
+}
+
+/* Microsoft Edge */
+::-ms-input-placeholder {
+   color:    #bdbdbd;
+   font-weight: normal;
+   font-size: 16px;
+}
+
+/* Most modern browsers support this now. */
+::placeholder {
+   color:    #bdbdbd;
+   font-weight: normal;
+   font-size: 16px;
+}

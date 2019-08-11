@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>EBED3223-C3F1-43FD-A777-989351C3BE33</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Account-Information-Errors" transform="translate(-237.000000, -704.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="input" transform="translate(200.000000, 581.000000)">
+                <g id="error" transform="translate(0.000000, 60.000000)">
+                    <path d="M51,63 C43.2679556,63 37,69.2679556 37,77 C37,84.7320444 43.2679556,91 51,91 C58.7320444,91 65,84.7320444 65,77 C65,69.2679556 58.7320444,63 51,63 Z M52.5555556,84.7777778 L49.4444444,84.7777778 L49.4444444,81.6666667 L52.5555556,81.6666667 L52.5555556,84.7777778 Z M52.5555556,80.1111111 L49.4444444,80.1111111 L49.4444444,69.2222222 L52.5555556,69.2222222 L52.5555556,80.1111111 Z" id="error-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,181 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/css/styles.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: left;
+}
+.content div{ 
+    margin-bottom: 20px;    
+}
+
+.instructionWrapper {
+    font-family: Arial;
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.inputTextWrapper { 
+    margin: auto;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 580px) {
+    .inputTextWrapper input::placeholder {
+        color: $newreg-media-color;
+    }
+}
+ 
+
+.questionWrapper {
+    margin: 40px 0;
+    color: $accent-color;
+}
+
+.questionWrapper a {
+    color: $accent-color;
+}
+
+.questionWrapper a:hover {
+    text-decoration: none;
+    color: $accent-color;
+}
+
+.textError {
+    @include global-text-error(); 
+    padding: 10px;
+}
+
+.textError a{
+    color: #F0F0F0 !important;
+}
+
+.linkTxt{ 
+    height: 90px;	 
+    border-radius: 45px;
+    background-color: #D8E4E7; 
+    display: inline-block;
+    color: #344559;
+  }
+
+  .linkTxt:hover{
+    border:none;
+    outline:none;
+    text-decoration:none;
+    color:inherit;
+    -webkit-tap-highlight-color: white;
+  } 
+
+.errorSpace{  
+    margin: auto;
+    font-size: 20px;
+}
+ 
+
+.inputWrapper {
+    align-items: top;
+    text-align: left;
+    padding-left: 45px;     
+    padding-right: 45px;
+}
+
+.helpWrapper {
+    align-items: top;
+    align-items: flex-start;
+    text-align: center;
+    padding-left: s5px; 
+    padding-right: 50px;    
+}
+
+.rectangle {	 
+    width: 850px; 
+    padding-left: 50px; 
+    padding-right: 50px;  
+    padding-top:25px; 
+    height: 90px;	 
+    border-radius: 45px;
+    background-color:  rgba(13, 164, 197, 0.1);
+    display: inline-block;
+    color: #344559;   
+}
+
+.rectangle:hover {	 
+    background: rgba(13, 164, 197, 0.3);
+}
+.helpText{
+    height: 32px;
+    width: 564px;
+    color: #344559 !important;	
+    font-family: Nunito Sans;
+    font-size: 24px;	
+    font-weight: bold; 
+    line-height: 32px; 
+    text-decoration: none;
+  }
+ 
+
+.headingText{ 
+    color: #11839E;
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-weight: Nunito Sans Bold;	 
+    line-height: 41px;   
+    font-weight: bold; 
+}
+ 
+.textHeading {
+    height: 82px;
+    width: 977px;
+    color: #11839E;	
+    font-family: Nunito Sans;
+    font-size: 18px;	
+    font-weight: 600;
+    line-height: 41px;
+}
+  
+
+.icon{
+    height: 40px;	
+    width: 40px;
+}
+.buttonWrapper button {
+    height: 91px;
+    width: 349px; 
+    border-radius: 45.5px;
+    background-color: #0DA4C5;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.38);
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+ .empty20{
+     height: 20px;
+     width: 100%;
+ }
+ .empty7{
+    width: 100%;
+}
+.empty10{
+    height: 10x;
+    width: 100%;
+}
+ 
+.loginText{
+    color:  #0DA4C5;
+    height: 32px;	 
+    font-family: Nunito Sans;
+    font-size: 26px;	
+    font-weight: bold;
+    line-height: 35px; 
+    cursor:pointer; 
+    text-decoration: underline; 
+    text-align: center;
+}
+.loginText a{ 
+    color:  #0DA4C5;
+}

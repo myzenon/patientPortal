@@ -1,0 +1,302 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders access correctly 1`] = `
+<Policies
+  onDone={[Function]}
+  popup={true}
+  user="caregiver"
+>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="policyWrapper"
+    >
+      <div
+        className="policyContent"
+      >
+        <div
+          className="tabWrapper"
+        >
+          <div
+            className="tab"
+            onClick={[Function]}
+          >
+            Notice of Privacy Practices
+          </div>
+          <div
+            className="tab"
+            onClick={[Function]}
+          >
+            End User License Agreement
+          </div>
+          <div
+            className="tab"
+            onClick={[Function]}
+          >
+            Terms and Conditions
+          </div>
+          <div
+            className="tabActive"
+            onClick={[Function]}
+          >
+            Access to Another Adult's Online Medical Record
+          </div>
+          <div
+            className="tabSpace"
+          />
+        </div>
+        <div
+          className="contentWrapper"
+        >
+          <div
+            className="scrollDiv"
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "access content",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="buttonWrapper"
+    >
+      <Button
+        className="button"
+        color="secondary"
+        onClick={[Function]}
+        tag="button"
+      >
+        <button
+          className="button btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Done
+        </button>
+      </Button>
+    </div>
+  </div>
+</Policies>
+`;
+
+exports[`renders eula correctly 1`] = `
+<Policies
+  onDone={[Function]}
+  popup={true}
+  user="patient"
+>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="policyWrapper"
+    >
+      <div
+        className="policyContent"
+      >
+        <div
+          className="tabWrapper"
+        >
+          <div
+            className="tab"
+            onClick={[Function]}
+          >
+            Notice of Privacy Practices
+          </div>
+          <div
+            className="tabActive"
+            onClick={[Function]}
+          >
+            End User License Agreement
+          </div>
+          <div
+            className="tab"
+            onClick={[Function]}
+          >
+            Terms and Conditions
+          </div>
+          <div
+            className="tabSpace"
+          />
+        </div>
+        <div
+          className="contentWrapper"
+        >
+          <div
+            className="scrollDiv"
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "eula content",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="buttonWrapper"
+    >
+      <Button
+        className="button"
+        color="secondary"
+        onClick={[Function]}
+        tag="button"
+      >
+        <button
+          className="button btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Done
+        </button>
+      </Button>
+    </div>
+  </div>
+</Policies>
+`;
+
+exports[`renders nopp correctly 1`] = `
+<div
+  class="wrapper"
+>
+  <div
+    class="policyWrapper"
+  >
+    <div
+      class="policyContent"
+    >
+      <div
+        class="tabWrapper"
+      >
+        <div
+          class="tabActive"
+        >
+          Notice of Privacy Practices
+        </div>
+        <div
+          class="tab"
+        >
+          End User License Agreement
+        </div>
+        <div
+          class="tab"
+        >
+          Terms and Conditions
+        </div>
+        <div
+          class="tabSpace"
+        />
+      </div>
+      <div
+        class="contentWrapper"
+      >
+        <div
+          class="scrollDiv"
+        >
+          <span>
+            nopp content
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="buttonWrapper"
+  >
+    <button
+      class="button btn btn-secondary"
+      type="button"
+    >
+      Done
+    </button>
+  </div>
+</div>
+`;
+
+exports[`renders terms correctly 1`] = `
+<Policies
+  onDone={[Function]}
+  popup={true}
+  user="patient"
+>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="policyWrapper"
+    >
+      <div
+        className="policyContent"
+      >
+        <div
+          className="tabWrapper"
+        >
+          <div
+            className="tab"
+            onClick={[Function]}
+          >
+            Notice of Privacy Practices
+          </div>
+          <div
+            className="tab"
+            onClick={[Function]}
+          >
+            End User License Agreement
+          </div>
+          <div
+            className="tabActive"
+            onClick={[Function]}
+          >
+            Terms and Conditions
+          </div>
+          <div
+            className="tabSpace"
+          />
+        </div>
+        <div
+          className="contentWrapper"
+        >
+          <div
+            className="scrollDiv"
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "terms content",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="buttonWrapper"
+    >
+      <Button
+        className="button"
+        color="secondary"
+        onClick={[Function]}
+        tag="button"
+      >
+        <button
+          className="button btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Done
+        </button>
+      </Button>
+    </div>
+  </div>
+</Policies>
+`;

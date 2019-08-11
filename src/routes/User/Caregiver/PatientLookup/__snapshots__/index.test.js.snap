@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clicks next button | found = false 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <div
+      class="instructionWrapper"
+    >
+      <p>
+        Please enter the patient's information below
+      </p>
+    </div>
+    <form
+      class=""
+    >
+      <div
+        class="inputTextWrapper"
+      >
+        <input
+          class="inputTextError"
+          name="insuranceId"
+          placeholder="Enter Patient Health Plan Identification Number"
+          type="text"
+          value="insuranceId"
+        />
+        <div
+          class="textError"
+        >
+          Uh oh! It looks like you might have entered the wrong ID, or we can't find your patient in our system. Give us a call and we'll help you sort it out!
+        </div>
+      </div>
+      <br />
+      <br />
+       
+      <br />
+      <div
+        class="helpWrapper"
+      >
+        <a
+          href="/help-me-find-hpid"
+        >
+          Help me find my patient's Health Plan Identification Number
+        </a>
+      </div>
+      <br />
+      <p />
+      <button
+        class="button btn btn-secondary"
+        type="submit"
+      >
+        NEXT
+      </button>
+    </form>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <div
+      class="instructionWrapper"
+    >
+      <p>
+        Please enter the patient's information below
+      </p>
+    </div>
+    <form
+      class=""
+    >
+      <div
+        class="inputTextWrapper"
+      >
+        <input
+          autofocus=""
+          class="inputText"
+          name="insuranceId"
+          placeholder="Enter Patient Health Plan Identification Number"
+          type="text"
+          value=""
+        />
+      </div>
+      <br />
+      <br />
+       
+      <br />
+      <div
+        class="helpWrapper"
+      >
+        <a
+          href="/help-me-find-hpid"
+        >
+          Help me find my patient's Health Plan Identification Number
+        </a>
+      </div>
+      <br />
+      <p />
+      <button
+        class="button btn btn-secondary"
+        type="submit"
+      >
+        NEXT
+      </button>
+    </form>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

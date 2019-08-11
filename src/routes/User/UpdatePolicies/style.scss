@@ -1,0 +1,43 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 900px;
+}
+
+.policies {
+    flex: 1;
+}
+
+.agreeCheckbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.agreeCheckbox > div {
+    text-align: left;
+    max-width: 700px;
+}
+
+.agreeCheckbox > div > div:first-child {
+    text-align: right;
+}
+
+.button {
+    @include button(300px);
+    width: 40% !important;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.questionWrapper {
+    color: $accent-color;
+    margin-bottom: 20px;
+}

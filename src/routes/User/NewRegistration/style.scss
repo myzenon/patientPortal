@@ -1,0 +1,72 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/css/styles.scss';
+@import '~themes/global.scss';
+
+.headingText{
+  margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 580px) {
+    .inputTextWrapper input::placeholder {
+        color: $newreg-media-color;
+    }
+}
+.errorSpace{
+    margin: auto;
+    font-size: 20px;
+}
+
+.rectangle {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top:25px;
+    padding-bottom: 20px;
+    border-radius: 45px;
+    background-color:  rgba(13, 164, 197, 0.1);
+    color: #344559;
+}
+
+.rectangle:hover {
+    background: rgba(13, 164, 197, 0.3);
+}
+.helpText{
+    height: 32px;
+    width: 564px;
+    color: #344559 !important;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    text-decoration: none;
+  }
+
+.icon{
+    height: 40px;
+    width: 40px;
+}
+.buttonWrapper button {
+    height: 91px;
+    width: 349px;
+    border-radius: 45.5px;
+    background-color: #0DA4C5;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.38);
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+.loginText{
+    color:  #0DA4C5;
+    height: 32px;
+    font-family: Nunito Sans;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 35px;
+    cursor:pointer;
+    text-decoration: underline;
+    text-align: center;
+}

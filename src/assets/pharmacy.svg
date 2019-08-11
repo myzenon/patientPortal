@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>5CEF7E9C-0E1A-44C8-954E-DB8BFF49589F</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Account-Setup-(Provider-and-Pharmacy-Selection)" transform="translate(-259.000000, -508.000000)" fill="#0DA4C5" fill-rule="nonzero">
+            <g id="input" transform="translate(200.000000, 466.000000)">
+                <g id="icon" transform="translate(33.000000, 16.000000)">
+                    <path d="M47.8673684,26 L38.1326316,26 C37.56,26 37.0589474,26.4652632 37.0589474,27.0736842 L37.0589474,37.0589474 L27.0736842,37.0589474 C26.5010526,37.0589474 26,37.5242105 26,38.1326316 L26,47.8673684 C26,48.44 26.4652632,48.9410526 27.0736842,48.9410526 L37.0589474,48.9410526 L37.0589474,58.9263158 C37.0589474,59.4989474 37.5242105,60 38.1326316,60 L47.8673684,60 C48.44,60 48.9410526,59.5347368 48.9410526,58.9263158 L48.9410526,48.9410526 L58.9263158,48.9410526 C59.4989474,48.9410526 60,48.4757895 60,47.8673684 L60,38.1326316 C60,37.56 59.5347368,37.0589474 58.9263158,37.0589474 L48.9410526,37.0589474 L48.9410526,27.0736842 C48.9410526,26.4652632 48.4757895,26 47.8673684,26 Z" id="pharmacy-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.amountMedsText {
+    color: $accent-color;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.medsListWrapper {
+    text-align: left;
+    font-size: 0.8em;
+    max-width: 400px;
+    margin: auto;
+}
+
+.medsListWrapper li {
+    margin: 40px 0;
+}
+
+.buttonWrapper {
+    margin: 50px 0;
+}
+
+.button {
+    @include button(90px);
+    width: 40% !important;    
+    max-width: 300px;
+}

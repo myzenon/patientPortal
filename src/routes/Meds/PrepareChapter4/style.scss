@@ -1,0 +1,119 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/css/styles.scss';
+
+.heading {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #0E849E;
+}
+
+.mainBodyPosition {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 100% !important;
+}
+
+.mainHeader {
+    height: 99px;
+    width: 1103px;
+    color: #344559;
+    font-family: "Nunito Sans";
+    font-size: 24px;
+    line-height: 41px;
+    margin-left: 200px;
+    margin-right: 131px;
+    margin-top: 10px;
+}
+
+.mainHeader>strong>h1 {
+    color: #0E849E;
+    font-weight: bold;
+}
+
+.mainHeader>strong>span {
+    font-weight: normal;
+}
+
+.bodyList {
+    width: 900px !important;
+    height: 400px;
+    color: #344559;
+    font-family: "Nunito Sans";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    // margin: 0 auto;
+    margin-top: 45px;
+    margin-left: 200px;
+}
+ 
+.bg {
+    height: 160px;
+    width: 100%;
+    background-color: #F8FAFA;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.pictureWrapper {
+    text-align: right;
+    vertical-align: top;
+    padding-right: 0px;
+}
+
+.pillWrapper {
+    position: relative;
+    padding-top: 160px;
+    height: 700px;
+    background-color: #F8FAFA;
+}
+
+.buttonInputWrapper {
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 185px;
+    margin-bottom: 60px;
+}
+
+.buttonWrapper button {
+    height: 91px;
+    width: 349px;
+    border-radius: 45.5px;
+    background-color: #0DA4C5;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.38);
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+.nextStepButtonWrapper {
+    padding-top: 87px;
+    padding-left: 199px;
+    height: 60px;
+    width: 60px;
+}
+
+.bulletPoints {
+    height: 169px;
+    width: 1065px;
+    font-family: "Nunito Sans";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.bulletPoints >li {
+    padding-left: 1em;
+    text-indent: -.7em;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+.bulletPoints> li:before {
+    content: "• ";
+    color: #0DA4C5;
+    padding-right: 10px;
+}

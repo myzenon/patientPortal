@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p>
+      <strong>
+        Rita
+      </strong>
+      , so far you have told as about
+    </p>
+    <p
+      class="amountMedsText"
+    >
+      0  Medicines
+    </p>
+    <div
+      class="medsListWrapper"
+    >
+      <ul />
+    </div>
+    <p
+      class="buttonWrapper"
+    >
+      <a
+        href="/meds-other-meds"
+      >
+        <button
+          class="button btn btn-secondary"
+        >
+          GOT IT!
+        </button>
+      </a>
+    </p>
+  </div>
+</div>
+`;

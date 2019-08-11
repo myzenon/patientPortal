@@ -1,0 +1,45 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+
+.wrapper {
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // z-index: 1500;
+    // background-color: $background-color;
+    // display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: $label-color;
+    overflow-y: scroll;
+
+}
+
+.phoneNumber {
+    color: $accent-color;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.button {
+    @include button(300px);
+    max-width: 300px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 35px;
+}
+
+.logoWrapper {
+    position: fixed;
+    left: 15px;
+    top: 20px;
+    z-index: 1600;
+    cursor: pointer;
+}

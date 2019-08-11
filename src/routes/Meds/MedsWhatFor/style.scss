@@ -1,0 +1,169 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/global.scss';
+
+@import '~themes/css/styles.scss';
+
+.content {
+    @include content-wrapper(); 
+}
+ 
+
+.inputWrapper {
+    align-items: top;
+    text-align: left;
+    padding-left: 40px;   
+    padding-top: 20px; 
+}
+
+.heading{ 
+    color: #11839E;
+    font-family: Nunito Sans;	
+    font-size: 28px;
+    font-weight: 600;	
+    line-height: 41px;  
+    font-weight: bold;  
+    text-align: left;  
+    padding-left: 33px;
+    padding-top: 43px;
+   
+ }
+
+ .subHeading{  
+    text-align: left;   
+    color: #344559;
+    font-family: Nunito Sans;	
+    font-size: 24px; 	
+    font-weight: 600; 
+    padding-left: 33px; 
+    padding-top: 15px;
+    
+} 
+
+.contentImg { 
+    object-fit: cover; 
+    height: 205px;
+    width: 277px;	 
+    border-radius: 6px; 
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.14);  
+}
+ 
+
+.buttonWrapper button {  
+    text-align: center; 
+    height: 91px;	
+    width: 349px;
+    border-radius: 45.5px;
+    background-color: #0DA4C5;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.38);
+}
+
+
+.empty40{
+    width: 100px;
+    height: 40px;;
+}
+ 
+.empty20{
+    width: 100px;
+    height: 20px;;
+}
+ 
+ 
+
+.indicationConditionName {
+    height: 32px;	
+    width: 331px;	
+    color: #344559;	
+    font-family: "Nunito Sans";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;;
+    padding-left: 25px;
+}
+
+ 
+ 
+.indicationContainer{   
+    text-align: left;
+    word-wrap: break-word;
+    table-layout:fixed;      
+    border: 1px solid #DEDCDC;
+    border-radius: 6px;
+    background-color: #FFFFFF; 
+}
+
+.formLabel {
+    padding-top: 20px;
+    text-align: left;
+    color: $accent-color;  
+    padding-left: 20px;
+}
+
+.formLabel > input {
+    width: 92%; 
+    height: 80%;
+    margin-left: 20px;
+}
+ 
+ 
+.line {	
+    box-sizing: border-box;
+    height: 2px;
+    width: 90%;	
+    border: 1px solid #DEDCDC;
+}
+ 
+
+
+.selectCheckWrapper { 
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 60px !important;     
+}
+
+@media screen and (max-width: 650px) {
+    .selectCheckWrapper {
+        margin-left: 0%;
+        max-width: 100%;
+    }
+}
+
+ 
+
+/* Hide the browser's default checkbox */
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    padding-left: 20px; 
+}
+
+/* On mouse-over, add a grey background color */
+.chkContcheckboxContainerainer:hover input ~ .checkbox {
+    background-color: #46a2c1;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxContainer input:checked ~ .checkbox {
+    background-color: #46a2c1;
+}
+
+
+/* Show the checkbox when checked */
+.checkboxContainer input:checked ~ .checkbox:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxContainer .checkbox:after {
+    left: 15px;
+    top: 8px;
+    width: 10px;
+    height: 18px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

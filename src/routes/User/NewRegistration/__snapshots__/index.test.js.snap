@@ -1,0 +1,419 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clicks next button | found = false 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <div
+      class="instructionWrapper"
+    >
+      <p>
+        To get started, please enter your
+      </p>
+      <p>
+        Health Plan Identification Number below
+      </p>
+    </div>
+    <form
+      class=""
+    >
+      <div
+        class="inputTextWrapper"
+      >
+        <input
+          class="inputTextCenterError"
+          name="insuranceId"
+          placeholder="Enter Health Plan Identification Number"
+          textalign="center"
+          type="text"
+          value="insuranceId"
+        />
+        <div
+          class="textError"
+        >
+          Uh oh! It looks like you might have entered the wrong number, or we can't find you in our system. Give us a call  and we'll help you sort it out!
+        </div>
+      </div>
+      <br />
+       
+      <br />
+      <p />
+      <div
+        class="helpWrapper"
+      >
+        <a
+          href="/help-me-find-hpid"
+        >
+          <br />
+           Help me find my Health Plan Identification Number
+        </a>
+      </div>
+      <br />
+      <p />
+      <button
+        class="button btn btn-secondary"
+        type="submit"
+      >
+        <b>
+          NEXT
+        </b>
+      </button>
+    </form>
+    <div
+      class="questionWrapper"
+    />
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`clicks next button | found = true | accountExists = true 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <div
+      class="instructionWrapper"
+    >
+      <p>
+        To get started, please enter your
+      </p>
+      <p>
+        Health Plan Identification Number below
+      </p>
+    </div>
+    <form
+      class=""
+    >
+      <div
+        class="inputTextWrapper"
+      >
+        <input
+          class="inputTextCenterError"
+          name="insuranceId"
+          placeholder="Enter Health Plan Identification Number"
+          textalign="center"
+          type="text"
+          value="insuranceId"
+        />
+        <div
+          class="textError"
+        >
+          Uh oh! It looks like this insurance id is already associated with an account. 
+          <a
+            href="/login"
+          >
+            Click here to Sign In.
+          </a>
+        </div>
+      </div>
+      <br />
+       
+      <br />
+      <p />
+      <div
+        class="helpWrapper"
+      >
+        <a
+          href="/help-me-find-hpid"
+        >
+          <br />
+           Help me find my Health Plan Identification Number
+        </a>
+      </div>
+      <br />
+      <p />
+      <button
+        class="button btn btn-secondary"
+        type="submit"
+      >
+        <b>
+          NEXT
+        </b>
+      </button>
+    </form>
+    <div
+      class="questionWrapper"
+    />
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <div
+      class="instructionWrapper"
+    >
+      <p>
+        To get started, please enter your
+      </p>
+      <p>
+        Health Plan Identification Number below
+      </p>
+    </div>
+    <form
+      class=""
+    >
+      <div
+        class="inputTextWrapper"
+      >
+        <input
+          autofocus=""
+          class="inputTextCenter"
+          name="insuranceId"
+          placeholder="Enter Health Plan Identification Number"
+          textalign="center"
+          type="text"
+          value=""
+        />
+      </div>
+      <br />
+       
+      <br />
+      <p />
+      <div
+        class="helpWrapper"
+      >
+        <a
+          href="/help-me-find-hpid"
+        >
+          <br />
+           Help me find my Health Plan Identification Number
+        </a>
+      </div>
+      <br />
+      <p />
+      <button
+        class="button btn btn-secondary"
+        type="submit"
+      >
+        <b>
+          NEXT
+        </b>
+      </button>
+    </form>
+    <div
+      class="questionWrapper"
+    />
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepActive"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumber"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

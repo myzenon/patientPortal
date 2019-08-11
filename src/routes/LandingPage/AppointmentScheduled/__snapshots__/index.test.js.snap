@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="content"
+>
+  <p
+    class="titleName"
+  >
+    Carl, our pharmacist will call you on
+  </p>
+  <p
+    class="scheduledDate"
+  >
+    March 3rd at 7:00pm UTC
+  </p>
+  <div
+    class="text"
+  >
+    <p>
+      <strong>
+        What You Can Expect
+      </strong>
+    </p>
+    <p>
+      Our pharmacist will review all of your medications—including prescriptions, over-the-counter drugs, herbals and supplements—to help identify any drug-related problems you may be experiencing
+    </p>
+    <p>
+      <strong>
+        On the Call
+      </strong>
+    </p>
+    <p>
+      Our pharmacist will answer any questions you may have about your medications, and will also be looking for ways to reduce your prescription costs and improve your health. They will provide you with recommendations that are specific to you, and will follow up with your doctor as well.
+    </p>
+    <p>
+      <strong>
+        How do I Change My Appointment Time and Date?
+      </strong>
+    </p>
+    <p>
+      To change the time and date of your pharmacist call, just call us at 
+      <strong />
+      .
+    </p>
+    <p>
+      <strong>
+        Anything Else?
+      </strong>
+    </p>
+    <p>
+      Ask questions! Our pharmacists are here to serve you. There is no additional cost for this service, and the more we know about you, the more we can help!
+    </p>
+    <p>
+      <strong>
+        What Happens After the Appointment?
+      </strong>
+    </p>
+    <p>
+      After the call, our pharmacist will prepare two reports for you: a personalized medication list, and a medication action plan. These reports will be visible to you any time you log into the Arine portal.
+    </p>
+  </div>
+  <div>
+    <div
+      class="wrapper"
+    >
+      <div
+        class="stepCompleted"
+      >
+        Account
+        <br />
+        Setup
+        <div
+          class="stepNumberActive"
+        >
+          1
+        </div>
+      </div>
+      <div
+        class="stepCompleted"
+      >
+        Medication
+        <br />
+        Review
+        <div
+          class="stepNumberActive"
+        >
+          2
+        </div>
+      </div>
+      <div
+        class="stepCompleted"
+      >
+        Additional 
+        <br />
+        Medications
+        <div
+          class="stepNumberActive"
+        >
+          3
+        </div>
+      </div>
+      <div
+        class="stepCompleted"
+      >
+        Health
+        <br />
+        Updates
+        <div
+          class="stepNumberActive"
+        >
+          4
+        </div>
+      </div>
+      <div
+        class="stepActive"
+      >
+        Set
+        <br />
+        Appointment
+        <div
+          class="stepNumberActive"
+        >
+          5
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

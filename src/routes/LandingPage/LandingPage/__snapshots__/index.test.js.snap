@@ -1,0 +1,866 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders step 1 1`] = `
+<div>
+  <div
+    class="content"
+  >
+    <br />
+    <p>
+      <strong>
+        Carl
+      </strong>
+      , you have
+      <strong>
+        4
+      </strong>
+       steps remaining before your review is complete.
+    </p>
+    <div
+      class="wrapper"
+    >
+      <div
+        class="line"
+      />
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleWhiteBackground"
+          />
+          <div
+            class="circleActive"
+          >
+            1
+          </div>
+          <div
+            class="circleNoBackground"
+          />
+        </div>
+        <div
+          class="text"
+        >
+          Account Successfully Created
+          <a
+            class="edit"
+            href="/confirm-info"
+          >
+            (Click to edit account info)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circle"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          You have told us about
+          <span
+            class="medsNumber"
+          >
+            0
+          </span>
+           of your medications.
+          <br />
+          <span
+            class="subText"
+          >
+            There
+            <span
+              class="medsNumber"
+            >
+              are
+            </span>
+            5 more we would like to ask you about.
+          </span>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circle"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          <span
+            class="subText"
+          >
+            We still need to hear about any additional prescription drugs, over the counter drugs and supplements you take.
+          </span>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circle"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          <span
+            class="subText"
+          >
+            You haven't told us about your health.
+          </span>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleNoBackground"
+          />
+          <div
+            class="circle"
+          >
+            5
+          </div>
+          <div
+            class="circleWhiteBackground"
+          />
+        </div>
+        <div
+          class="text"
+        >
+          <span
+            class="subText"
+          >
+            You need to schedule an appointment with our pharmacist.
+          </span>
+        </div>
+      </div>
+    </div>
+    <p>
+      <button
+        class="button btn btn-secondary"
+        type="button"
+      >
+        Finish My Review
+      </button>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`renders step 2 1`] = `
+<div>
+  <div
+    class="content"
+  >
+    <br />
+    <p>
+      <strong>
+        Carl
+      </strong>
+      , you have
+      <strong>
+        3
+      </strong>
+       steps remaining before your review is complete.
+    </p>
+    <div
+      class="wrapper"
+    >
+      <div
+        class="line"
+      />
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleWhiteBackground"
+          />
+          <div
+            class="circleActive"
+          >
+            1
+          </div>
+          <div
+            class="circleNoBackground"
+          />
+        </div>
+        <div
+          class="text"
+        >
+          Account Successfully Created
+          <a
+            class="edit"
+            href="/confirm-info"
+          >
+            (Click to edit account info)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          You've told us about
+          <span
+            class="medsNumber"
+          >
+            5
+          </span>
+          of your Medications.
+          <a
+            class="edit"
+            href="/prepare/Chapter2"
+          >
+            (Click to edit answers)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circle"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          <span
+            class="subText"
+          >
+            We still need to hear about any additional prescription drugs, over the counter drugs and supplements you take.
+          </span>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circle"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          <span
+            class="subText"
+          >
+            You haven't told us about your health.
+          </span>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleNoBackground"
+          />
+          <div
+            class="circle"
+          >
+            5
+          </div>
+          <div
+            class="circleWhiteBackground"
+          />
+        </div>
+        <div
+          class="text"
+        >
+          <span
+            class="subText"
+          >
+            You need to schedule an appointment with our pharmacist.
+          </span>
+        </div>
+      </div>
+    </div>
+    <p>
+      <button
+        class="button btn btn-secondary"
+        type="button"
+      >
+        Finish My Review
+      </button>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`renders step 3 1`] = `
+<div>
+  <div
+    class="content"
+  >
+    <br />
+    <p>
+      <strong>
+        Carl
+      </strong>
+      , you have
+      <strong>
+        2
+      </strong>
+       steps remaining before your review is complete.
+    </p>
+    <div
+      class="wrapper"
+    >
+      <div
+        class="line"
+      />
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleWhiteBackground"
+          />
+          <div
+            class="circleActive"
+          >
+            1
+          </div>
+          <div
+            class="circleNoBackground"
+          />
+        </div>
+        <div
+          class="text"
+        >
+          Account Successfully Created
+          <a
+            class="edit"
+            href="/confirm-info"
+          >
+            (Click to edit account info)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          You've told us about
+          <span
+            class="medsNumber"
+          >
+            5
+          </span>
+          of your Medications.
+          <a
+            class="edit"
+            href="/prepare/Chapter2"
+          >
+            (Click to edit answers)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleActive"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          You have told us about
+          <span
+            class="medsNumber"
+          >
+            0
+          </span>
+          additional prescription drug(s), over the counter drug(s) and supplements you take.
+          <a
+            class="edit"
+            href="/prepare/Chapter3"
+          >
+            (Click to edit answers)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circle"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          <span
+            class="subText"
+          >
+            You haven't told us about your health.
+          </span>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleNoBackground"
+          />
+          <div
+            class="circle"
+          >
+            5
+          </div>
+          <div
+            class="circleWhiteBackground"
+          />
+        </div>
+        <div
+          class="text"
+        >
+          <span
+            class="subText"
+          >
+            You need to schedule an appointment with our pharmacist.
+          </span>
+        </div>
+      </div>
+    </div>
+    <p>
+      <button
+        class="button btn btn-secondary"
+        type="button"
+      >
+        Finish My Review
+      </button>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`renders step 4 1`] = `
+<div>
+  <div
+    class="content"
+  >
+    <br />
+    <p>
+      <strong>
+        Carl
+      </strong>
+      , you have
+      <strong>
+        1
+      </strong>
+       step remaining before your review is complete.
+    </p>
+    <div
+      class="wrapper"
+    >
+      <div
+        class="line"
+      />
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleWhiteBackground"
+          />
+          <div
+            class="circleActive"
+          >
+            1
+          </div>
+          <div
+            class="circleNoBackground"
+          />
+        </div>
+        <div
+          class="text"
+        >
+          Account Successfully Created
+          <a
+            class="edit"
+            href="/confirm-info"
+          >
+            (Click to edit account info)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          You've told us about
+          <span
+            class="medsNumber"
+          >
+            5
+          </span>
+          of your Medications.
+          <a
+            class="edit"
+            href="/prepare/Chapter2"
+          >
+            (Click to edit answers)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleActive"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          You have told us about
+          <span
+            class="medsNumber"
+          >
+            0
+          </span>
+          additional prescription drug(s), over the counter drug(s) and supplements you take.
+          <a
+            class="edit"
+            href="/prepare/Chapter3"
+          >
+            (Click to edit answers)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleActive"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          You have told us about your health
+          <a
+            class="edit"
+            href="/prepare-Chapter4"
+          >
+            (Click to edit answers)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleNoBackground"
+          />
+          <div
+            class="circle"
+          >
+            5
+          </div>
+          <div
+            class="circleWhiteBackground"
+          />
+        </div>
+        <div
+          class="text"
+        >
+          <span
+            class="subText"
+          >
+            You need to schedule an appointment with our pharmacist.
+          </span>
+        </div>
+      </div>
+    </div>
+    <p>
+      <button
+        class="button btn btn-secondary"
+        type="button"
+      >
+        Finish My Review
+      </button>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`renders step 5 1`] = `
+<div>
+  <div
+    class="content"
+  >
+    <br />
+    <p>
+      <strong>
+        Carl
+      </strong>
+      , you have
+      <strong>
+        0
+      </strong>
+       steps remaining before your review is complete.
+    </p>
+    <div
+      class="wrapper"
+    >
+      <div
+        class="line"
+      />
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleWhiteBackground"
+          />
+          <div
+            class="circleActive"
+          >
+            1
+          </div>
+          <div
+            class="circleNoBackground"
+          />
+        </div>
+        <div
+          class="text"
+        >
+          Account Successfully Created
+          <a
+            class="edit"
+            href="/confirm-info"
+          >
+            (Click to edit Account Info)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          You've told us about
+          <span
+            class="medsNumber"
+          >
+            5
+          </span>
+           of your Medications.
+          <a
+            class="edit"
+            href="/prepare/Chapter2"
+          >
+            (Click to edit Answers)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleActive"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          You have told us about the additional prescription drugs, over the counter drugs and supplements you take.
+          <a
+            class="edit"
+            href="/prepare/Chapter3"
+          >
+            (Click to edit Answers)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleActive"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="text"
+        >
+          You have told us about your health
+          <a
+            class="edit"
+            href="/prepare-Chapter4"
+          >
+            (Click to edit Answers)
+          </a>
+        </div>
+      </div>
+      <div
+        class="progressWrapper"
+      >
+        <div
+          class="circleWrapper"
+        >
+          <div
+            class="circleNoBackground"
+          />
+          <div
+            class="circleActive"
+          >
+            5
+          </div>
+          <div
+            class="circleWhiteBackground"
+          />
+        </div>
+        <div
+          class="text"
+        >
+          Pharmacist call scheduled
+          <a
+            class="edit"
+            href="/appointment-scheduled"
+          >
+            (Click to see Appointment)
+          </a>
+        </div>
+      </div>
+    </div>
+    <p>
+      <button
+        class="button btn btn-secondary"
+        type="button"
+      >
+        Finish My Review
+      </button>
+    </p>
+  </div>
+</div>
+`;

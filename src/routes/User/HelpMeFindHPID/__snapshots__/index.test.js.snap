@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <p>
+      You should have a Health Plan Card
+    </p>
+    <p>
+      that looks like this one:
+    </p>
+    <p>
+      <img
+        alt="Health Plan Card"
+        src="health-plan-card-help.png"
+      />
+    </p>
+    <p>
+      <a
+        href="/caregiver-patient-lookup"
+      >
+        <button
+          class="button btn btn-secondary"
+        >
+          FOUND IT!
+        </button>
+      </a>
+    </p>
+    <p>
+      <button
+        class="button btn btn-secondary"
+        type="button"
+      >
+        DIDN'T FIND IT
+      </button>
+    </p>
+  </div>
+</div>
+`;

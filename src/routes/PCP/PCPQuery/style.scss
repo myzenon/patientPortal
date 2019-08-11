@@ -1,0 +1,122 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/global.scss';
+@import '~themes/css/styles.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: left;
+}
+
+.inputWrapper {
+    align-items: top;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.headingText{
+    color: #11839E;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: 600;
+    font-weight: bold;
+    line-height: 41px;
+}
+
+.subheading{
+    color: #344559;
+    font-family: Nunito Sans;
+    font-size: 22px;
+}
+
+
+.buttonWrapper button {
+     @include button(349px)
+}
+
+.title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.selectWrapper {
+    border: 1px solid $choice-border-color;
+    border-radius: 5px;
+    max-height: 290px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+
+.choiceWrapper {
+    cursor: pointer;
+    display: flex;
+}
+
+.activeChoiceWrapper {
+    @extend .choiceWrapper;
+    border: 2px solid $selected-doctor-border-color;
+    border-radius: 5px;
+    background-color: $selected-doctor-bg-color;
+}
+
+.radioWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+}
+.radio {
+    width: 30px;
+    height: 30px;
+    border: 3px solid $choice-border-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio:before {
+    content: '';
+    border-radius: 50%;
+    border: 6px solid $choice-border-color;
+}
+
+.activeRadio {
+    @extend .radio;
+    border: 3px solid $accent-color;
+}
+
+.activeRadio:before {
+    border: 6px solid $accent-color;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: $accent-color;
+    padding: 10px;
+    input {
+        margin: 0 0 0 10px;
+    }
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

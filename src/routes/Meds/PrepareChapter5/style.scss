@@ -1,0 +1,146 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/css/styles.scss';
+
+.center{
+    width: 1200px;
+    height: 502px;
+}
+.videoContainer{
+    height: 502px;
+    width: 1200px;
+    margin-bottom: 59px;
+}
+.video {
+    height: 502px;
+    margin-left: 200px;
+    max-width: 83%;
+}
+
+.scheduledDate {
+    color: $accent-color;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+a {
+    cursor: pointer;
+    font-weight: bold;
+    color: $accent-color; 
+}
+
+a:hover  { 
+    color: $accent-color;
+}
+
+a:visited  { 
+    color: $accent-color;
+}
+
+.heading {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.mainBodyPosition {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 100% !important;
+}
+
+.mainHeader {
+    height: 99px;
+    width: 1103px;
+    color: #344559;
+    font-family: "Nunito Sans";
+    font-size: 24px;
+    line-height: 45px;
+    margin-left: 200px;
+    margin-right: 131px;
+    margin-top: 13px;
+}
+
+.mainHeader>strong>h1 {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.mainHeader>strong>span {
+    font-weight: normal;
+}
+ 
+
+.headerBackground {
+    height: 160px;
+    width: 100%;
+    background-color: #F8FAFA;
+}
+
+.buttonInputWrapper {
+    text-align: left;
+    margin-left: 235px;
+    margin-bottom: 60px;
+}
+
+.buttonWrapper button {
+    height: 91px;
+    width: 503px;
+    border-radius: 45.5px;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.38);
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+.reviewButtonWrapper{
+    margin-left: 300px;
+}
+
+button.btn.callIcon{
+    background-color: #0FB297;
+    margin-left: 240px;
+}
+
+button.btn.callIcon:after{
+    right: 20em !important;
+    margin-top: -20px !important;
+    content: url('data:image/svg+xml;charset=UTF-8,<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: sketchtool 52.3 (67297) - http://www.bohemiancoding.com/sketch --><title>DA6EEBEC-C040-485D-BB22-1D4F50C72929</title><desc>Created with sketchtool.</desc><g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Chapter-5---Congrats-and-Schedule-Appt" transform="translate(-570.000000, -367.000000)" fill="#FFFFFF"><g id="button" transform="translate(530.000000, 341.000000)"><path d="M78,45 C78,34.5 69.5,26 59,26 C48.5,26 40,34.5 40,45 C40,55.5 48.5,64 59,64 C69.5,64 78,55.5 78,45 Z M67.0714286,47.2857143 C64.9285714,45.1428571 63.0714286,47.6428571 61.7857143,48.9285714 C59.0714286,47.5 56.2857143,45 55.0714286,42.2142857 C59,38.6428571 58.2142857,38.2142857 53.7857143,34 C51.5714286,31.8571429 49.7857143,34.4285714 48.4285714,35.7857143 C47.7142857,36.5 47.3571429,37.3571429 47.2857143,38.2857143 C46.5714286,44.7142857 56.7857143,56.3571429 64.9285714,56.8571429 C67.3571429,57 68.2857143,55.6428571 70,53.8571429 C71.0714286,52.7857143 71.0714286,51.2857143 69.9285714,50.2142857 L67.0714286,47.2857143 Z" id="schedule-button-icon"></path></g></g></g></svg>') !important;
+}
+
+button.btn.callIcon:hover{
+    background: darken(#0FB297,6%);
+}
+
+.nextStepButtonWrapper {
+    padding-top: 87px;
+    padding-left: 199px;
+    height: 60px;
+    width: 60px;
+}
+
+.scheduledAppointment{
+    margin-bottom: 57px;
+    margin-left: 530px;
+    border: 2px solid red;
+}
+
+.scheduleText{
+    height: 181px;
+    width: 1100px;
+    color: black;
+    font-family: "Nunito Sans";
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 42px;
+    text-align: center;
+    margin-left: 180px;
+    margin-right: 214px;
+} 
+
+.scheduleText > p > span{
+    color: #0DA4C5;
+    font-weight: 800;
+} 

@@ -1,0 +1,29 @@
+%center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+%clear {
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+  }
+}
+
+%font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%box-shadow-none {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}

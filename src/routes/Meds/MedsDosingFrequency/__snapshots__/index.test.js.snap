@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <br />
+    <span
+      class="heading1"
+    >
+      EFFEXOR XR 75MG
+    </span>
+    <div
+      class="questions"
+    >
+      How often do you take this medicine?
+    </div>
+    <div
+      class="contentText"
+    >
+      <span
+        class="bulletPoints"
+      >
+        <li>
+          Click "Every Day", if you take this medication daily
+        </li>
+        <p />
+        <li>
+          Click "As Needed", if you take this medication only when you need it
+        </li>
+        <p />
+        <li>
+          Click "Other", if you take this medication any other way
+        </li>
+      </span>
+    </div>
+    <div
+      class="contentButton"
+    >
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <button
+                class="button btn btn-secondary"
+                id="everyDayButton"
+                type="button"
+              >
+                Every Day
+              </button>
+            </td>
+            <td>
+                 
+            </td>
+            <td>
+              <button
+                class="button btn btn-secondary"
+                id="asNeededButton"
+                type="button"
+              >
+                As Needed
+              </button>
+            </td>
+            <td>
+                 
+            </td>
+            <td>
+              <button
+                class="button btn btn-secondary"
+                id="otherButton"
+                type="button"
+              >
+                Other
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+     
+    <br />
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

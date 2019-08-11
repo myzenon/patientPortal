@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="container-fluid"
+>
+  <div
+    class="content container"
+  >
+    <span
+      class="heading1"
+    >
+      EFFEXOR XR 75MG
+    </span>
+    <p />
+    <div>
+      <div
+        class="imageWrapper"
+      >
+        <img
+          alt=""
+          class="contentImg"
+          src="https://rximage.nlm.nih.gov/image/images/gallery/original/00008-0833-21_RXNAVIMAGE10_3015981C.jpg"
+        />
+        <img
+          alt="Zoom-In"
+          class="imageMagnifyZoomIn"
+          src="magnify-in.png"
+        />
+      </div>
+    </div>
+    <p />
+    <span
+      class="questions"
+    >
+      What did the doctor tell you this medication was for? (Check all that apply)
+    </span>
+    <p />
+    <div
+      class="indicationContainer"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="checkboxWrapper col-1 col-md-1 offset-md-1"
+        >
+          <label
+            class="checkboxContainer"
+          >
+            <input
+              name="Major Depressive Disorder"
+              type="checkbox"
+            />
+            <span
+              class="checkbox"
+            />
+          </label>
+        </div>
+        <div
+          class="formLabel col-9 col-md-9"
+        >
+          <span
+            class="indicationConditionName"
+          >
+            Major Depressive Disorder
+          </span>
+          <p />
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="checkboxWrapper col-1 col-md-1 offset-md-1"
+        >
+          <label
+            class="checkboxContainer"
+          >
+            <input
+              name="Generalized Anxiety Disorder"
+              type="checkbox"
+            />
+            <span
+              class="checkbox"
+            />
+          </label>
+        </div>
+        <div
+          class="formLabel col-9 col-md-9"
+        >
+          <span
+            class="indicationConditionName"
+          >
+            Generalized Anxiety Disorder
+          </span>
+          <p />
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="checkboxWrapper col-1 col-md-1 offset-md-1"
+        >
+          <label
+            class="checkboxContainer"
+          >
+            <input
+              name="Vasomotor Symptoms"
+              type="checkbox"
+            />
+            <span
+              class="checkbox"
+            />
+          </label>
+        </div>
+        <div
+          class="formLabel col-9 col-md-9"
+        >
+          <span
+            class="indicationConditionName"
+          >
+            Vasomotor Symptoms
+          </span>
+          <p />
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="checkboxWrapper col-1 col-md-1 offset-md-1"
+        >
+          <label
+            class="checkboxContainer"
+          >
+            <input
+              name="Social Anxiety Disorder"
+              type="checkbox"
+            />
+            <span
+              class="checkbox"
+            />
+          </label>
+        </div>
+        <div
+          class="formLabel col-9 col-md-9"
+        >
+          <span
+            class="indicationConditionName"
+          >
+            Social Anxiety Disorder
+          </span>
+          <p />
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="checkboxWrapper col-1 col-md-1 offset-md-1"
+        >
+          <label
+            class="checkboxContainer"
+          >
+            <input
+              name="Neuropathic Pain"
+              type="checkbox"
+            />
+            <span
+              class="checkbox"
+            />
+          </label>
+        </div>
+        <div
+          class="formLabel col-9 col-md-9"
+        >
+          <span
+            class="indicationConditionName"
+          >
+            Neuropathic Pain
+          </span>
+          <p />
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="checkboxWrapper col-1 col-md-1 offset-md-1"
+        >
+          <label
+            class="checkboxContainer"
+          >
+            <input
+              name="I don't know"
+              type="checkbox"
+            />
+            <span
+              class="checkbox"
+            />
+          </label>
+        </div>
+        <div
+          class="formLabel col-9 col-md-9"
+        >
+          <span
+            class="indicationConditionName"
+          >
+            I don't know
+          </span>
+          <p />
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="checkboxWrapper col-1 col-md-1 offset-md-1"
+        >
+          <label
+            class="checkboxContainer"
+          >
+            <input
+              name="Other"
+              type="checkbox"
+            />
+            <span
+              class="checkbox"
+            />
+          </label>
+        </div>
+        <div
+          class="formLabel col-9 col-md-9"
+        >
+          <input
+            class="inputText"
+            name="inputOther"
+            placeholder="Enter Other here"
+            type="text"
+            value=""
+          />
+          <p />
+        </div>
+      </div>
+    </div>
+    <br />
+    <p>
+      <button
+        class="button btn btn-secondary"
+        id="MedsWhatForButton"
+        type="button"
+      >
+        <b>
+           NEXT
+        </b>
+      </button>
+    </p>
+  </div>
+  <div
+    class="footerWrapper container"
+  >
+    <div>
+      <div
+        class="wrapper"
+      >
+        <div
+          class="stepCompleted"
+        >
+          Account
+          <br />
+          Setup
+          <div
+            class="stepNumberActive"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="stepActive"
+        >
+          Medication
+          <br />
+          Review
+          <div
+            class="stepNumberActive"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Additional 
+          <br />
+          Medications
+          <div
+            class="stepNumber"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Health
+          <br />
+          Updates
+          <div
+            class="stepNumber"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="step"
+        >
+          Set
+          <br />
+          Appointment
+          <div
+            class="stepNumber"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

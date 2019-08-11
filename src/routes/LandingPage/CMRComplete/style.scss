@@ -1,0 +1,74 @@
+@import '~themes/mixins.scss';
+@import '~themes/colors.scss';
+@import '~themes/global.scss';
+.borders {
+  border-width: thin;
+  border-style: solid;
+  border-color: red;
+}
+.wrapper {
+    border: 3px solid $accent-color;
+    border-radius: 30px;
+    padding: 20px;
+    margin: auto;
+    vertical-align: center;
+}
+
+
+.wrapper > p:first-child {
+    color: $accent-color;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+.lettersWrapper {
+    vertical-align: middle;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content {
+    @include content-wrapper();
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.content > div {
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.title {
+  @extend .heading1;
+  color: $accent-color;
+  font-weight: bold;
+  text-align: center;
+}
+
+.heading3 {
+    @extend .heading3;
+    font-weight: bold;
+    font-size: 17.5px;
+    align-items: center;
+  }
+
+.bodytext {
+  text-align: center;
+  }
+
+.phoneNumber {
+    color: $accent-color;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.button {
+    @include button(100%, 40px);
+    font-size: 0.8em;
+}
+
+.buttonView {
+    @include button(100%, 40px);
+    font-size: 0.8em;
+}

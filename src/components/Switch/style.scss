@@ -1,0 +1,31 @@
+@import '~themes/colors.scss';
+
+.switch {
+    width: 40px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: $switch-background-color;
+    cursor: pointer;
+    display: inline-block;
+    transform: translateY(20%);
+}
+
+.switchOff::before {
+    content: '';
+    padding: 7.5px 12.5px 0 12.5px;
+    margin-left: -20px;
+    border-radius: 15px;
+    background-color: $switchoff-bg-color;
+}
+
+.switchOn {
+    background-color: $switchon-bg-color;
+}
+
+.switchOn::after {
+    content: '';
+    padding: 7.5px 12.5px 0 12.5px;
+    margin-right: -20px;
+    border-radius: 15px;
+    background-color: $switchon-afterbg-color;
+}

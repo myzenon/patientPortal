@@ -1,0 +1,49 @@
+@import '~themes/colors.scss';
+@import '~themes/mixins.scss';
+@import '~themes/global.scss';
+
+.content {
+    @include content-wrapper();
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.buttonWrapper {
+    margin: 50px auto 0 auto !important;
+    max-width: 650px;
+}
+
+.buttonWrapper > div.col {
+    margin-bottom: 15px;
+    z-index: 5;
+}
+
+.button {
+    @include button(90px);
+    width: 250px!important;
+    margin-top: 10px;
+}
+
+
+
+.questions {
+    @extend .heading2;
+}
+
+.contentImg {
+    max-width: 180px;
+    padding-bottom: 10px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .contentImg {
+        max-width: 90px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contentImg {
+        max-width: 180px;
+    }
+}
